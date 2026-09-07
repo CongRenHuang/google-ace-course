@@ -1,0 +1,579 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<title>ACE03 田野筆記 · 第二冊</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700;900&family=Noto+Sans+TC:wght@400;500;700;900&family=JetBrains+Mono:wght@500;700&display=swap">
+<style>
+  :root{
+    --paper:#EEF1F7; --paper-alt:#E2E7F0; --paper-card:#FFFFFF;
+    --ink:#1B2340; --ink-soft:#525C7A;
+    --accent:#F2A93B; --accent-ink:#7A4E06;
+    --accent2:#2FB8AC; --accent2-ink:#0E5A54;
+    --border:#C7CEDD;
+    --correct:#2E8B57; --correct-bg:#E4F5EC;
+    --wrong:#D64545; --wrong-bg:#FBE7E7;
+    --shadow: 0 10px 28px -14px rgba(27,35,64,0.28);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --paper:#11152A; --paper-alt:#171D38; --paper-card:#1B2140;
+      --ink:#E8EBF5; --ink-soft:#A6AFCB;
+      --accent:#FFC069; --accent-ink:#3A2600;
+      --accent2:#4FD8CB; --accent2-ink:#04241F;
+      --border:#2E3760;
+      --correct:#5FD394; --correct-bg:#123324;
+      --wrong:#FF8484; --wrong-bg:#3A1414;
+      --shadow: 0 10px 28px -14px rgba(0,0,0,0.6);
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#11152A; --paper-alt:#171D38; --paper-card:#1B2140;
+    --ink:#E8EBF5; --ink-soft:#A6AFCB;
+    --accent:#FFC069; --accent-ink:#3A2600;
+    --accent2:#4FD8CB; --accent2-ink:#04241F;
+    --border:#2E3760;
+    --correct:#5FD394; --correct-bg:#123324;
+    --wrong:#FF8484; --wrong-bg:#3A1414;
+    --shadow: 0 10px 28px -14px rgba(0,0,0,0.6);
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0; background:var(--paper); color:var(--ink);
+    font-family:"Noto Sans TC","Zen Maru Gothic",sans-serif;
+    line-height:1.6;
+  }
+  h1,h2,h3,.display{ font-family:"Zen Maru Gothic","Noto Sans TC",sans-serif; text-wrap:balance; }
+  code, .mono{ font-family:"JetBrains Mono",monospace; }
+
+  .masthead{
+    padding:56px 24px 40px; text-align:center;
+    background:
+      radial-gradient(circle at 15% 20%, color-mix(in srgb, var(--accent2) 22%, transparent), transparent 45%),
+      radial-gradient(circle at 85% 10%, color-mix(in srgb, var(--accent) 20%, transparent), transparent 45%),
+      var(--paper-alt);
+    border-bottom:2px solid var(--border);
+  }
+  .masthead .kicker{
+    display:inline-block; font-family:"JetBrains Mono",monospace; font-weight:700;
+    letter-spacing:.12em; font-size:.78rem; color:var(--accent2-ink);
+    background:color-mix(in srgb, var(--accent2) 24%, var(--paper-card));
+    padding:5px 14px; border-radius:999px; margin-bottom:16px;
+  }
+  .masthead h1{ font-size:clamp(2rem,5vw,3.1rem); margin:0 0 10px; font-weight:900; }
+  .masthead p{ color:var(--ink-soft); max-width:640px; margin:0 auto; font-size:1.05rem; }
+
+  main{ max-width:1040px; margin:0 auto; padding:40px 24px 100px; }
+
+  .chapter{ margin-bottom:56px; }
+  .chapter-head{ display:flex; align-items:baseline; gap:14px; margin-bottom:22px; }
+  .chapter-num{
+    font-family:"JetBrains Mono",monospace; font-weight:700; font-size:1rem;
+    color:var(--paper-card); background:var(--ink); padding:4px 12px; border-radius:8px;
+  }
+  .chapter-head h2{ margin:0; font-size:1.5rem; }
+  .chapter-head .date{ margin-left:auto; font-family:"JetBrains Mono",monospace; color:var(--ink-soft); font-size:.85rem; }
+
+  .grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:16px; }
+  .card{
+    background:var(--paper-card); border:1.5px solid var(--border); border-radius:16px;
+    padding:18px 18px 16px; box-shadow:var(--shadow);
+  }
+  .card .icon{ width:34px; height:34px; margin-bottom:10px; color:var(--accent2-ink); }
+  .card h3{ margin:0 0 8px; font-size:1.02rem; }
+  .card ul{ margin:0; padding-left:1.15em; font-size:.92rem; color:var(--ink-soft); }
+  .card li{ margin-bottom:5px; }
+  .card li:last-child{ margin-bottom:0; }
+  .card li b, .card li strong{ color:var(--ink); }
+
+  .callout{
+    grid-column:1/-1;
+    background:color-mix(in srgb, var(--accent) 16%, var(--paper-card));
+    border:1.5px dashed color-mix(in srgb, var(--accent) 55%, var(--border));
+    border-radius:16px; padding:16px 20px;
+  }
+  .callout .tag{
+    display:inline-block; font-family:"JetBrains Mono",monospace; font-weight:700; font-size:.72rem;
+    letter-spacing:.08em; color:var(--accent-ink); background:var(--accent); padding:2px 10px;
+    border-radius:999px; margin-bottom:8px;
+  }
+  .callout p{ margin:0; font-size:.94rem; }
+  .callout code{ background:var(--paper-alt); padding:1px 6px; border-radius:5px; }
+
+  /* quiz */
+  .quiz-shell{
+    margin-top:64px; background:var(--paper-alt); border:2px solid var(--border);
+    border-radius:22px; padding:32px 28px;
+  }
+  .quiz-shell > h2{ text-align:center; font-size:1.7rem; margin:0 0 6px; }
+  .quiz-shell > .sub{ text-align:center; color:var(--ink-soft); margin:0 0 28px; }
+  .q-card{
+    background:var(--paper-card); border:1.5px solid var(--border); border-radius:14px;
+    padding:18px 20px; margin-bottom:16px;
+  }
+  .q-card .q-num{ font-family:"JetBrains Mono",monospace; color:var(--accent2-ink); font-weight:700; font-size:.82rem; }
+  .q-card p.q-text{ margin:4px 0 12px; font-weight:700; font-size:1rem; }
+  .opt{
+    display:flex; align-items:center; gap:10px; padding:9px 12px; margin-bottom:7px;
+    border:1.5px solid var(--border); border-radius:10px; cursor:pointer; font-size:.92rem;
+  }
+  .opt:hover{ border-color:var(--accent2); }
+  .opt input{ accent-color:var(--accent2); }
+  .opt.correct{ background:var(--correct-bg); border-color:var(--correct); color:var(--correct); font-weight:700; }
+  .opt.wrong{ background:var(--wrong-bg); border-color:var(--wrong); color:var(--wrong); font-weight:700; }
+  .explain{
+    display:none; margin-top:10px; padding:10px 14px; background:var(--paper-alt);
+    border-left:4px solid var(--accent2); border-radius:8px; font-size:.88rem; color:var(--ink-soft);
+  }
+  .explain.show{ display:block; }
+  #checkBtn{
+    display:block; margin:20px auto 8px; padding:13px 38px; font-size:1.02rem; font-weight:700;
+    font-family:"Zen Maru Gothic",sans-serif; color:var(--accent-ink); background:var(--accent);
+    border:none; border-radius:999px; cursor:pointer; box-shadow:var(--shadow);
+  }
+  #checkBtn:hover{ filter:brightness(1.04); }
+  #scoreLine{ text-align:center; font-weight:700; font-size:1.1rem; margin-top:10px; min-height:1.6em; }
+
+  footer{ text-align:center; color:var(--ink-soft); font-size:.82rem; padding:20px; }
+  a.back{ color:var(--accent2-ink); text-decoration:none; font-weight:700; }
+
+  .theme-toggle{
+    position:fixed; top:16px; right:16px; z-index:20;
+    width:44px; height:44px; border-radius:50%; border:1.5px solid var(--border);
+    background:var(--paper-card); color:var(--ink); font-size:1.15rem; cursor:pointer;
+    box-shadow:var(--shadow); display:flex; align-items:center; justify-content:center;
+  }
+  .theme-toggle:hover{ filter:brightness(1.05); }
+</style>
+</head>
+<body>
+
+<button class="theme-toggle" id="themeToggle" title="切換淺色／深色／跟隨系統">🌓</button>
+
+<div class="masthead">
+  <span class="kicker">ACE03 · GETCERT FIELD NOTES</span>
+  <h1>田野筆記　第二冊</h1>
+  <p>Session #2 ～ #6 重點濃縮版 — 大圖示、少字、一頁看完 IAM / GCS / Cloud SQL / GKE / BigQuery / HA·DR。最後附 10 題自我測驗。</p>
+</div>
+
+<main>
+
+  <!-- Session 2 -->
+  <section class="chapter">
+    <div class="chapter-head">
+      <span class="chapter-num">#2</span><h2>報帳表格與 IAM 入門</h2>
+      <span class="date">2026-07-06</span>
+    </div>
+    <div class="grid">
+      <div class="card">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0-4-4m4 4 4-4M5 21h14"/></svg>
+        <h3>先做這件事</h3>
+        <ul>
+          <li>提交表單前要完成 <b>≥5 個技能徽章</b></li>
+          <li>其中 1 個必修：<b>「Create your first Gemini Enterprise App」</b></li>
+          <li>徽章要「完成」不是「開始」，早交表單不會提早拿到 voucher</li>
+        </ul>
+      </div>
+      <div class="card">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 3h9l5 5v13a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z"/><path d="M9 12h6M9 16h6"/></svg>
+        <h3>表單欄位重點</h3>
+        <ul>
+          <li>姓名 ＋ 註冊用（公司）email</li>
+          <li>個人 email——要選真的收得到信的</li>
+          <li>Cohort ID：<span class="mono">ASO3</span></li>
+          <li>認證選 <span class="mono">Associate Cloud Engineer</span>，別選錯 PCA/PDE</li>
+        </ul>
+      </div>
+      <div class="card">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M9 12l2 2 4-4"/></svg>
+        <h3>Google Skills 個人檔案</h3>
+        <ul>
+          <li>設定 → 公開可見度改成 <b>Public</b></li>
+          <li>要按<b>儲存</b>，不然連結不會生成</li>
+          <li>把公開連結貼進表單</li>
+        </ul>
+      </div>
+      <div class="card">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 4 6v6c0 5 3.5 8.5 8 10 4.5-1.5 8-5 8-10V6l-8-4Z"/></svg>
+        <h3>IAM 一句話</h3>
+        <ul>
+          <li><b>誰</b>（使用者/群組）＋<b>能做什麼</b>（角色）＋<b>在哪個資源上</b></li>
+          <li><b>Predefined</b>（Google 做好的）→ 優先試這個</li>
+          <li><b>Custom</b> → 自己組合權限包</li>
+          <li><b>Basic</b>（Owner/Editor/Viewer）→ 範圍最粗，最後手段</li>
+        </ul>
+      </div>
+      <div class="card">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="4" rx="1"/><rect x="6" y="11" width="12" height="4" rx="1"/><rect x="9" y="18" width="6" height="3" rx="1"/></svg>
+        <h3>資源階層</h3>
+        <ul>
+          <li><b>Organization → Folder → Project → Resource</b></li>
+          <li>上層授權會<b>往下流</b>：150 個專案要同權限，在 org 層設一次就好</li>
+          <li>Project <b>ID</b> 建立後鎖死；<b>名稱</b>之後還能改</li>
+        </ul>
+      </div>
+      <div class="card">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M7 9h4M7 13h7"/></svg>
+        <h3>Compute Engine 選型</h3>
+        <ul>
+          <li>依負載選機型：compute／memory／network optimized</li>
+          <li>頻寬跟 vCPU 成正比，上限 32 Gbps，要更快開 <span class="mono">Tier 1 networking</span>（100 Gbps，加錢）</li>
+          <li>VM 最少 <b>1 個 internal IP</b></li>
+        </ul>
+      </div>
+      <div class="callout">
+        <span class="tag">全域/區域/可用區小抄</span>
+        <p><b>Global</b>：VPC、部分 Load Balancer。<b>Regional</b>：GCS bucket、subnet、GKE cluster（最多到這）、MIG。<b>Zonal</b>：VM 實例本身、Persistent Disk（多數情況）、Cloud SQL（預設）。VM 永遠是 zonal，這是最常考的陷阱。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Session 3 -->
+  <section class="chapter">
+    <div class="chapter-head">
+      <span class="chapter-num">#3</span><h2>儲存的地圖：GCS 與 Cloud SQL</h2>
+      <span class="date">2026-07-13</span>
+    </div>
+    <div class="grid">
+      <div class="card">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 15a4 4 0 0 0 4 4h11a3 3 0 0 0 1-5.83A5 5 0 0 0 9.5 8.5 4.5 4.5 0 0 0 3 15Z"/></svg>
+        <h3>儲存等級</h3>
+        <ul>
+          <li><b>Standard→Nearline→Coldline→Archive</b>，越少用越便宜</li>
+          <li><b>Lifecycle Policy</b>：自動依條件搬移／刪除</li>
+          <li><b>Autoclass</b>：依實際存取自動換等級（少見）</li>
+        </ul>
+      </div>
+      <div class="card">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        <h3>加密金鑰三兄弟</h3>
+        <ul>
+          <li><b>GMEK</b>：Google 管，預設，不用管</li>
+          <li><b>CMEK</b>：你的金鑰，放在 Google</li>
+          <li><b>CSEK</b>：你的金鑰，你自己保管（弄丟＝資料沒了）</li>
+        </ul>
+      </div>
+      <div class="card">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 4 6v6c0 5 3.5 8.5 8 10 4.5-1.5 8-5 8-10V6l-8-4Z"/></svg>
+        <h3>鎖起來別亂動</h3>
+        <ul>
+          <li><b>Retention Policy</b>：bucket 層級鎖定期限，鎖了不能刪</li>
+          <li><b>Object Hold</b>：物件層級版本</li>
+          <li>新規則：<b>版本控管可以跟保留政策一起用</b>了（舊教材可能寫錯）</li>
+          <li><b>Uniform bucket-level access</b>：只用 IAM，關掉 ACL</li>
+        </ul>
+      </div>
+      <div class="card">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v12c0 1.66 3.58 3 8 3s8-1.34 8-3V6M4 12c0 1.66 3.58 3 8 3s8-1.34 8-3"/></svg>
+        <h3>Cloud SQL 高可用</h3>
+        <ul>
+          <li>預設是<b>單一可用區</b>（zonal）</li>
+          <li><b>HA 勾選</b>＝自動跨區容錯</li>
+          <li><b>Read Replica</b>＝容錯要<b>手動</b>切換，別搞混！</li>
+          <li>刪除/停止 instance <b>不會自動備份</b>，只留 4 天</li>
+        </ul>
+      </div>
+      <div class="callout">
+        <span class="tag">搬家小抄</span>
+        <p>外部資料要搬進 GCS？90–95% 情況都用 <code>Storage Transfer Service</code>。異質資料庫（例如 Oracle→Cloud SQL）搬家用 <code>DMS</code>。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Session 4 -->
+  <section class="chapter">
+    <div class="chapter-head">
+      <span class="chapter-num">#4</span><h2>GKE 大冒險 与 運算選型</h2>
+      <span class="date">2026-07-20</span>
+    </div>
+    <div class="grid">
+      <div class="card">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/></svg>
+        <h3>Autopilot vs Standard</h3>
+        <ul>
+          <li><b>Autopilot</b>：全自動、<b>永遠是 regional</b>、貴一點</li>
+          <li><b>Standard</b>：你自己管、可 zonal 也可 regional、便宜</li>
+          <li>小 pilot 專案不需要 HA → 選 <b>zonal Standard</b></li>
+        </ul>
+      </div>
+      <div class="card">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v6M12 15v6M4.2 7l5.2 3M14.6 14l5.2 3M4.2 17l5.2-3M14.6 10l5.2-3"/></svg>
+        <h3>私有集群連外</h3>
+        <ul>
+          <li>沒有外部 IP 的節點 = <b>Private Cluster</b></li>
+          <li>連 Google 服務 → <b>Private Google Access</b></li>
+          <li>連外部網路 → <b>Cloud NAT</b></li>
+          <li><b>Workload Identity</b>：K8s SA 直接借用 GCP SA，不用金鑰檔</li>
+        </ul>
+      </div>
+      <div class="card">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18"/></svg>
+        <h3>三選一：怎麼跑 Web App</h3>
+        <ul>
+          <li><b>Cloud Functions</b>：純事件驅動，不是拿來跑網站的</li>
+          <li><b>App Engine</b>：Standard 可縮到零／Flexible 至少開一台</li>
+          <li><b>Cloud Run</b>：需 stateless；兩者都行時<b>優先選它</b></li>
+        </ul>
+      </div>
+      <div class="card">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v6H4zM4 14h7v6H4zM14 14h6v6h-6z"/></svg>
+        <h3>Terraform 口訣</h3>
+        <ul>
+          <li>四檔案：cloudbuild config／backend.tf／tfstate／main.tf</li>
+          <li>四指令：<span class="mono">init → plan → apply → destroy</span></li>
+        </ul>
+      </div>
+      <div class="callout">
+        <span class="tag">合規陷阱</span>
+        <p>Google 拿到 PCI-DSS / GDPR / HIPAA 認證，<b>不代表你蓋在上面的系統也自動合規</b>——這是共同責任。考題常考「怎麼強制資料留在特定地區」→ 答案是 <b>Organization Policy</b>，不是問你合不合規。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Session 5 -->
+  <section class="chapter">
+    <div class="chapter-head">
+      <span class="chapter-num">#5</span><h2>BigQuery 與資料倉儲家族</h2>
+      <span class="date">2026-07-27</span>
+    </div>
+    <div class="grid">
+      <div class="card">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+        <h3>三個很像的名字</h3>
+        <ul>
+          <li><b>Filestore</b>：NFS 檔案共享，不是資料庫</li>
+          <li><b>Firestore</b>：NoSQL 文件資料庫</li>
+          <li><b>Firebase</b>：App 開發平台，不是資料庫</li>
+        </ul>
+      </div>
+      <div class="card">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19V5M4 19h16M8 15l3-4 3 3 4-6"/></svg>
+        <h3>BigQuery 省錢三招</h3>
+        <ul>
+          <li><b>查詢快取</b>：一樣的查詢 24 小時內免費重跑</li>
+          <li><b>Table Expiration</b>：資料到期自動刪，不用手動追</li>
+          <li><b>Partitioning + Clustering</b>：只掃需要的那一小塊資料</li>
+        </ul>
+      </div>
+      <div class="card">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 3 7l9 5 9-5-9-5ZM3 12l9 5 9-5M3 17l9 5 9-5"/></svg>
+        <h3>Cloud Spanner 特異功能</h3>
+        <ul>
+          <li>唯一能<b>水平擴展</b>的關聯式資料庫（加節點就變快）</li>
+          <li>代價：DB 邏輯（trigger／預存程序）要搬到應用層</li>
+          <li>代價：<b>綁定 GCP</b>，換雲商不容易</li>
+        </ul>
+      </div>
+      <div class="card">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+        <h3>Bigtable 是誰的菜</h3>
+        <ul>
+          <li>Key-Value、寬欄、<b>時序資料</b>首選</li>
+          <li>要「讀取密集＋超低延遲」的分析 → 也可以用它取代 BigQuery</li>
+        </ul>
+      </div>
+      <div class="callout">
+        <span class="tag">指令口訣</span>
+        <p>所有 <code>gcloud</code> 指令都是 <code>gcloud [群組] [子群組] [動作]</code>，例如 <code>gcloud compute snapshots list</code>。快照沒有 <code>get</code> 這個動作，只有 <b>list／describe／delete</b>。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Session 6 -->
+  <section class="chapter">
+    <div class="chapter-head">
+      <span class="chapter-num">#6</span><h2>HA、DR 與畢業考前準備</h2>
+      <span class="date">2026-08-03（最終堂）</span>
+    </div>
+    <div class="grid">
+      <div class="card">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2 3 14h8l-1 8 11-14h-8l1-6Z"/></svg>
+        <h3>HA＝自動應變</h3>
+        <ul>
+          <li>Compute Engine → <b>Regional MIG + LB</b></li>
+          <li>GKE → <b>Regional Cluster + LB</b></li>
+          <li>App Engine／Spanner／GCS → <b>本來就高可用</b>，免設定</li>
+          <li>Cloud SQL → 勾 <b>Multi-zone</b></li>
+        </ul>
+      </div>
+      <div class="card">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4.5 8-11V5l-8-3-8 3v6c0 6.5 8 11 8 11Z"/><path d="M9 12h6M12 9v6"/></svg>
+        <h3>DR＝需要人做決定</h3>
+        <ul>
+          <li><b>Cold</b>：備份還原，慢但簡單</li>
+          <li><b>Warm</b>：跨區 Read Replica，快一點但<b>手動</b>切換</li>
+          <li><b>Hot</b>：Cloud SQL 原生沒有，要改用 <b>Cloud Spanner</b></li>
+          <li>DR 永遠不是全自動——跟 HA 最大不同</li>
+        </ul>
+      </div>
+      <div class="card">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21v-1a8 8 0 0 1 16 0v1"/></svg>
+        <h3>身分別搞混</h3>
+        <ul>
+          <li><b>Service Account</b>：機器對機器</li>
+          <li><b>Cloud Identity</b>：管理「人」的帳號（例如從 AD 匯入）</li>
+          <li>PII 資料 → <b>細粒度權限</b>優於「有到期時間的分享連結」</li>
+        </ul>
+      </div>
+      <div class="card">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12h6M9 16h6M9 8h6M5 3h14v18H5z"/></svg>
+        <h3>報名考試小抄</h3>
+        <ul>
+          <li>約 <b>50 題 / 2 小時</b></li>
+          <li>考場版：帶身份證件即可</li>
+          <li>居家版：個人筆電＋鏡頭麥克風、房間要給監考官看一圈、考試中不能帶紙筆水食</li>
+        </ul>
+      </div>
+      <div class="callout">
+        <span class="tag">最容易考錯</span>
+        <p>「哪個服務最<b>簡單</b>」跟「哪個服務最<b>好</b>」常常答案不同！例如靜態網站「最簡單」是 GCS + Load Balancer，但「最佳」通常才是 App Engine。看清楚題目問的是哪一個。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUIZ -->
+  <section class="quiz-shell">
+    <h2>✏️ 自我測驗：12 題</h2>
+    <p class="sub">來自 Session 2～6 的診斷題重點，測完看分數</p>
+    <div id="quiz"></div>
+    <button id="checkBtn">交卷看分數</button>
+    <div id="scoreLine"></div>
+  </section>
+
+</main>
+
+<footer>ACE03-GETCERT 田野筆記 · 第二冊 · Session #3–#6　<a class="back" href="index.html">← 回到目錄</a></footer>
+
+<script>
+const QUESTIONS = [
+  {
+    q: "GCP 資源階層的正確順序是？",
+    opts: ["Project → Folder → Organization → Resource","Organization → Folder → Project → Resource","Folder → Organization → Project → Resource","Organization → Project → Folder → Resource"],
+    correct: 1,
+    explain: "由上而下：Organization 在最上層，Folder 分組專案，Project 底下才是各種資源。"
+  },
+  {
+    q: "選 IAM 角色的優先順序，Google 建議是？",
+    opts: ["Basic → Custom → Predefined","Custom → Predefined → Basic","Predefined → Custom → Basic","Basic → Predefined → Custom"],
+    correct: 2,
+    explain: "先試 Google 做好的 Predefined（夠granular又有人維護），不夠用再 Custom，Basic（Owner/Editor/Viewer）留到最後手段。"
+  },
+  {
+    q: "客戶的 PII（信用卡、病歷）資料存在 GCS，怎麼設定存取最安全？",
+    opts: ["設成公開存取","給大家 read-only","用細粒度的存取控制（granular access）","分享一個有到期時間的 signed URL"],
+    correct: 2,
+    explain: "Signed URL 到期前任何持有連結的人都能存取，對高敏感資料不夠嚴謹；應該用細粒度權限精準控管誰能看什麼。"
+  },
+  {
+    q: "「最簡單」架設一個純靜態網站的方法是？",
+    opts: ["App Engine","GCS bucket + Global External LB（backend bucket）","GKE + Ingress","Cloud Run"],
+    correct: 1,
+    explain: "App Engine 是「最佳」方案，但「最簡單」是把網站丟進 GCS bucket，再用全域負載平衡器指向它當 backend bucket。"
+  },
+  {
+    q: "無法預測負載的 stateless Python web app，該用什麼？",
+    opts: ["Compute Engine","Kubernetes (GKE Standard)","App Engine 或 Cloud Run","Cloud Functions"],
+    correct: 2,
+    explain: "無法預測負載時，交給平台管理擴縮最省事，排除需要自己管理基礎設施的 Compute Engine / GKE。兩者都能選時優先 Cloud Run。"
+  },
+  {
+    q: "VM 裡的應用程式要連 Cloud SQL，Google 建議用什麼身分驗證？",
+    opts: ["個人 Google 帳號密碼","Service Account","Cloud Identity 匯入的使用者","API Key"],
+    correct: 1,
+    explain: "機器對機器（App 對 App）的溝通標準做法是 Service Account，不是人類帳號密碼。"
+  },
+  {
+    q: "GKE Autopilot 叢集有什麼限制？",
+    opts: ["只能是 zonal","只能是 regional","不能用私有叢集","不支援 Workload Identity"],
+    correct: 1,
+    explain: "Autopilot 叢集永遠是 regional，沒有 zonal 版本；要 zonal 就要用 Standard 模式。"
+  },
+  {
+    q: "Cloud SQL 要做到「跨區容錯」但可以接受手動切換，該用什麼？",
+    opts: ["High Availability（多可用區）核取方塊","Read Replica","自動備份","Point-in-time recovery"],
+    correct: 1,
+    explain: "Read Replica 提供跨區資料副本，但故障轉移是手動決定，不像 HA 核取方塊那樣自動。"
+  },
+  {
+    q: "BigQuery 查詢結果快取，會保留多久？",
+    opts: ["1 小時","24 小時","7 天","永久"],
+    correct: 1,
+    explain: "同樣的查詢在資料未變動下，24 小時內重跑不用再付費、也更快，是內建的成本優化機制。"
+  },
+  {
+    q: "要讓 BigQuery 只掃描「上個月」的資料而不是整年，該用哪個功能？",
+    opts: ["Clustering","Table Expiration","Partitioning（依時間戳記分區）","Autoclass"],
+    correct: 2,
+    explain: "Partitioning 把表依時間戳記或整數切開，查詢可以只打到需要的分區，大幅降低掃描量與成本。"
+  },
+  {
+    q: "Cloud SQL 想要做到近乎零停機的「Hot 災難復原」，該怎麼做？",
+    opts: ["加開更多 Read Replica","勾選 HA 核取方塊","改用 Cloud Spanner","縮短備份週期"],
+    correct: 2,
+    explain: "Cloud SQL 原生沒有 Hot DR 選項；要達到近乎零停機的跨區容錯，需要換成原生多區域架構的 Cloud Spanner。"
+  },
+  {
+    q: "以下哪一組名字最容易被搞混，但其實是三個完全不同的服務？",
+    opts: ["BigQuery / Bigtable / Spanner","Filestore / Firestore / Firebase","Cloud Run / Cloud Function / App Engine","VPC / Subnet / Firewall"],
+    correct: 1,
+    explain: "Filestore 是 NFS 檔案服務、Firestore 是 NoSQL 文件資料庫、Firebase 是行動 App 開發平台——三者名字很像但完全不同類。"
+  }
+];
+
+const quizEl = document.getElementById('quiz');
+QUESTIONS.forEach((item, qi) => {
+  const card = document.createElement('div');
+  card.className = 'q-card';
+  card.innerHTML = `
+    <div class="q-num">Q${qi+1}</div>
+    <p class="q-text">${item.q}</p>
+    <div class="opts"></div>
+    <div class="explain" id="exp-${qi}">💡 ${item.explain}</div>
+  `;
+  const optsWrap = card.querySelector('.opts');
+  item.opts.forEach((opt, oi) => {
+    const label = document.createElement('label');
+    label.className = 'opt';
+    label.innerHTML = `<input type="radio" name="q${qi}" value="${oi}"><span>${opt}</span>`;
+    optsWrap.appendChild(label);
+  });
+  quizEl.appendChild(card);
+});
+
+document.getElementById('checkBtn').addEventListener('click', () => {
+  let score = 0;
+  QUESTIONS.forEach((item, qi) => {
+    const chosen = document.querySelector(`input[name="q${qi}"]:checked`);
+    const opts = document.querySelectorAll(`input[name="q${qi}"]`);
+    opts.forEach((inp, oi) => {
+      const label = inp.closest('.opt');
+      label.classList.remove('correct','wrong');
+      if (oi === item.correct) label.classList.add('correct');
+      else if (chosen && parseInt(chosen.value) === oi) label.classList.add('wrong');
+    });
+    if (chosen && parseInt(chosen.value) === item.correct) score++;
+    document.getElementById(`exp-${qi}`).classList.add('show');
+  });
+  const line = document.getElementById('scoreLine');
+  line.textContent = `你答對 ${score} / ${QUESTIONS.length} 題　${score >= 10 ? '🎉 很穩，可以去約考試了！' : score >= 6 ? '💪 還不錯，再複習一下弱項' : '📖 建議重看一次筆記本再測一次'}`;
+});
+
+(function(){
+  const root = document.documentElement;
+  const btn = document.getElementById('themeToggle');
+  const KEY = 'ace03-theme';
+  function apply(t){
+    if(t){ root.setAttribute('data-theme', t); } else { root.removeAttribute('data-theme'); }
+    btn.textContent = t === 'dark' ? '🌙' : t === 'light' ? '☀️' : '🌓';
+  }
+  apply(localStorage.getItem(KEY));
+  btn.addEventListener('click', () => {
+    const cur = localStorage.getItem(KEY);
+    const next = cur === 'light' ? 'dark' : cur === 'dark' ? '' : 'light';
+    if(next){ localStorage.setItem(KEY, next); } else { localStorage.removeItem(KEY); }
+    apply(next || null);
+  });
+})();
+</script>
+</body>
+</html>

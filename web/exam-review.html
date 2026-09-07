@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<title>ACE03 考前戰情室</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=JetBrains+Mono:wght@500;700&display=swap">
+<style>
+  :root{
+    --bg:#F5F7FB; --surface:#FFFFFF; --surface-alt:#EEF1F9;
+    --ink:#181B29; --ink-soft:#5A6178;
+    --accent:#4C6FFF; --accent-soft:#E7ECFF; --accent-ink:#2439A8;
+    --warn:#C97A16; --warn-soft:#FDF0DD;
+    --good:#1E8F5F; --good-soft:#E3F6EC;
+    --bad:#C1403F; --bad-soft:#FBE7E6;
+    --border:#DCE1EE;
+    --shadow:0 8px 24px -14px rgba(24,27,41,.25);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#0D0F17; --surface:#161926; --surface-alt:#1C2032;
+      --ink:#EAEDF7; --ink-soft:#9AA1BD;
+      --accent:#7C93FF; --accent-soft:#212A52; --accent-ink:#C3CDFF;
+      --warn:#E2A64A; --warn-soft:#2E2412;
+      --good:#59CC97; --good-soft:#12291E;
+      --bad:#FF8A87; --bad-soft:#2E1616;
+      --border:#282D42;
+      --shadow:0 8px 24px -14px rgba(0,0,0,.6);
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#0D0F17; --surface:#161926; --surface-alt:#1C2032;
+    --ink:#EAEDF7; --ink-soft:#9AA1BD;
+    --accent:#7C93FF; --accent-soft:#212A52; --accent-ink:#C3CDFF;
+    --warn:#E2A64A; --warn-soft:#2E2412;
+    --good:#59CC97; --good-soft:#12291E;
+    --bad:#FF8A87; --bad-soft:#2E1616;
+    --border:#282D42;
+    --shadow:0 8px 24px -14px rgba(0,0,0,.6);
+  }
+  *{box-sizing:border-box;}
+  body{ margin:0; background:var(--bg); color:var(--ink); font-family:"Noto Sans TC",sans-serif; line-height:1.65; }
+  code,.mono{ font-family:"JetBrains Mono",monospace; }
+  h1,h2,h3{ text-wrap:balance; margin:0; }
+
+  header.top{
+    padding:36px 24px 28px; background:var(--surface);
+    border-bottom:1px solid var(--border); position:sticky; top:0; z-index:5;
+    backdrop-filter:blur(6px);
+  }
+  header.top .wrap{ max-width:980px; margin:0 auto; }
+  header.top .eyebrow{
+    font-family:"JetBrains Mono",monospace; font-size:.75rem; letter-spacing:.1em; font-weight:700;
+    color:var(--accent-ink); background:var(--accent-soft); display:inline-block;
+    padding:4px 12px; border-radius:999px; margin-bottom:10px;
+  }
+  header.top h1{ font-size:clamp(1.5rem,3.6vw,2.1rem); font-weight:900; }
+  header.top p{ color:var(--ink-soft); margin:8px 0 0; max-width:640px; }
+
+  main{ max-width:980px; margin:0 auto; padding:36px 24px 100px; }
+  section{ margin-bottom:44px; }
+  section > h2{
+    font-size:1.25rem; font-weight:900; margin-bottom:16px; display:flex; align-items:center; gap:10px;
+  }
+  section > h2 .num{
+    font-family:"JetBrains Mono",monospace; background:var(--ink); color:var(--surface);
+    font-size:.78rem; padding:2px 9px; border-radius:6px;
+  }
+
+  /* logic steps */
+  .steps{ display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:14px; }
+  .step{
+    background:var(--surface); border:1px solid var(--border); border-radius:14px; padding:16px 18px;
+    box-shadow:var(--shadow);
+  }
+  .step .n{ font-family:"JetBrains Mono",monospace; font-weight:700; color:var(--accent-ink); font-size:.85rem; }
+  .step p{ margin:6px 0 0; font-size:.92rem; color:var(--ink-soft); }
+  .step p b{ color:var(--ink); }
+
+  /* accordion */
+  .accordion{ display:flex; flex-direction:column; gap:10px; }
+  .acc-item{ background:var(--surface); border:1px solid var(--border); border-radius:14px; overflow:hidden; }
+  .acc-btn{
+    width:100%; text-align:left; background:none; border:none; padding:16px 18px; cursor:pointer;
+    display:flex; align-items:center; gap:12px; font-family:inherit; font-size:1rem; font-weight:700; color:var(--ink);
+  }
+  .acc-btn .tag{
+    font-family:"JetBrains Mono",monospace; font-size:.72rem; font-weight:700; color:var(--accent-ink);
+    background:var(--accent-soft); padding:2px 9px; border-radius:6px; flex-shrink:0;
+  }
+  .acc-btn .date{ margin-left:auto; font-size:.78rem; color:var(--ink-soft); font-family:"JetBrains Mono",monospace; font-weight:500; }
+  .acc-btn .chev{ transition:transform .2s ease; flex-shrink:0; color:var(--ink-soft); }
+  .acc-item.open .chev{ transform:rotate(180deg); }
+  .acc-body{ display:none; padding:0 20px 18px 20px; }
+  .acc-item.open .acc-body{ display:block; }
+  .acc-body ul{ margin:0; padding-left:1.2em; color:var(--ink-soft); font-size:.92rem; }
+  .acc-body li{ margin-bottom:7px; }
+  .acc-body li b{ color:var(--ink); }
+  .acc-body code{ background:var(--surface-alt); padding:1px 6px; border-radius:5px; }
+
+  /* concept map */
+  .filter-bar{ display:flex; flex-wrap:wrap; gap:8px; margin-bottom:16px; }
+  .filter-btn{
+    font-family:"JetBrains Mono",monospace; font-size:.78rem; font-weight:700; padding:6px 14px;
+    border-radius:999px; border:1.5px solid var(--border); background:var(--surface); color:var(--ink-soft);
+    cursor:pointer;
+  }
+  .filter-btn.active{ background:var(--accent); color:#fff; border-color:var(--accent); }
+  .map-grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+  .map-card{
+    background:var(--surface); border:1px solid var(--border); border-radius:14px; padding:16px 18px;
+    box-shadow:var(--shadow);
+  }
+  .map-card .topic{
+    font-family:"JetBrains Mono",monospace; font-size:.72rem; font-weight:700; color:var(--accent-ink);
+    background:var(--accent-soft); padding:2px 9px; border-radius:6px; display:inline-block; margin-bottom:8px;
+  }
+  .map-card p{ margin:0; font-size:.92rem; color:var(--ink-soft); }
+  .map-card p b{ color:var(--ink); }
+  .map-card[hidden]{ display:none; }
+
+  /* flip cards */
+  .flip-grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:16px; }
+  .flip-outer{ perspective:1200px; height:170px; cursor:pointer; }
+  .flip-inner{
+    position:relative; width:100%; height:100%; transition:transform .5s; transform-style:preserve-3d;
+  }
+  .flip-outer.flipped .flip-inner{ transform:rotateY(180deg); }
+  .flip-face{
+    position:absolute; inset:0; backface-visibility:hidden; border-radius:14px; padding:16px 18px;
+    display:flex; flex-direction:column; justify-content:center; border:1px solid var(--border); box-shadow:var(--shadow);
+  }
+  .flip-front{ background:var(--warn-soft); }
+  .flip-front .lbl{ font-family:"JetBrains Mono",monospace; font-size:.7rem; font-weight:700; color:var(--warn); margin-bottom:6px; }
+  .flip-front p{ margin:0; font-weight:700; font-size:.94rem; }
+  .flip-back{ background:var(--good-soft); transform:rotateY(180deg); }
+  .flip-back .lbl{ font-family:"JetBrains Mono",monospace; font-size:.7rem; font-weight:700; color:var(--good); margin-bottom:6px; }
+  .flip-back p{ margin:0; font-size:.88rem; color:var(--ink); }
+  .flip-hint{ position:absolute; bottom:8px; right:12px; font-size:.7rem; color:var(--ink-soft); opacity:.7; }
+
+  /* strategy */
+  .strategy-list{ display:flex; flex-direction:column; gap:10px; }
+  .strategy-list li{
+    list-style:none; background:var(--surface); border:1px solid var(--border); border-radius:12px;
+    padding:12px 16px; display:flex; gap:12px; align-items:flex-start; box-shadow:var(--shadow); font-size:.92rem;
+  }
+  .strategy-list li .mark{ color:var(--accent-ink); font-weight:900; font-family:"JetBrains Mono",monospace; }
+  .strategy-list b{ color:var(--ink); }
+
+  footer{ text-align:center; color:var(--ink-soft); font-size:.82rem; padding:24px; }
+  a.back{ color:var(--accent-ink); text-decoration:none; font-weight:700; }
+
+  .theme-toggle{
+    position:fixed; top:16px; right:16px; z-index:20;
+    width:44px; height:44px; border-radius:50%; border:1.5px solid var(--border);
+    background:var(--surface); color:var(--ink); font-size:1.15rem; cursor:pointer;
+    box-shadow:var(--shadow); display:flex; align-items:center; justify-content:center;
+  }
+  .theme-toggle:hover{ filter:brightness(1.05); }
+</style>
+</head>
+<body>
+
+<button class="theme-toggle" id="themeToggle" title="切換淺色／深色／跟隨系統">🌓</button>
+
+<header class="top">
+  <div class="wrap">
+    <span class="eyebrow">ACE03 · EXAM WAR ROOM</span>
+    <h1>考前戰情室 — 逐堂重點 × 考試技巧</h1>
+    <p>整理自 Session #2～#6 的總複習筆記，重點放在「怎麼解題」而不是死背定義。點各區塊展開內容。</p>
+  </div>
+</header>
+
+<main>
+
+  <section>
+    <h2><span class="num">01</span>出題邏輯：情境題 > 死背題</h2>
+    <div class="steps">
+      <div class="step"><div class="n">STEP 1</div><p>先抓<b>限制條件關鍵字</b>：不可預測負載、highly available、特定日期、機器對機器⋯</p></div>
+      <div class="step"><div class="n">STEP 2</div><p>用關鍵字<b>直接消去</b>不可能的選項（技術不符、範圍不對、非最佳實務）</p></div>
+      <div class="step"><div class="n">STEP 3</div><p>剩下選項比「<b>最省事／Google 推薦</b>」的那個——同樣正確時通常只有一個更優解</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="num">02</span>逐堂重點回顧</h2>
+    <div class="accordion" id="accordion">
+
+      <div class="acc-item">
+        <button class="acc-btn"><span class="tag">#2</span>IAM 與資源階層<span class="date">2026-07-06</span><svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button>
+        <div class="acc-body">
+          <ul>
+            <li>Resource Hierarchy：<b>Organization → Folder → Project → Resource</b>，權限由上往下繼承</li>
+            <li>IAM 角色優先序：<b>Predefined → Custom → Basic</b>（最後手段）</li>
+            <li>BigQuery：檢視要 <code>dataViewer</code>，查詢要另外的 <code>jobUser</code></li>
+            <li>常考陷阱：<b>VM 永遠 zonal</b>，GKE 最多 regional，GCS 最多 multi-region（非 global）</li>
+            <li>VM 最少要 1 個 internal IP；Spot VM 省 90% 但可被收回；MIG 分 stateful / stateless</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="acc-item">
+        <button class="acc-btn"><span class="tag">#3</span>Cloud Storage 與 Cloud SQL<span class="date">2026-07-13</span><svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button>
+        <div class="acc-body">
+          <ul>
+            <li>儲存等級遞減：<b>Standard→Nearline→Coldline→Archive</b></li>
+            <li>加密三層：<b>GMEK</b>(預設)／<b>CMEK</b>(自帶金鑰存Google)／<b>CSEK</b>(自己保管)</li>
+            <li>Retention Policy（bucket）vs Object Hold（物件）；<b>Versioning 現可與 Retention 併用</b>（新規則）</li>
+            <li>Cloud SQL：HA=<b>自動</b>容錯；Read Replica=<b>手動</b>容錯；刪除 instance 不自動備份，僅留 4 天</li>
+            <li>外部搬資料進 GCS：首選 <b>Storage Transfer Service</b></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="acc-item">
+        <button class="acc-btn"><span class="tag">#4</span>GKE 與 Compute 服務<span class="date">2026-07-20</span><svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button>
+        <div class="acc-body">
+          <ul>
+            <li>NoSQL 走 <b>BASE</b>（非 ACID），schema 彈性、邏輯下放應用層</li>
+            <li>Google 合規認證 ≠ 客戶系統自動合規（共同責任）；強制地區用 <b>Organization Policy</b></li>
+            <li><b>Autopilot</b>(全託管/永遠regional/貴) vs <b>Standard</b>(可zonal或regional/便宜)</li>
+            <li>Private Cluster：連 Google 服務用 <b>Private Google Access</b>，連外部用 <b>Cloud NAT</b></li>
+            <li><b>Workload Identity</b>：K8s SA 代用 GCP SA，免金鑰檔</li>
+            <li>Terraform 指令：<code>init → plan → apply → destroy</code></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="acc-item">
+        <button class="acc-btn"><span class="tag">#5</span>BigQuery、Spanner 與儲存家族<span class="date">2026-07-27</span><svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button>
+        <div class="acc-body">
+          <ul>
+            <li>CI/CD：Source Repo → Cloud Build → Artifact Registry → 弱點掃描 → <b>Binary Authorization</b>（守門）→ 部署</li>
+            <li>Filestore(NFS) vs Firestore(NoSQL文件) vs Firebase(App平台) —— 三個名字像但完全不同</li>
+            <li>Spanner：唯一<b>水平擴展</b>的關聯式資料庫，但邏輯要搬應用層 + <b>vendor lock-in</b></li>
+            <li>BigQuery：欄式資料庫，成本看掃描量；<b>查詢快取 24 小時</b>；Partitioning + Clustering 優化速度成本</li>
+            <li>Bigtable：key-value/寬欄/時序資料首選，讀取密集低延遲分析也適用</li>
+            <li>快照指令固定 <code>gcloud [group] [subgroup] [verb]</code>，沒有 <code>get</code></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="acc-item">
+        <button class="acc-btn"><span class="tag">#6</span>HA / DR / 服務選型 / 報名<span class="date">2026-08-03（最終堂）</span><svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button>
+        <div class="acc-body">
+          <ul>
+            <li>Cloud Function Gen1(隱藏Pub/Sub) vs Gen2(顯式 <b>Eventarc</b>，較好除錯)</li>
+            <li>PII 資料：<b>細粒度權限</b>優於 signed URL</li>
+            <li>靜態網站「最簡單」＝GCS+全域LB(backend bucket)；跟「最佳」(App Engine)不同答案</li>
+            <li>HA：Compute Engine/GKE 靠 Regional+LB；App Engine/Spanner/GCS 本來就高可用；Cloud SQL 勾 Multi-zone</li>
+            <li>DR：Cold(備份)／Warm(跨區Read Replica，手動)／Hot(Cloud SQL不支援，需換Spanner)</li>
+            <li>金鑰選擇：公開資料→API Key；代表使用者→OAuth2.0；代表SA且資源在GCP內→環境憑證；代表SA且資源在GCP外→<b>Service Account Key</b></li>
+            <li>考試：約 <b>50題／2小時</b>，居家版需個人筆電+鏡頭麥克風+房間檢查</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="num">03</span>必考觀念地圖</h2>
+    <div class="filter-bar" id="filterBar">
+      <button class="filter-btn active" data-topic="all">全部</button>
+      <button class="filter-btn" data-topic="iam">IAM</button>
+      <button class="filter-btn" data-topic="scope">資源範圍</button>
+      <button class="filter-btn" data-topic="compute">運算選型</button>
+      <button class="filter-btn" data-topic="storage">儲存選型</button>
+      <button class="filter-btn" data-topic="hadr">HA/DR</button>
+      <button class="filter-btn" data-topic="security">安全</button>
+      <button class="filter-btn" data-topic="ops">指令/工具</button>
+    </div>
+    <div class="map-grid" id="mapGrid">
+      <div class="map-card" data-topic="iam"><span class="topic">IAM</span><p><b>Predefined &gt; Custom &gt; Basic</b>；Service Account 用於機器對機器溝通</p></div>
+      <div class="map-card" data-topic="scope"><span class="topic">資源範圍</span><p><b>VM / Cloud SQL = zonal</b>；GKE 最多 regional；VPC = global</p></div>
+      <div class="map-card" data-topic="compute"><span class="topic">運算選型</span><p>事件驅動→Functions；容器＋免管理→Cloud Run；需自訂OS→Compute Engine；混合雲→Anthos</p></div>
+      <div class="map-card" data-topic="storage"><span class="topic">儲存選型</span><p>結構化+跨區→Spanner；分析+大量資料→BigQuery；NoSQL文件→Firestore；key-value/時序→Bigtable；檔案共享→Filestore</p></div>
+      <div class="map-card" data-topic="hadr"><span class="topic">HA vs DR</span><p>HA＝自動容錯（zone層級）；DR＝人工決策（region層級，Cold/Warm/Hot）</p></div>
+      <div class="map-card" data-topic="security"><span class="topic">安全</span><p>Uniform bucket-level access；PII用細粒度權限非signed URL；GCP合規≠客戶系統自動合規</p></div>
+      <div class="map-card" data-topic="ops"><span class="topic">Terraform</span><p><code>init → plan → apply → destroy</code></p></div>
+      <div class="map-card" data-topic="ops"><span class="topic">gcloud 語法</span><p><code>gcloud [group] [subgroup] [verb]</code>，如 <code>gcloud compute snapshots list</code></p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="num">04</span>易混淆點（點卡片看解答）</h2>
+    <div class="flip-grid" id="flipGrid">
+      <div class="flip-outer">
+        <div class="flip-inner">
+          <div class="flip-face flip-front"><span class="lbl">容易搞混</span><p>Filestore / Firestore / Firebase 是同一種東西？</p></div>
+          <div class="flip-face flip-back"><span class="lbl">正確觀念</span><p>三個完全不同：Filestore=NFS檔案服務、Firestore=NoSQL文件資料庫、Firebase=App開發平台（可搭配Firestore）。</p></div>
+        </div>
+        <div class="flip-hint">點我翻面</div>
+      </div>
+      <div class="flip-outer">
+        <div class="flip-inner">
+          <div class="flip-face flip-front"><span class="lbl">容易搞混</span><p>App Engine 跟 Cloud Run 技術上都能用，選哪個？</p></div>
+          <div class="flip-face flip-back"><span class="lbl">正確觀念</span><p>兩者都可行時，Google 建議<b>優先選 Cloud Run</b>——考試遇到「兩者皆可」的題目，Cloud Run 是更優解。</p></div>
+        </div>
+        <div class="flip-hint">點我翻面</div>
+      </div>
+      <div class="flip-outer">
+        <div class="flip-inner">
+          <div class="flip-face flip-front"><span class="lbl">容易搞混</span><p>HA 跟 DR 是同一回事嗎？</p></div>
+          <div class="flip-face flip-back"><span class="lbl">正確觀念</span><p>不是。HA 是<b>自動化</b>處理 zone 層級失效；DR 是處理整個 region 失效，且<b>一定需要人工介入</b>做決策。</p></div>
+        </div>
+        <div class="flip-hint">點我翻面</div>
+      </div>
+      <div class="flip-outer">
+        <div class="flip-inner">
+          <div class="flip-face flip-front"><span class="lbl">容易搞混</span><p>Object Versioning 跟 Retention Policy 能一起用嗎？</p></div>
+          <div class="flip-face flip-back"><span class="lbl">正確觀念</span><p>規則已變更：<b>現在可以併用</b>了。舊教材可能寫「互斥」，考試以新規則為準。</p></div>
+        </div>
+        <div class="flip-hint">點我翻面</div>
+      </div>
+      <div class="flip-outer">
+        <div class="flip-inner">
+          <div class="flip-face flip-front"><span class="lbl">容易搞混</span><p><code>gsutil</code> 現在還是標準指令嗎？</p></div>
+          <div class="flip-face flip-back"><span class="lbl">正確觀念</span><p><code>gsutil</code> 已淘汰，改用 <code>gcloud storage</code>；但考題可能仍出現舊語法，兩者都要認得。</p></div>
+        </div>
+        <div class="flip-hint">點我翻面</div>
+      </div>
+      <div class="flip-outer">
+        <div class="flip-inner">
+          <div class="flip-face flip-front"><span class="lbl">容易搞混</span><p>Cloud SQL 的 Read Replica 容錯是自動的嗎？</p></div>
+          <div class="flip-face flip-back"><span class="lbl">正確觀念</span><p>不是，Read Replica 容錯是<b>手動</b>切換。自動容錯要靠 HA（Multi-zone）核取方塊。</p></div>
+        </div>
+        <div class="flip-hint">點我翻面</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="num">05</span>讀書策略建議</h2>
+    <ul class="strategy-list">
+      <li><span class="mark">→</span><span>依「<b>資源歸屬服務</b>」分類記憶（哪個服務原生 zonal/regional/global），比背個別定義更有效率——很多考題就是繞著這個範圍設陷阱。</span></li>
+      <li><span class="mark">→</span><span>每個服務至少記住：<b>適用情境</b> ＋ <b>不適用情境</b>，因為出題常用排除法設計干擾選項。</span></li>
+      <li><span class="mark">→</span><span>考前用課程提供的兩份 Google Form 練習題（各 ~30 題，目標正確率 <b>80%+</b>）與自建練習 App 做最後驗收。</span></li>
+      <li><span class="mark">→</span><span>建議讀書順序：IAM/資源階層 → 運算(Compute/GKE/Serverless) → 資料儲存 → 網路 → 安全/合規 → HA/DR → IaC(Terraform)。</span></li>
+    </ul>
+  </section>
+
+</main>
+
+<footer>ACE03-GETCERT 考前戰情室 · Session #2–#6 總複習　<a class="back" href="index.html">← 回到目錄</a></footer>
+
+<script>
+  document.querySelectorAll('.acc-btn').forEach(btn => {
+    btn.addEventListener('click', () => btn.closest('.acc-item').classList.toggle('open'));
+  });
+  // open first by default
+  document.querySelector('.acc-item')?.classList.add('open');
+
+  document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const topic = btn.dataset.topic;
+      document.querySelectorAll('.map-card').forEach(card => {
+        card.hidden = !(topic === 'all' || card.dataset.topic === topic);
+      });
+    });
+  });
+
+  document.querySelectorAll('.flip-outer').forEach(el => {
+    el.addEventListener('click', () => el.classList.toggle('flipped'));
+  });
+
+  (function(){
+    const root = document.documentElement;
+    const btn = document.getElementById('themeToggle');
+    const KEY = 'ace03-theme';
+    function apply(t){
+      if(t){ root.setAttribute('data-theme', t); } else { root.removeAttribute('data-theme'); }
+      btn.textContent = t === 'dark' ? '🌙' : t === 'light' ? '☀️' : '🌓';
+    }
+    apply(localStorage.getItem(KEY));
+    btn.addEventListener('click', () => {
+      const cur = localStorage.getItem(KEY);
+      const next = cur === 'light' ? 'dark' : cur === 'dark' ? '' : 'light';
+      if(next){ localStorage.setItem(KEY, next); } else { localStorage.removeItem(KEY); }
+      apply(next || null);
+    });
+  })();
+</script>
+</body>
+</html>

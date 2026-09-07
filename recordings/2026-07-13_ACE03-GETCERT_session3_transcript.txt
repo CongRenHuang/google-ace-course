@@ -1,0 +1,882 @@
+[0:03] All right, your recording has been started. And another one uh another
+[0:08] announcement is that I wanted to tell you guys again that the Google groups is
+[0:12] open. So um it will be open starting from today. So if let's say you have any
+[0:19] technical questions you wanted to ask your trainer or maybe you want to ask
+[0:22] your peers inside the Google groups, please feel free to um ask your
+[0:28] questions direct. Okay. Thank you so much. Uh super team, the floor is all
+[0:32] yours. Thank you.
+[0:35] >> Yeah, thanks N. Okay, so guys, yeah. Hi, welcome to week
+[0:42] number three, guys. How you all feeling? We're getting the certification like
+[0:49] hard. we can grab some knowledge or we already
+[0:55] have some knowledge uh the couple of sessions.
+[0:59] Okay, great. Thank you. So, yeah. Uh any doubt guys, any queries, anything uh the
+[1:06] last couple of weeks or we are all good? Mhm.
+[1:16] By the I'm audible, right?
+[1:20] >> Yes. Yes, sir. Audible. Okay. Okay. Great. So, no queries, no doubt means
+[1:27] everything good. Okay. Great. So, guys, what we have for today? See, finally
+[1:33] we'll start with quiz as well as last week we are doing those things. So, I'll
+[1:39] be starting with quiz today. Then a bit of uh symbols supposed to how they are
+[1:45] feeling what what sort of planning they have already done last week and how how
+[1:50] we are helping them to execute those planning all those things. Then guys
+[1:55] I'll be covering couple of more technical topic in terms of cloud
+[2:01] storage and cloud SQL and this is one of those again three four topics that are
+[2:07] like tested in the exam. Okay. And definitely at the last I'll be covering
+[2:11] some diagnostic questions. Okay, great. So let's start with quizzes. Let me
+[2:18] quickly show my screen for quizzes. Okay, here is the first one.
+[2:29] Yep. Uh Susama, is it a technical doubt or
+[2:43] regarding those operational things that is taking care of?
+[2:51] uh super actually I have a a doubt uh as Mandi
+[2:56] has uh the same thing regarding voucher thing that that I'm I have mentioned in
+[3:03] the chat
+[3:06] >> no techn okay okay you're getting the voucher I think that
+[3:14] fine so I shall take care of this one okay guys so let let's come on this
+[3:19] particular ular question we haven't yet covered right about cloud
+[3:25] storage but if someone can volunteer answer
+[3:34] no okay okay let let me clarify this so first of all cloud storage cloud storage
+[3:41] bucket is GCP's
+[3:45] object storing uh service I would say. So if you want to store some data in
+[3:53] terms of object let's say maybe some videos some audio files some images
+[3:59] maybe some CSV file whatever it is we are storing those unstructured
+[4:04] semistructured or maybe sometimes structured data as an object within a
+[4:10] so-called bucket that is what we have those cloud storage service right now uh
+[4:18] if I go there in the console and we try to do the same activity. Right? What is
+[4:26] the activity? We will try to create a bucket that will follow the same
+[4:34] recommendation. That is where we have in this particular
+[4:38] question because we will be storing data that is not accessed more than once a
+[4:46] month. That's the first constraint and again not needed after five second one.
+[4:51] So let me first cover the first logic first constraint. So again if we go to
+[4:57] the console and let me just create a bucket. Okay. Now
+[5:05] GCS gives us a very uh good way to define the access level access level of
+[5:16] uh those bucket that means let's say I want to create a bucket where I'll be
+[5:25] accessing the object very frequently.
+[5:30] Then Google is saying that guys better to use a standard storage class bucket
+[5:38] because you are planning to access those object very frequently. But if you want
+[5:44] to access those object within the bucket maybe once in a month not more than that
+[5:52] try to select nearline storage class or if it is like accessed once in a quarter
+[6:00] core line accessed
+[6:05] once in a year or maybe couple of times in a year that is archived. So if we
+[6:10] have like some log files that we need to store and those are like it's a backup
+[6:15] thing we we used to access those things very rarely sometimes once or two times
+[6:21] in a year use archive. If we have to create some quarterly reports and we
+[6:27] need to access some files once in a quarter use core like maybe we if we
+[6:33] need some monthly reports monthly access near like frequently access some images
+[6:39] that are like frequently accessed for my e-commerce website standard. So based on
+[6:45] those access frequency we define those different classes while we are creating
+[6:51] a cloud storage bucket. Got it. Now let's move to the question.
+[6:57] Now they are asking that we should be using a cloud storage bucket where the
+[7:04] data that we store should be accessed not more than once a month. Now guys can
+[7:11] we just based on this criteria eliminate some of
+[7:15] the option? I already got a solution like someone is
+[7:21] telling John is telling near line definitely once in a month means near
+[7:27] line not standard storage class. So we can easily eliminate
+[7:35] A and D. Exactly. We can eliminate A and D. So it's now already 50/50 right
+[7:41] between these two. Now let's come to the next point. Not needed after 5 years.
+[7:50] So shall we delete those data after five years or
+[7:56] maybe we can push the data to more older storage class after 5 years. What do you
+[8:05] say? See
+[8:09] like we should straight away delete that thing right after 5 years.
+[8:15] Fine. Exactly. Because even if guys if we move from one storage class to
+[8:21] another storage class maybe the price will be lesser because we're
+[8:28] moving to more colder storage class. But even if that thing uh we should be
+[8:33] incurring a bit of cost as well. So if we not at all required those data just
+[8:40] go ahead and till it as simple as that. So for this question yes option C is the
+[8:46] correct one where we should be accessing those data
+[8:50] once in number that means nearline storage class and if not needed after
+[8:56] five years straight away go delete those data after five years but here a
+[9:01] question come if let's say today I store some object I
+[9:06] I just want those object to be deleted after 5 years that means somehow I need
+[9:12] to write the storing date uh maybe I need to remember I need to like tell
+[9:17] someone I need to write it somewhere anything.
+[9:21] So that means manually I need to remember I need to put some sort of um
+[9:28] option based on my memory that after 5 years starting from today I need to
+[9:37] delete those object. Is it the case? No, that is where Google is telling that
+[9:46] guys you need not to remember that thing. What you can do is let's say you
+[9:51] already have a bucket created like this one for me and there you can able to set
+[9:59] a life cycle rule. Now what is this life cycle rule? Life cycle will rule will
+[10:05] help you to add some rule or life cycle policy will help you to add some rule
+[10:11] like I want to move the object from this storage bucket from this particular
+[10:19] storage class to let's say nearline storage class or code line or archive or
+[10:25] maybe for this particular use case I can straight away delete that object right
+[10:31] and when that a event will get triggered based on this condition. Now a condition
+[10:39] can be those number of ages that means those number of days like 365 multiplied
+[10:44] by five or you can like set different rules different conditions and once you
+[10:51] click on create based on this condition based on that rule that you set that
+[10:57] action I would say that you set this rule will trigger and either it will
+[11:03] delete it or it will move it to another storage source or whatever it is right
+[11:06] so that is where this life cycle policy works. So life cycle policy is again a
+[11:13] uh automatic action will be triggered based on the rules
+[11:19] that you define over here right so that's why they are telling like hey
+[11:26] definitely you should be using near storage class and delete is the criteria
+[11:30] and for that we should put this life cycle policy
+[11:36] okay any confusion guys on this question and
+[11:41] every point is cleared because this is very important thing from the exam
+[11:44] perspective. Okay. Yes. Thumbs up, thumbs down,
+[11:51] guys. Whatever. Okay.
+[11:53] >> Yes. Yes.
+[11:54] >> Fine. Great. Next one. Let's see.
+[12:18] I got some interesting comments. Priyanka is telling everyone that the
+[12:21] resistance is great for solid foundations but I'm finding the high
+[12:24] level CLA based labs really challenging without knowing the commands.
+[12:33] >> Brianka it's like at the very initial stage everyone will face these
+[12:37] challenges that I can tell you it's not you only maybe all of or say majority of
+[12:42] you will be facing the same challenges that's why we have those um guided labs
+[12:47] right where they will mentioning those different steps so try to first
+[12:51] understand those guided labs then try to solve those unguided labs that the first
+[12:57] one
+[12:58] >> even if after going through those guided labs you feel a bit some more challenges
+[13:03] or maybe were not able to clear some of the uh options or some concept are not
+[13:09] cleared do let us know because we as I said like we already have our online
+[13:14] community on active for you all so post your queries I'll be there over there
+[13:19] okay so let's have an introduction offline on the online community if you
+[13:23] feel any sort of challenges in the lab okay I think that will solve no worries
+[13:30] What is nearline class? Uh now maybe just just maybe take one more minute to
+[13:36] discuss this one for everyone guys. In a cloud storage bucket based on the
+[13:41] frequency of the access right how frequently we are planning to access the
+[13:47] object that are stored within cloud storage bucket. GCP defines multiple
+[13:53] classes.
+[13:54] >> Now why they have defined those multiple classes based on frequency? Because see
+[13:58] if I don't need some object very frequently then why should I pay more?
+[14:03] So maybe if I just planning to store the object somewhere
+[14:08] at maybe once in a year or maybe once in a quarter I should be accessing those
+[14:11] object. So GCB is saying that guys if those are very less uh frequent access
+[14:16] level we should be considered a bit lower cost right? So that's why they
+[14:21] define those four different storage classes. Standard one for frequently
+[14:26] access objects once in a month nearland storage class once in a quarter score
+[14:32] line maybe once in a year archive. Those are the four major different storage
+[14:37] class. That's the purpose. Okay. Now I already have a link. I'll be showing you
+[14:42] later a particular link where you'll getting a detailed option over there.
+[14:45] But this is the concept. I think now it's clear. uh Pratam for for you this
+[14:50] one. So Priyanka Pam is is it a bit clear now
+[14:56] what I've discussed? Yes.
+[14:58] >> Okay. Great. Now now let's come back to this question. Um they're telling that
+[15:04] which service is best for multi-etabyte
+[15:11] database. Okay. for analysis
+[15:18] and that and also knows a bit of SQL. Now definitely among those four guys
+[15:28] first of all as I told you cloud storage bucket is an object storage bucket. So
+[15:35] no they will not able to access SQL. Firebase is a NoSQL database. Again, no
+[15:44] cloud SQL and BigQuery both knows SQL, right? So, first criteria or I would say
+[15:54] this particular criteria is applicable for these two.
+[15:59] Now, when it comes to analysis guys, it's always big query. Remember
+[16:07] cloud SQL is a relational database right? But BigQuery is act as a data
+[16:14] warehouse where we store those historical data and based on those
+[16:18] historical data we or our data analyst team do those analysis on top of them.
+[16:23] Right? So whenever you see such type of keywords analysis always find where is
+[16:30] big query in the option. Okay. And when it comes to multi-ab this is also
+[16:36] applicable to big query only because cloud SQL if I'm not wrong
+[16:43] around 64 TB that is what the storage capacity of cloud SQL is right now. So
+[16:52] it's not applicable for those multiabyte thing. Okay. So combining all those
+[16:56] logic it's option C big query. Okay. Okay. So those who have selected guys
+[17:03] cloud SQL. Okay. Clear now.
+[17:09] Okay. Great. Let me know if any confusion you have any sort of confusion
+[17:13] guys. Now let's do this one. This should be
+[17:18] easy. Right. which cloud IM role
+[17:28] would you assign for security auditors and they want some visibility across all
+[17:37] those project that's it they don't want to edit the data they just don't want to
+[17:41] update it delete it whatever it is they just want to view some data across all
+[17:46] the projects under organization what type of role should we define Fine.
+[18:00] Simple should be viewer role, right? Viewer will do the job for us. Simple
+[18:06] because that is what Google's recommendation is. List privilege access
+[18:10] owner will definitely do this. But from list privilege perspective, if you have
+[18:15] a viewer role, the auditor should be good enough to view all the resources
+[18:22] within a project with all the projects I would say. Okay. So admin owner it's a
+[18:29] bit high and browser again a bit lower. So browser will not give you some uh
+[18:36] viewable access to different resources within a project. The browser is low,
+[18:41] owner admin is high, exact privilege is view.
+[18:48] Right? Now guys, a quick question maybe um I should expect this question that
+[18:53] comes to comes to you know your mind only like why we should be giving or
+[18:57] viewer and project viewer both. Any quick answer on this one? I think
+[19:05] project viewer will do the task or just if you just define org viewer it will do
+[19:11] the job for us like if we have organization at the top followed by
+[19:15] folder then project so something given at the top will definitely flow down
+[19:19] down to all the projects. So why we okay someone is telling across all
+[19:26] projects or lets them see resources across the organizations gives you
+[19:32] access within the project. Yes to some extent that is that is the solution. If
+[19:38] we give now this becomes again if I started telling I going into different
+[19:44] direction guys just related to like we have a basic role right now that's the
+[19:49] difference between basic viewer and viewer viewer will give you some varable
+[19:56] role specifically from organization perspective some organizations metadata
+[20:01] what are the folders under the organization what are the different like
+[20:04] projects connected with it but if we are planning to dig drive into the projects
+[20:09] along with the resources to view then org viewer will not help. If it is a
+[20:16] basic viewer role definitely it will do the task but here it is
+[20:20] defining org viewer. So or view wall maybe land till project not under the or
+[20:27] or the resources attached with the project. That's why we need org view
+[20:32] along with project view to dig dive into all the resources associated with all
+[20:38] the projects under the organization. Okay. So just a small explanation
+[20:43] basically. Hope you understand this one. Okay.
+[20:49] We can override some IM roles at the project level.
+[20:55] Yes, to some extent that as well but that is not related to this one. Okay.
+[21:04] Um, next. Let's see.
+[21:18] >> Pop storage. Uh, I think someone is unmuted.
+[21:23] Can you please mute? Regina. Uh, can you please mute? I think
+[21:29] this just just getting some noises. Please mute.
+[21:37] So what is the cheapest pop by storage? I got couple of answers I think. What
+[21:44] about others guys? What do you think? Cheapest power by storage
+[21:50] big table. No,
+[22:00] it is very costly guys to let you know. Maybe it's the costliest.
+[22:06] Yes, it should be cloud storage. So cloud storage has this capacity of
+[22:13] cheapest period storage definitely cloud storage. Okay. No big
+[22:20] table, no fire. Those are NoSQL database and NoSQL database cost higher compared
+[22:25] to SQL or maybe compared to those object storage. Okay. No. Now I have a
+[22:32] follow-up question with this. If cloud storage is the cheapest one, can anyone
+[22:39] tell me the second cheapest storage offered by Google?
+[22:48] Again I'm repeating cloud storage is the cheapest one. Which one is second
+[22:53] cheapest? And wait the hint is that option is not there in
+[23:00] these three. Okay
+[23:06] that's the end. So fire file store
+[23:15] I would say no you forgot the very renowned name we
+[23:21] have just discussed that particular storage service
+[23:26] spanner is very costly archive is again a storage class of cloud storage yes
+[23:34] it's it's big query yes everything is is BigQuery. Okay. So, BigQuery is the
+[23:43] second cheapest storage offered by Google. Now, guys, in the exam, Google
+[23:49] will not expect you to know those actual price or power by price of different
+[23:56] storage service, but they will expect you that you know or you can able to
+[24:02] find out the optimal storage service. So on that respect definitely we need to
+[24:07] understand like what which one is the cheapest one or maybe which one is the
+[24:11] second cheapest one. So just for that particular knowledge for that
+[24:14] requirement when you take care of this but again I'm repeating Google will not
+[24:18] ask you about the exact price per or I would say power byte price of those
+[24:22] different storage service that offered by Google. Okay. So as I told you
+[24:26] cheapest one is cloud storage and second cheapest is big query. Okay. Next
+[24:32] question. Yeah,
+[24:44] maybe in your organization your boss ask you to maintain
+[24:51] that all the data that you are storing to GCP should be encrypted at rest.
+[25:00] What do you think? Which service should we use?
+[25:12] Robert is stealing B. I got a C as well.
+[25:18] What about others? What do you think, guys?
+[25:38] any of the managed database except BigQuery. Why is it that?
+[25:52] So Google is telling that yes Naggin that's the thing. So Google is telling
+[25:58] that whatever data you want to store in whatever data storage services that I
+[26:06] have I will explicitly ask my team to encrypt those data first and then store
+[26:16] it. That means in any storage services any data that you want to store should
+[26:23] be encrypted at rest and on that circumstances even you as a
+[26:31] user will not able to opt out from the encryption. You can't say that hey
+[26:35] Google no I don't want my data to be encrypted.
+[26:39] and Google will say no if you want to store the data within me within any of
+[26:44] my data storage service I will ensure that every data should be encrypted at
+[26:49] rest so it's any GCP storage services you will not able to opt out on this
+[26:55] particular encryption process when you are storing data at rest in any of the
+[26:59] GCP storage services okay be clear about it is a quick one and the easiest one
+[27:07] encryption the rest means is there in cloud storage bucket is encrypted when
+[27:12] it is there in bigquery it is encrypted it is encrypted at rest
+[27:19] okay but when it is moving from I don't know like cloud storage bucket
+[27:26] to bigquery on that path on that flow it may not be encrypted but when it is in
+[27:32] bigquery it is encrypted when it is in cloud storage bucket is encrypted that
+[27:36] is what we call as encrypted at rest got Right. Okay.
+[27:42] >> Yes. Thank you.
+[27:43] >> Okay. Great. Now, what about this one? Quickly storage class should be used to
+[27:48] save logs file. Oh my god. Logs file which should be accessed
+[27:54] at most once a quarter. So
+[28:00] once a quarter once a quarter which one B or C everything is selling B. So yeah.
+[28:06] Agreed. Agreed. Oh my god, it's already 30 minutes. So guys, I'm moving quickly
+[28:11] but don't miss those question. I will be just coming to which one.
+[28:20] Huh? Better better this question. Maybe the last one.
+[28:28] Let's see. uh maybe a bit confusing for you guys.
+[28:50] See again there is a compliance requirement from the organization
+[28:56] perspective and they wants to define a retention policy
+[29:03] on top of a GCS bucket. Now what is exactly a retention policy?
+[29:11] Uh now this is one sort of protection technique that Google use within cloud
+[29:19] storage bucket. Okay. So let's say you um oh you are storing some files. So for
+[29:28] example some bank document some bank loan document and bank wants that those
+[29:35] document should be untouched unedited undded for the next five years right
+[29:44] they'll be storing some document that shouldn't be having any sort of changes
+[29:49] a single bit of changes on that particular file for the next five years
+[29:54] then we can do whatever we like but this five years should be like locked for
+[30:00] this particular uh bucket over there. Okay. Now how to do that
+[30:07] thing? That is where Google is asking guys go ahead and set retention policy
+[30:13] and you set up a duration. Let's say I set a duration for next 10 days. That
+[30:19] means I set a duration 10. I click on save. So
+[30:26] whoever is using the bucket will not be able to first delete the
+[30:33] object or I would say delete all the objects within the bucket and even they
+[30:38] will not be able to edit update those object within the bucket.
+[30:45] Got it? So that is what retention is all about. You are setting up a compliance
+[30:52] where a bucket is being applied by a particular policy where no one will be
+[31:01] able to edit or update the object for this particular time span. For my
+[31:08] example, it is 10 days until unless a user like me or an admin like me has an
+[31:16] option to go and edit this thing. That means now I can move this from 10 days
+[31:23] to 1 day and save it. Now what will happen? The retention policy will or the
+[31:31] number of duration of the policy will be moved. Either I can increase it, I can
+[31:35] decrease it. That means if I am an admin, I have an option to edit the
+[31:41] policy and I have an option to delete the policy as well.
+[31:47] Okay. So that's the first part. So let me move to the question once again.
+[31:53] So again just I'm reading for fulfilling those compliance requirement some or you
+[32:00] define a retention policy on top of a GCS bucket and that is what we have
+[32:04] discussed. Now at the next stage you also executed
+[32:10] a GS util retention lock command. Now exactly what it does, let me go back
+[32:17] to the console that you have done with the command. I
+[32:21] can do that with the console as well by clicking on the lock. Now once I click
+[32:26] on lock, once I write some the pocket name and click on lock policy, what will
+[32:31] happen? an admin even not me or maybe it's not a
+[32:37] super admin who will now be able to edit or delete this retention policy. That
+[32:46] means it is permanently locked for that duration. No one has the capacity
+[32:54] to edit or delete that law once we apply the second step that is potential law.
+[33:02] Okay. So again if I come back to the question we have applied both the step
+[33:08] first step and the second step. Now they're asking you to modify some
+[33:15] objects from the bucket and while doing that thing you are
+[33:21] getting some error. What should be the answer?
+[33:32] What do you think guys? Which one? We have applied retention policy on top
+[33:37] of that we have applied retention lock. Now within that time span you are trying
+[33:42] to edit and you are getting an error. Yes, it should be option C because you
+[33:51] can't remove the object until it fulfills the expiration policy and there
+[33:57] is not even any way to manually revoke the lock. those bucket those policies
+[34:03] nothing you need to wait till that expiration of the policy occurs okay and
+[34:12] the admin who lo the object can unlock it no after the second step
+[34:18] it's no one can able to lock it okay those who have selected option A
+[34:25] guys is it clear maybe if we are done with the first step maybe opt Option A
+[34:31] can be an option but once you have completed the step number two no we need
+[34:37] to wait till the expiration focus. Okay
+[34:43] fine now okay do one thing let's move to the
+[34:49] console once again and we have one more option called object
+[34:56] versioning. Now guys, do we know what is this object versioning is?
+[35:01] Again, if we want to make multiple versions of an object, let's say uh
+[35:08] today I've created a excel file and stored that file in cloud storage
+[35:13] bucket. Next day I do some changes but at the same time I want to keep the
+[35:18] older version. Object versioning
+[35:23] we're keeping multiple versions of a single object. Okay. So if we make
+[35:29] object versioning on that means you can able to keep multiple versions of a same
+[35:37] object as simple as that. But the next question that comes in my mind is
+[35:43] can we keep object versioning on and retention lock policy applied to the
+[35:51] same bucket in the same time. What do you say guys?
+[35:58] The answer is definitely no because retention policy says that it you will
+[36:04] not able to delete the object. You will not able to update the object. Now if
+[36:09] you are not able to update the object how we can make multiple versions of an
+[36:12] object they are mutually exclusive in nature as simple as that right excellent
+[36:18] good answer but there is a catch guys
+[36:24] Google maybe uh around 7 8 months back Google change this rule a bit this
+[36:32] concept is applicable before those eight or months now Google has just changed
+[36:39] the concept a bit where Google is saying that retention policy is where you are
+[36:47] not permission to delete the object but now you can able to update the object.
+[36:56] So you have an option to update objects and once you have the option to update
+[37:02] the object that means you have an added option to keep object versioning on. So
+[37:10] see purposefully guys I have applied retention policy I have also applied
+[37:17] object versioning as on. So again I'm repeating
+[37:22] some months back both are mutually exclusive. That's perfectly right. But
+[37:28] now we will change this rule where after application policy we can update this
+[37:34] object. So we now we can able to apply both the things simultaneously uh like
+[37:41] at the same time. Okay that's the thing. Now from exam perspective I think um you
+[37:48] should apply for the or you should go with the newer one because Google is
+[37:53] changing those uh exam pattern and maybe the questions is updated on this current
+[37:59] concept. So just to let you know that older in older version we have this one
+[38:04] but currently is being applied and this is I think this newer concept is same
+[38:10] for other cloud storage services as well. Okay. Any confusion guys on this
+[38:16] one? Okay. Not getting any confirmation. I
+[38:23] have some doubt, confusion. What else? No.
+[38:28] So, are we good with all the quiz question?
+[38:32] H any thumbs up, thumbs down? Yes. No. No responses, guys.
+[38:38] Mhm. I'm audible. Oh, okay. Now I got a response. Okay. Thank you.
+[38:43] Great. So let's now move to the next part.
+[38:48] Okay. So just maybe take the 10 odd minutes to discuss symbol supererstore
+[38:54] solution and being an associate cloud engineer how we can help them to plan
+[38:58] and configure that particular solution. So guys the first planning meeting for
+[39:03] symbol supererstore migration to uh Google cloud was a success. Everyone is
+[39:09] excited to get into the details of how symbol super existing applications are
+[39:13] like going to be migrated to cloud. Okay. Now as an associate cloud engineer
+[39:19] you are tasked to help realizing the overall cloud design that is what the
+[39:25] next phase would be on on this migration part and we turn this phase as planning
+[39:32] and configuring. Right now the planning and configuration is based on three
+[39:37] different pillars I would say specifically for simple superto guys.
+[39:42] Now maybe in general as a whole like compute data storage and processing and
+[39:47] networking right now starting from the compute part or
+[39:53] symbol super store those are mainly based on virtual machines
+[39:59] something can be configured with containers so we need to take care of
+[40:04] both the thing there are also resources that are purely serverless so do we have
+[40:11] any option in GCP that are serverless. The level of control or flexibility
+[40:20] which is a I would say core solution or core deciding for factor when we are
+[40:28] like planning to migrate that to cloud. So how we can manage that level of
+[40:34] control and or maybe the flexibility part of different resources within GCP
+[40:39] right and uh maybe this is about compute. Now when it uh comes to those
+[40:46] data storage and processing thing now data solution storage solution uh should
+[40:52] be uh or we should be thinking on in terms of throughput latency storage
+[40:59] size. So those are the multiple parameters that we need to take into
+[41:02] concern when we're thinking about uh storing some data. Okay. And again being
+[41:08] an associate cloud engineer there are some common question
+[41:12] comes when you are trying to using some data to do some analysis over there or
+[41:19] maybe the data that we are using those are transactional or or those data are
+[41:24] analytical data right so those type of questions definitely we need to ask or
+[41:30] we need to ask the entire team to find out the proper network or proper cloud
+[41:35] services uh within GCP and when it comes to network connectivity which is another
+[41:40] important uh factor on this particular solution. So either uh you are using
+[41:45] internet or or or the particular organization is using internet whether
+[41:49] we should be thinking about applying some private internet private network
+[41:53] yes or no that we need to think about if if we are planning to configure
+[41:57] connectivity of multiple servers. Can we use load balancer
+[42:04] to control those incoming traffic across those different servers?
+[42:09] how to protect uh those traffic or how to protect our our application from
+[42:15] different networking threats, different vulnerabilities,
+[42:19] how to do that thing. So, can we apply firewall policy or is there any other
+[42:23] thing or option that we can think of? Right? So, those are like multiple
+[42:29] questions that we need to have those answers while discussing or planning
+[42:35] some sort of GCP solutions. Right now when it comes to symbol superersto we
+[42:39] have three different applications in symbol superersto first symbol
+[42:44] superersto sales and marketing team has an existing web application that's
+[42:49] provides an interface for customers to look at those different products. So
+[42:54] this e-commerce app is currently based on containers
+[42:59] and definitely as it's an web app they need to have a global availability with
+[43:07] low latency. That's the first requirement. Secondly,
+[43:12] delivery services that is that transportation services is becoming an
+[43:17] important aspect of symbol superersto customer interaction. Right now, symbol
+[43:22] supersters would like to use Google services to somehow keep track of those
+[43:29] truck locations. So, logistics has a transportation management app already
+[43:37] implemented locally, but they need something similar to that
+[43:42] in GCP for a broader scale I would say. Okay. Now third
+[43:51] operations team has decided to migrate their legacy supply chain application to
+[43:57] cloud and this is currently in in a virtual machine based
+[44:02] application based on Linux operating system and it is implemented in lambstep
+[44:08] and the application needs to be available somehow local to symbol
+[44:12] superto headquarter. So those are three different things or I
+[44:17] would say existing things that are there in on premises.
+[44:21] Okay. So guys just let me pause myself and
+[44:27] just let me ask you all are we able to understand the requirement
+[44:33] what they are existing they're having in on premises
+[44:39] then we can move to how we can plan to GCP
+[44:45] H sure so if we can to understand the
+[44:49] requirement now let's do a small brainstorming exercise guys to find out
+[44:53] how we can guide symbol superto map the requirement to GCP and let me quickly
+[44:59] move to the next slide where we start with the e-commerce requirement so it's
+[45:06] an e-commerce application and as I told you they are currently implemented
+[45:13] with containers so what you want to decide
+[45:23] So this uh so is telling please explain. So again in symbol supertore we have
+[45:30] three different ongoing application on premises and we as an associate cloud
+[45:36] engineer trying to help them to implement that thing into GCP and that
+[45:40] is their first application e-commerce application right now that application
+[45:47] in onremises is running in containers
+[45:52] right and what we can help them to migrate or what
+[45:59] are the services we have in GCP to migrate the same application in Google
+[46:05] cloud. So
+[46:09] yes containeriz architecture should we use definitely GKE that's the
+[46:16] file first one now when it comes to storage guys they are using relational
+[46:22] back end which
+[46:39] relational thing. Okay. Relational. I would not go with
+[46:45] Big Query. I will go with Cloud SQL. Yes. Or Cloud Spanner. Anyone. Now again
+[46:55] based on the availability I can select any one of them because both are
+[47:00] relational database right but I can like put cloud
+[47:08] spanner on top of cloud SQL at least at this situation because they want some
+[47:13] global availability over there right so it's not about only networking's global
+[47:18] availability it's also about relational database global availability So
+[47:24] definitely cloud SQL spanner both works fine but for that availability
+[47:29] perspective with low latency I suggest we can think of using cloud spanner and
+[47:35] when it's about networking global availability and it's an web- based
+[47:40] application so here we need an external HTTPS load balancer
+[47:48] where able to distribute the loads throughout the entire globe.
+[47:53] So every user can find the resources to their nearest uh or from their nearest
+[48:00] checkpoint. Okay. So that means latency will get reduced definitely. Okay.
+[48:07] And now this one needs analytical
+[48:11] capabilities that is where we can think of using big
+[48:17] query. Okay. So relational one definitely cloud
+[48:23] SQL spanner analytics bigquer that is what we have discussed in those quiz
+[48:28] questions as well right so guys this is overall solution see I think we're good
+[48:33] containerized kubernetes data cloud spanner as I told you SQL can work but
+[48:39] definitely I will prefer cloud spanner then external with load balancer for
+[48:44] those networking global availability and finally analytics
+[48:49] BigQuery. Okay. So that's the first application.
+[48:55] Next logistic transportation management
+[49:00] system. They are currently using on premises message broker. Um now you as
+[49:07] an associate cloud engineer need to work with the cloud architect to choose
+[49:12] different option. So let's say a truck is traveling and you need to track the
+[49:18] truck location at every uh point of time. That means maybe we have some
+[49:24] sensors, some IoT devices plugged in the root of that truck,
+[49:31] right? And those sensor will track the exact position. So the sensors will
+[49:37] collect those data. we should be using some popsub
+[49:43] to collect the data from those sensor. So popsup is a messaging service helps
+[49:49] to collect those uh messages from those IoT devices.
+[49:56] Then we can use cloud function who will take the data from popsup and put that
+[50:03] thing to a service which will able to transform those unstructured
+[50:12] uh realtime data to a more structured way.
+[50:16] That means we can think of using data flow as a service there.
+[50:21] So again I'm repeating IoT devices pops up cloud function to
+[50:31] uh data flow right now. Data flow will not store the data. It will just
+[50:36] transform it and move that data to BigQuery or big table directly. Now it's
+[50:45] up to us which one we'll be storing or which one we'll be using for doing
+[50:49] analysis. Okay, if we are storing those data to
+[50:53] big table then we need to create some federated query. Not going into too
+[50:58] complex guys but maybe some sort of challenge should be created to extract
+[51:03] or to connect bigquery with big table or if we are directly storing the data to
+[51:09] big query then it good enough to just extract some insights uh at some uh
+[51:17] frequency to find out where our truck actually is. Okay. So that's the process
+[51:25] guys. Again I'm repeating we have those IoT devices that will collect instant
+[51:31] realtime data and we have popsub those which are collecting data from IoT
+[51:37] devices those sensors putting that thing via cloud function to data flow data
+[51:43] flow doing some sort of transformation then moving the data to big table or big
+[51:47] query for further analysis or maybe extracting some those insights over
+[51:53] there. Okay. So that's the overall process guys. Now here it is defining
+[51:58] storage as big table. I can also write big Q over here as well. Shouldn't be a
+[52:05] great problem. Okay. Why not big table by using why not big
+[52:11] table while using relational database guys? Big table is not a relational
+[52:16] database. It is the opposite one. It's a NoSQL database.
+[52:20] So don't get confused. Big table is a no SQL database.
+[52:26] H okay. Um anything for me? Great.
+[52:34] Next point if you're all clear on this up to this one. Third one. This is a bit
+[52:41] easy. Third application. Simple supertore.
+[52:44] Simple supertore existing supply chain application guys is implemented using
+[52:50] simple virtual machines with Linux operating system
+[52:56] uh with Apache MySQL PH mean they're applying those lambstack type of
+[53:02] approach now I would say it it should be a straightforward lift tensive process
+[53:07] where we should be using same sort of virtual machine in GCP we should be
+[53:13] installing the same operating system as Linux maybe we can use cloud SQL while
+[53:19] we are planning to use MySQL and PHP it's it's a programming language so not
+[53:24] a problem so definitely it's it's a straightforward left hand process of
+[53:29] using the same thing and networking remains the same if the supply chain
+[53:34] application is running uh or just simple supposed to want that thing to be run in
+[53:40] a single region then uh we can use those regional
+[53:44] HTTPS access if they want something this thing to be running globally then we can
+[53:49] use those global HTTPS access thing but as this is specifically concentrated on
+[53:55] the headquarter side only so it's better to use rel regional one not global
+[54:01] because it should not be accessed by other users it is based on those
+[54:05] headquarter persons or employees that would be using
+[54:10] this supply chain app so that's why it's more or less
+[54:13] regional. Okay guys, any confusion till now about
+[54:19] symbol superto? Why did we choose regional? I think for
+[54:24] this one, is it clear why we have choose regional for supply chain? Okay, great.
+[54:30] What about others? Are we good everything on this this
+[54:35] three different applications of symbol supertore? Perfect. Great.
+[54:40] So let's now quickly move to GCS bucket. We are already uh like le on five 10
+[54:45] minutes. Fine. So guys uh what we have discussed I think we have already
+[54:49] discussed about retention policy. We have discussed about object versioning.
+[54:53] We have already discussed life cycle management. Now uh maybe some of you can
+[54:59] ask a question like retation policy is applied at the bucket level or the
+[55:03] object level. The answer is bucket level. That means I think when I'm
+[55:08] showing you the example it is at the bucket level whenever I'm applying a
+[55:11] retention policy whatever object stored in the bucket should with the same
+[55:16] policy but to some extent if we need some sort of policy like retention
+[55:22] policy to be applied at the object level then we can think of using object hold.
+[55:29] The object hold is individual object preventing or applying same sort of
+[55:36] rules like we have done on retention policy. Okay. Similarly, AM identity and
+[55:42] access management applied at a higher level at the bucket level. But if we
+[55:47] apply that sort of access policy at the object level, we will be using ACL.
+[55:54] Okay. Now also I didn't want to just uh give
+[55:59] you some idea on object change notification. Now guys let's take an
+[56:02] example. we have um I'll select some data storage service in in on premises
+[56:10] and uh I have a con pawn job running in uh as an application over here with me
+[56:17] and that application will check the data storage service in on premises after 10
+[56:23] minutes to find out if there is any new object or if any new data is being added
+[56:28] or someone have changed something or someone is deleted or like that thing
+[56:32] Right. So even if some change happens or not my application my my that particular
+[56:38] job will check or go there and check after every 10 minutes rather than if
+[56:44] something is already there in GCP where if a object is updated, deleted or added
+[56:52] whatever happens if some changes happens in a particular bucket I will be
+[56:56] notified automatically. I will not put some application or ask some application
+[57:02] to go there check and then give me a report. It will notify me once some
+[57:08] changes happens and that is the purpose of using object change notification.
+[57:14] Okay. Now I already discussed about storage classes and all those things. I
+[57:19] just want to discuss this thing a bit more on encryption part and I already
+[57:23] told you that the data is already being encrypted by default over there in GCP.
+[57:31] Now Google is telling that you can hand over
+[57:37] enter encryption process technique algorithm key management to me.
+[57:44] If you do that thing, I can termed it as GME, Google managed encryption key. But
+[57:52] some of the customer wants no, I'm storing the data within Google. That's
+[57:57] fine. I'm storing the encryption key within Google. That's also fine. But I
+[58:04] will manage the key. I will manage the the rotation of the key. I will manage
+[58:09] the life cycle of the key. I will not give that responsibility to Google
+[58:15] specifically for some compliance reasons. I don't know that is customer
+[58:19] managed encryption key and within GCP specifically for GCS bucket and
+[58:26] persistent disk we have another layer that is called CK
+[58:34] customer supplied encryption key where customer is saying that I'll be storing
+[58:40] the data within Google okay but the key management and key storage
+[58:49] everything should be managed by me means customer I will just want you to store
+[58:57] the data so whenever you want to do encryption whenever you want to do
+[59:02] decryption I will provide you the key don't think about it okay so in case of
+[59:09] cck customer supplier encryption key customer is taking responsibility of
+[59:14] storing and managing the key and the flip side of this thing is that if the
+[59:20] customer lost the key or some sort of problem happens on customer side the
+[59:25] customer will not even able to extract its own data right so maybe it's a
+[59:32] different tutorial together but that's the situation
+[59:35] okay now quickly moving to the next part now guys uh when we are trying to create
+[59:43] a cloud storage bucket They will first ask me what is the
+[59:48] location. That means either you want the storage bucket to be created in a single
+[59:55] region or you want something where we can store that multi-reion or dual
+[1:00:02] region. Now again this thing depends on the use cases. If I want my customer
+[1:00:08] that hey I have an e-commerce app and I have my customer spread across the globe
+[1:00:13] and I want my customer to be nearer to the point where the bucket is.
+[1:00:19] So for that global availability you can think of using multi- region or let's
+[1:00:25] say no I I I I want my application and bucket running in one region but I want
+[1:00:33] something to be backed up in another region because even if one of the region
+[1:00:39] goes down means my application and and that particular region goes down my data
+[1:00:45] should be there in another region. So at the same time my application was or and
+[1:00:49] the data shouldn't be unavailable at at single point of time even if my
+[1:00:53] application goes down I have my data in another region that is why you have this
+[1:00:57] dual region and if you want like low latency high performance definitely you
+[1:01:04] can select region nowadays if I'm not wrong in the month of April midappril
+[1:01:11] they have introduced the zonal concept as well within the bucket right So I'm
+[1:01:17] not sure whether they will keep this concept in the exam that's I haven't put
+[1:01:22] that in the deck but just again for your current knowledge that maybe couple of
+[1:01:26] months back it's only 12 multi and region but now we al also have a zone.
+[1:01:34] So if someone wants for more lower latency
+[1:01:39] then we can think of using zone over there. Okay that's it.
+[1:01:47] uh I think I've covered this storage class so I'm not going to cover one
+[1:01:52] thing but again depending on your use case which storage
+[1:01:57] class you want to choose choose that okay but one more thing I want to
+[1:02:02] describe over here is that guys uh let's say I have selected region and now it's
+[1:02:08] time to select the storage class so in general by default I can choose any one
+[1:02:14] of these based on my use case but I am right now creating a bucket I'm not
+[1:02:21] sure that what should be my access frequency
+[1:02:27] I because if I don't know my access frequency I'm not able to select
+[1:02:30] standard near line cold line archive whatever it is so what I have done I
+[1:02:35] asked to Google I say Google hey Google I'm I'm not sure about it like what
+[1:02:40] should be my storage class that's why I'm selecting auto class okay now it's
+[1:02:44] your responsibility to put me in any of those storage classes right now. Google
+[1:02:51] say hey fine no worries I will check your access frequency I will analyze
+[1:02:58] your access frequency I will go through those statistics maybe for the next 5
+[1:03:03] days 10 days 2 weeks I don't know and based on that I will try to move you in
+[1:03:09] different different storage classes okay to to optimize the cost I would say okay
+[1:03:16] so autoclass is where we as a customer is not maintaining the storage class we
+[1:03:21] are handeding handed this thing over to Google okay so that's about storage auto
+[1:03:29] storage class but very rarely used I would say okay now
+[1:03:35] I've already told you like access frequency is the only parameter through
+[1:03:39] which you should be selecting the specific storage class but now I'm
+[1:03:43] telling that guys no access frequency shouldn't be the only parameter you
+[1:03:47] should also be taking care of the retention period of the object that you
+[1:03:52] are planning to store within that bucket. So let's say for an example I'm
+[1:03:55] storing some log file some some very backup data right so as backup one very
+[1:04:02] less used I'm selecting archive storage class but at the same time I will not be
+[1:04:08] using those data maybe after 6 7 8 months so even if I am going to delete
+[1:04:16] those data after 8 months then also as I have selected archive storage classes I
+[1:04:21] need to pay for the remaining 3 4 months that's why Google is telling that access
+[1:04:27] frequency is definitely the major parameter that you need to take care of
+[1:04:31] also find out that retention period how long you want to store those object okay
+[1:04:38] and that combining these two things will definitely give you the optimal
+[1:04:42] selection of the storage class okay next so we have discussed how we can create a
+[1:04:51] cloud storage bucket over those locations, classes,
+[1:04:55] everything. But if I go one step back where
+[1:04:59] if I ask like how we can move data from outside storage to GCP to a GCS bucket
+[1:05:06] that is where Google is telling that in majority of the cases maybe around 90
+[1:05:12] 95% of the cases if we want to move data from outside world to GCP within GCS
+[1:05:19] bucket we should be using storage transfer service right in majority of
+[1:05:24] the cases. until and unless the bandwidth is very
+[1:05:29] low or the file size is very small. Okay, apart from those couple of
+[1:05:35] criteria in all the cases I would say use storage transfer service. Okay,
+[1:05:43] remember that it's a best practice from Google side.
+[1:05:47] Okay, I think that's it from cloud storage bucket and let's let me check uh
+[1:05:54] before moving to cloud SQL did you ever expressly shut down on
+[1:06:02] Google cloud server and regular should be ever about you need not to be
+[1:06:07] concerned on this one right for for for those town every because Google has its
+[1:06:15] own management those different uh logic infrastructure
+[1:06:22] maintenance everything is maintained by Google.
+[1:06:24] No, I haven't faced any sort of shut down type of activity within GCP and
+[1:06:30] even if some regions, some location get down, it is already being backed up with
+[1:06:36] other regions as it's those global availability. Google has its own
+[1:06:39] networking facilities. It's a bigger concept but don't think on that one. So
+[1:06:44] you can think that 24 cross service because that is why you using cloud
+[1:06:49] right? cloud gives you 24 cross service in all those infrastructure, storage,
+[1:06:53] network and all those aspects. So that's what don't think it's internal
+[1:06:58] management that they're managing the entire process. Okay, any other question
+[1:07:02] guys? Can I move to cloud SQL quickly? Mhm.
+[1:07:07] Okay. So it's a managed database that's fine. managements. We need not to patch,
+[1:07:12] we need not to scale, we need not to think about anything until and unless
+[1:07:19] like we need some specific operating system to run this database or some
+[1:07:23] specific database engine for some specific versions or maybe some specific
+[1:07:28] unsupported features, plugins. Apart from those specific criteria, Google
+[1:07:34] always suggest to use a managed database because it will definitely definitely
+[1:07:40] remove 90% of your operational effort. Okay. So, couple of quickly technical
+[1:07:47] things within cloud SQL. Cloud SQL is zonal resource, right? But we can make
+[1:07:56] cloud SQL highly available. How? So let's say
+[1:08:02] as cloud SQL is a zonal resource we are using a database engine we but now we
+[1:08:09] are in a development environment right and after creating a database I need to
+[1:08:15] go to my boss and say boss I have created a a database within cloud SQL
+[1:08:21] and it is working fine this instance is good now I'm planning to move to the
+[1:08:26] production environment now I'm pretty much uh facing some risk. Why?
+[1:08:34] Because it is a zonal resource. That means it is based on a single zone. If
+[1:08:40] that particular zone fails, what will happen? My entire data get lost. I will
+[1:08:45] not get back those data. So I don't want to take any risk boss. So I am moving to
+[1:08:51] multiple zone. That means I moving to high availability. So if a zone fails it
+[1:08:59] will automatically fail over to another zone. So without any down sort of
+[1:09:06] downtime so I'll be good or or my customer will be good enough for using
+[1:09:12] cloud SQL. Maybe it will cost a bit high that we can charge to the cloud but I am
+[1:09:18] like pretty much less risk or on that part right. So it's always recommended
+[1:09:24] to use multiple zone to use high availability. It's just a matter of
+[1:09:29] clicking or selecting a particular checkbox. That's it. It is what high
+[1:09:33] availability all about. But if some more disaster happens that means if the
+[1:09:43] entire region fails what will happen? That is why Google is telling that you
+[1:09:49] can use rate replicas. But remember that rate replicas are not fully automatic.
+[1:09:56] You should be there or someone should be there in the middle who will take care
+[1:09:59] of this thing. That means you can create another cloud SQL but this time it's a
+[1:10:06] replica of your primary instance. So if your primary instance or the
+[1:10:12] region of your primary instance fails, it will fail over to another region. But
+[1:10:18] as I told you it will not automatically fail over. You or someone should be
+[1:10:23] there in the middle to take care of this responsibility. We can use read replicas
+[1:10:29] to offload some analytical workloads as well. Right? If someone is sitting in on
+[1:10:34] premises or maybe in my data analyst team is sitting in on premises couple of
+[1:10:38] persons and do want to do some sort of analysis on the data that are there in
+[1:10:42] primary instance. Yeah, they can do that thing with the help of read replicas.
+[1:10:47] Ret replicas can be used for multiple purposes that like if I want to migrate
+[1:10:53] cloud SQL from one region to another region that is whereas
+[1:10:59] being used within cloud SQL so there are multiple use cases of using but major
+[1:11:04] use case is those things those disaster recovery offloading workloads and all
+[1:11:08] those things okay now uh DMS data migration service so
+[1:11:16] it's a Google provided way to migrate from onremises to GCP right so it's
+[1:11:21] mostly replication based so you can initiate the replication during uptime
+[1:11:26] wait until both ends are synchronized and we plan a cut over but with with a
+[1:11:32] sort of downtime in a suitable set so it's just the very easy thing backups
+[1:11:39] automatic backups can be done daily they are kept like selected for an amount of
+[1:11:46] time You can also trigger a manual backups as well. You need to define a
+[1:11:50] time window and like when to take the backups and also you can define the
+[1:11:54] location as well. So that's it. But do remember that cloud SQL doesn't take a
+[1:11:59] backup of an instance if you stop or delete that instance. Right? And in case
+[1:12:06] of like you delete an instance the data is preserved only for 4 days. Okay. You
+[1:12:13] can also add point in time recovery on top of uh those backups. So combining
+[1:12:18] those things you can get a good functionality in terms of getting those
+[1:12:23] backups and doing those restore options. Okay. Now just to wrap up this thing
+[1:12:29] this particular topic cloud SQL we have one more concept called data export.
+[1:12:36] Right now this thing is is different with backup guys. Backup is a cloud
+[1:12:41] native thing right but exports where let's say for example we want to export
+[1:12:49] some data from cloud SQL and move that thing or to
+[1:12:56] uh a database maybe a postg database in onremises
+[1:13:02] right so what we doing we will be exporting the this those backup uh in
+[1:13:08] form of SQL or in form of CSV format from cloud SQL and they will use that
+[1:13:12] that particular exported data as an imported data to those on premises post
+[1:13:20] SQL right so that is how this data export works is very much non-native to
+[1:13:25] GCP okay so yeah that's it about cloud SQL and those are different links for
+[1:13:34] you to go through on different topics what you have discussed
+[1:13:39] Okay. But though those are termed as optional guys but every week I'm telling
+[1:13:46] go through those things very important. Now we have still 15 odd minutes left.
+[1:13:51] Any questions is supported with heterogeneous
+[1:13:56] database. Maybe that is why we think of using data
+[1:14:00] export. Sum that is what I'm telling better export if is not cloud native
+[1:14:06] one. No data export is something different but whenever we are talking
+[1:14:10] about the data migration service it means we should have some source and
+[1:14:14] target right
+[1:14:16] >> it is not necessary that we our migration should will always happen from
+[1:14:20] uh with similar kind of database release or versions
+[1:14:25] >> in such scenario how DMS support or what are the features DMS support
+[1:14:32] >> if I'm not wrong on on the I understand the questions correctly
+[1:14:37] Let's uh maybe we are using cloud SQL and you want to migrate that thing to
+[1:14:43] other database. Yes, definitely they have different options in different
+[1:14:47] cloud services that you are telling
+[1:14:49] >> right. So I have I have I have Oracle DV on insource. So how whether DM DMS will
+[1:14:56] support or will be able to migrate this from Oracle to this
+[1:15:02] >> that option D is an option in DMS they can support over there
+[1:15:07] >> so it is vice versa right
+[1:15:09] >> it is vice versa it is v over there that that can support but I'm thinking about
+[1:15:14] maybe I'm thinking on export but there is another way where we are thinking
+[1:15:18] about heterogeneous one there's another way you can use data export to migrate
+[1:15:21] that thing but DMS has different options to migrate out the example that will
+[1:15:26] take with Oracle DB2 cloud SQL that definitely other option over there I
+[1:15:30] think I've already created something I will send you an email I think I have a
+[1:15:34] document over there
+[1:15:35] >> yeah please have I really share that
+[1:15:38] >> and al also is there any comparative study that uh how much performance
+[1:15:43] optimization or benefit we are we can get using cloudsql instead of other
+[1:15:50] vendors like Oracle or MySQL You are comparing something with which
+[1:15:59] is cloud native with a database that is not within a cloud native option.
+[1:16:06] >> Yes, because uh as Google is suggesting to use the cloud SQL always. Yes, Google
+[1:16:12] is suggesting cloud SQL because it is cloud native one and Google knows that
+[1:16:18] if we need to use a database within cloud what are the major inf from
+[1:16:24] infrastructure part maybe from storage or other thing is more optimal. So
+[1:16:28] Google design cloud SQL on that matter.
+[1:16:31] >> Yeah. But if our suppose our product recommendation and compatibility with
+[1:16:36] Oracle or other database vendors in that case
+[1:16:41] uh in that case to take a decision on which database we should go we need to
+[1:16:46] have a comparison between different factors cost other things are there but
+[1:16:51] uh performance is one of the key factors which will
+[1:16:55] >> definitely but from if you use see there are multiple factors but in a single
+[1:17:00] line if you want a comparison on the performance side using something which
+[1:17:05] is cloud native within already there in GCP compared to a database which is not
+[1:17:11] a cloud native one or maybe which is database which we are installing on top
+[1:17:15] of a uh lift and trap push like on on a VM and comparing the performance
+[1:17:21] definitely performance- wise cloud SQL is better as it's a cloud native one
+[1:17:26] that is what I'm telling cloud native means definitely performance is better
+[1:17:29] whatever database you should be using at least within cloud that is what I'm
+[1:17:33] telling cloud means cloud native mean that's why Google always suggesting that
+[1:17:37] what maybe it's not database in infrastructure networking what you are
+[1:17:40] using if you're using something that is cloud native that is always or that will
+[1:17:46] perform better compared to anything which is uh non-cloud native or thinking
+[1:17:52] of some lift and zip approach like installing Oracle or installing a MySQL
+[1:17:58] on top of a uh VM compared to using cloud SQL directly
+[1:18:04] that is what my opinion would be then you can compare the portion
+[1:18:10] everything over the later but performance wise it would be always
+[1:18:14] better I would say okay
+[1:18:19] >> okay
+[1:18:20] >> okay
+[1:18:21] >> fine great uh any other queries guys but yeah
+[1:18:27] good question any other question any doubt
+[1:18:32] no let's start with those diagonistic question and here's the first Come up.
+[1:19:04] In the exam we will find some questions a bit lengy.
+[1:19:10] Okay. Mhm.
+[1:19:50] What happened then? Let me check.
+[1:20:04] First of all, don't go with this one or don't make something like very crazy
+[1:20:07] thing. Pricing calculator is simple a calculative way of finding out or to
+[1:20:17] estimate uh like the cost of different resources
+[1:20:21] that we are planning to use. So they give us that sort of estimation that is
+[1:20:27] pricing calculator. Okay, I got couple of answers
+[1:20:31] CB. Okay, now let me check that question. in
+[1:20:36] symbol superto enable user to post pictures of project reviews in 10TB of
+[1:20:44] immediate access storage. Now guys, immediate access storage means
+[1:20:50] standard, right? And this is 10 TB and that should be in US. Fine. 30T TB of
+[1:20:58] storage for historical post in a bucket located near symbol supersters and and
+[1:21:05] and it's like every 30 days that you should be using those data.
+[1:21:14] H now they're telling option B someone is telling D maybe help you to highlight
+[1:21:20] those those areas okay now as the next part should be
+[1:21:28] accessed once every 30 days that means this 30 dB should be accessed once so it
+[1:21:36] should be cold line or near line because it is
+[1:21:40] cold line near line cold line near light.
+[1:21:47] Which one? 30 days means near light. Perfect. So, we should be
+[1:21:53] either using option B or D. No A, no C. So, it's already 50/50 now between these
+[1:22:04] two. Now, 10 dB immediate access that means it should be a standard storage. B
+[1:22:11] is giving us standard storage. T is also giving us a standard storage.
+[1:22:17] But the difference is that B is giving us a regional standard storage. D is
+[1:22:23] giving us a multi- regional standard storage
+[1:22:30] which one to select. So if uh if I need to go to bucket once
+[1:22:38] again and find out
+[1:22:42] the exact logic.
+[1:22:54] So click on create. Click on this one.
+[1:23:04] If I use region not at all a question like which one within US east one east
+[1:23:12] four east five south one I don't know which one region to select but if I
+[1:23:17] select multi-reion US Asia Europe I can select anyone and
+[1:23:28] it should c enter US and if someone ask me okay you can select dual vision maybe
+[1:23:32] for this question Americas, Asia, Pacific, Europe. If you select America
+[1:23:38] within America, which region lots of region, I can select only two of them.
+[1:23:43] Right? So it will not c the entire US. But as I told you for multi-reion, I can
+[1:23:48] select any of those three. Okay? So now I think we are clear
+[1:23:56] at as it is asked for US region. No sum it is not B as it asked for US region it
+[1:24:05] should be multi- region that we need to select only region will help us to
+[1:24:11] select couple of region within US but if we want to c the entire US we need to
+[1:24:19] select multi- region okay so the thing that I show over here right multi-
+[1:24:25] region where we can just select US it will get the interview use but if we
+[1:24:29] select 12 it will help us to select maybe carpel of regions within America
+[1:24:37] but that will not get the entire US H
+[1:24:43] guys hope that makes sense. Option D is the correct one.
+[1:24:48] H everyone. Okay.
+[1:24:54] Next. Let's see.
+[1:25:09] H. So exam will expect you to answer such type of tricky questions
+[1:25:26] symbol supposed to decide to migrate their supply chain application to Google
+[1:25:31] cloud. You need to configure specific operating system dependencies.
+[1:25:41] So so now we are getting exact answer. So that
+[1:25:49] means you as a user can able to configure your required operating
+[1:25:56] system. So it should always be infrastructure as a service where you
+[1:26:01] should define a virtual machine and within that virtual machine you can
+[1:26:05] select which operating system you specifically wants to.
+[1:26:11] M great. Next one. That's the key. You want to your code to
+[1:26:35] be portable and you're also focusing on code. Which one?
+[1:26:45] Those are the two major keywords. Yes, it should be option B, not D
+[1:27:10] because cloud function is great for those eventdriven
+[1:27:17] activities, right? It it it's not something that is
+[1:27:21] executable or maybe or managed uh within a container thing, right? So it is the
+[1:27:29] purpose where if we use cloud run we can package our code in a container and as
+[1:27:37] an image and post that thing to cloud run to execute and as it's a platform as
+[1:27:42] a service you need to take care of the infrastructure you can just only focus
+[1:27:46] on code yes it is option B one Oh,
+[1:28:15] tricky one. Once again, I would say and
+[1:28:22] like highly customized version of Ubuntu.
+[1:28:35] So maybe related to the first question right where you want very something very
+[1:28:41] specific from operating systems perspective and mainly the things to be
+[1:28:48] done in a lift and sift approach because least amount of time with minimal code
+[1:28:53] changes all those things right so yes option A great I think we can do one Oh.
+[1:29:15] Yes. Excellent. That's the answer. So you should have a
+[1:29:21] full control of how you manage containers but at the same time you
+[1:29:27] don't want to need to manage the control plane manage the operating system.
+[1:29:34] So it is GK. Perfect. Great.
+[1:29:41] Um I think we're already on time. So guys uh any question
+[1:29:48] any doubt on all the topics that we have discussed
+[1:29:55] and someone definitely by the way if I get some document on DMS I remember that
+[1:30:00] something is there with me. If I add that thing definitely I will share that
+[1:30:03] to online community. No worries. Um but anyone have any other queries.
+[1:30:10] >> Thank you. And uh by the way please share the group mail id where we can
+[1:30:14] raise our concerns.
+[1:30:15] >> Group mail ID. Uh Aisha can you just just ping that thing the chat quickly?
+[1:30:24] Are you there Aisha over here?
+[1:30:27] >> Yes. Yes I've already just Yeah. Oh okay see already given
+[1:30:34] fine. So yeah thank you.
+[1:30:36] >> Thank you.
+[1:30:37] >> Thank you guys joining the session. See you next week with some more technical
+[1:30:40] content. Take care. Happy learning and complete couple of labs guys in between.
+[1:30:45] Okay. Thank you. Take care. Bye-bye.
+[1:30:48] >> Okay. Thanks.

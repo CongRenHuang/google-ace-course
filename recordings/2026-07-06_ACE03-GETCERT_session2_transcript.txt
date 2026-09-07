@@ -1,0 +1,895 @@
+[0:02] Okay, the recording has been started. So, everyone welcome to your second exam
+[0:08] guide review session for ACE 03. And for today, since I already promised you guys
+[0:16] last week um that I will show you how to fill out the voucher claim form. So,
+[0:21] today I will be showing you guys how to get the form, where to get the form, and
+[0:27] how to fill it out. Okay. All right. First thing first, you guys can go your
+[0:38] Okay, your drive
+[0:46] under the resources folder. Okay, so this is your drive. Then you go
+[0:52] to resources. Then you will see all of this, right? So you go for your learning
+[0:56] plan and you could see that in the learning plan I've already um linked a
+[1:04] form here. You go to slide number four and number
+[1:08] five it has all the skill badges that is required. Right? So I think you guys
+[1:15] still remember that for all these skill badges
+[1:19] um you would have to complete at least five right and inside that five you
+[1:26] would have to complete one mandatory skill batch which is this one
+[1:32] your ge create your first Gemini enterprise application batch this is
+[1:36] very important if you don't have this inside five then you won't be able to
+[1:42] get your culture All right. So let's say you already complete five. You complete
+[1:47] this one and then you take another four. Let's say this three and then another
+[1:51] one from here. So you can do is you go to this form. You click here.
+[2:00] Okay. This is the form. This is how it looks like.
+[2:05] Okay. So first thing first, of course, you're going to ask for your name. So
+[2:09] just put your name and then your surname. your name as well. And then the
+[2:15] third one is your email address. Usually your corporate email address. Usually
+[2:21] it's your corporate email address. I'm sorry I mean this is your registered
+[2:25] email address and it is usually your corporate email. All right. So for those
+[2:30] some of you uh who did not use a corporate email or maybe you are not
+[2:34] sure which email is your corporate email you sorry which email is your registered
+[2:39] email you can just uh let me know email me I've already p the chat
+[2:45] my email as well so you guys can just email me and ask for your registered
+[2:50] email to confirm which one is your registered email. Usually it's your
+[2:54] corporate email but some of you some cases of course you're going to use
+[2:59] different email than your corporate email right so in that in those cases
+[3:04] where you don't um sure where you're not sure you just let me know and I'll
+[3:09] confirm it for you which is your registered email all right so the next
+[3:15] one is your personal email so your personal email here is um whichever
+[3:21] email that you can receive email from an email from us you know
+[3:26] because if let's say you have an email but then the email is not um able to get
+[3:33] emails so you won't be getting emails from us some of you have like bouncing
+[3:38] emails as well so please make sure that you are able to receive email okay so
+[3:43] the next one did you complete please put as yes if you really complete them and
+[3:49] your cohort ID please choose your cohort ID here ASO3. If you're not sure where
+[3:56] to see this, everything is in your learning plan. See your cohort ID is in
+[4:01] the first page. This is your cohort ID. Okay.
+[4:07] All right. Then go down here. So, how to get your Google skills profile? I think
+[4:14] or maybe all of you know this already, but let us just
+[4:19] go through once again. Okay. So from here,
+[4:26] go to your setting. Okay.
+[4:35] All right. You scroll down this one public visibility and make your
+[4:41] profile public. Click here. It won't um automatically comes out here. You have
+[4:47] to save first. So update your settings. Scroll down a bit.
+[4:56] You're going to have your profile. So this is the prof uh the link that we
+[5:02] need here. Yeah. All right. It's not your credi or
+[5:07] please don't put this link. This is just an example. All right. So which
+[5:12] certification are you doing? Please choose as associate cloud engineer not
+[5:17] PCA not professional cloud archite or professional data engineer because if
+[5:22] let's say you choose the other that you choose PCA you choose professional cloud
+[5:27] architect you won't be getting your voucher all right so please make sure to
+[5:31] fill this form uh correctly to receive your voucher and you're receiving a
+[5:37] voucher um the info I got from relevant team it would be the distribution would
+[5:43] starts by the end of this week. So if let's say you fill up this file today,
+[5:48] you won't be getting it in another two. Maybe you will be getting it next week.
+[5:53] All right? So please uh just wait until next week. U maybe on Tuesday, maybe
+[5:59] after our sessions or maybe on Tuesday or Wednesday if you still don't get your
+[6:04] after you fill out this form, please let me know. Yeah. And another one thing I
+[6:09] would really like to um put some note on is that you need to complete your skill
+[6:17] badges before you fill this form. All right? If let's say you didn't finish
+[6:23] and then you fill out this form, you won't be getting your voucher. Okay? So
+[6:29] fill out you need to finish everything first and only then you fill up this
+[6:33] form. Okay? So I hope that clarifies and for those uh who have any other
+[6:40] questions other than this please uh email me because I need to pass the mic
+[6:45] to super team already. All right guys thank you so much
+[6:49] super team the floor is all yours. Thank you.
+[6:53] >> Thanks. Thanks Aisha. Great.
+[6:58] >> Okay let me share my screen then guys. Hi, welcome to week number two.
+[7:07] So, how are you feeling about week two? Any question, any doubts from week one?
+[7:14] Anything you want to ask me or everything? Seems good.
+[7:21] Okay, great. And yeah, I feel my voice is loud and clear and you able to see my
+[7:27] screen, guys.
+[7:32] >> Yes. Okay, someone feels unmuted
+[7:37] guys. Whoever is unmuted, can you please mute?
+[7:42] Okay, great. So yeah guys, uh what we have for week
+[7:48] number two? If you don't have any queries, any doubts. So we will start
+[7:52] with symbol supertore. people remember that imaging organization that is
+[7:59] willing to migrate their onremises infrastructure to GCP
+[8:05] right so we'll be covering a bit of symbol superers over here then we will
+[8:09] move to one of the most important topic to be this is one of those three four
+[8:16] important topics that have been tested or I would say habilitated in the exam
+[8:20] right so that is why I'm telling about Google VMs the computer engines thing
+[8:25] I'll be covering a bit of that and I will take some time to cover GCP over
+[8:30] there then I'll move to quizzes okay and uh let me just or I will check
+[8:37] or will all check that whatever I've learned are good enough or not then I
+[8:43] will cover couple of more important topics like data pro and data flow but
+[8:48] this time it's in a bit high level basically we need to differentiate
+[8:51] between these two so we'll do that thing and finally Finally we will end up the
+[8:56] discussion with discussing some diagnostic questions. Yeah that is what
+[8:59] the agenda for today. Let's see.
+[9:03] >> Uh yeah, anything from me?
+[9:07] >> I feel someone is still unmuted guys. It's requested to please mute
+[9:13] if I'm not wrong. It is. Yeah. Okay. Thanks.
+[9:18] Great. So we have already mentioned that symbol supertore is ready to migrate its
+[9:24] onremises infrastructure to GCP. Now they're ready to implement those basic
+[9:32] cloud infrastructure for the organization in GCP. So being an
+[9:38] associate cloud engineer, you have been assigned
+[9:42] within that team to help this type of activities.
+[9:48] Right? So the team initiated their journey
+[9:52] with a planning meeting and why? because they want to decide that what should be
+[9:58] the cloud infrastructure how they will be organized all those things right so
+[10:02] the team sit together and have a world discussion now what is the outcome the
+[10:08] outcome of this particular phase of migration journey is number one they
+[10:15] planned about the resource hierarchy organization
+[10:20] then teams means folder remember those things project
+[10:25] Fine. Then resources that organization hierarchy then if required they're
+[10:31] planning some sort of organizational policies those constraints then how to
+[10:37] manage different projects its quarters how to manage users groups that means IM
+[10:43] so all those things they have some sort of planning and on top of that they also
+[10:48] need to plan to set out billing because this is another important thing that we
+[10:53] need to aside of all those other planning right
+[10:57] so let's take a bit closer look on this one specifically I'll be discussing
+[11:00] today on IM identity and access management that means or I would say
+[11:06] which tells that who can take action on which specific resources so IM policy
+[11:14] has a who the user group principle I think I've all remember that thing can
+[11:20] do what those roles
+[11:25] H data viewer role maybe some other roles and on which resources either it's
+[11:32] in a VM whether it's in a big query whether it's in a GCS bucket right so
+[11:37] definitely this access management works with who can do what and on which
+[11:45] resources. So till now if you remember
+[11:50] in our symbol super store we have three different types of applications
+[11:55] e-commerce transportations management and supply chain and those
+[12:01] three departments I would say those three different applications should have
+[12:05] different types of users along with different types of resources
+[12:10] say for example data analyst in a marketing department
+[12:16] is definitely has an access to all the data set in marketing department. But
+[12:20] sometimes the data analyst team of the marketing
+[12:25] department may need some app access to some historical data let's say from
+[12:31] e-commerce department right so
+[12:36] then if those are from different projects those are from different
+[12:40] folders how to manage those access right that's maybe a question in my mind
+[12:48] so let's take an example Guys, say the data analyst team if wants to have some
+[12:55] access for other project then that particular member or that
+[13:02] particular group should have a data viewer access on other project.
+[13:10] Why? Because they just want to view the data. They just want to access the data.
+[13:16] It's not required that they need to do some changes on those data set. It's
+[13:22] they would not do some additional activities like adding some data, some
+[13:26] rows, nothing. They just want to view those data. So the data analyst team or
+[13:33] the data analyst group should have at least a data viewer access on if that
+[13:42] data is stored in bigquery on that big query data set. Right now the next step
+[13:50] where BigQuery is telling that maybe you can see my data maybe you can view my
+[13:55] data view my data because I have already given you a data viewer access but if
+[13:59] you want to execute some instruction if you want to execute some SQL query on
+[14:06] top of my data set then you need one more permission
+[14:13] because bigquery being a bigquery data set If someone wants to execute some
+[14:19] query on top of my data set, I need to give a job create or job uh execution
+[14:29] access I would say. Right? So it's not about just viewing the data. It's also
+[14:36] about executing some query on top of those data.
+[14:41] So for both the reason or for both the activities you should have different
+[14:47] type of privileges you should have different type of permissions right so
+[14:53] in order to view the data data viewer access in order to execute some query on
+[14:58] top of those data pquery job create access. So if you are a data analyst
+[15:05] team in one project and you want to view or you want to just extract some
+[15:12] insights from other data set from other project you should have both both those
+[15:19] two rules or rules I those two roles in your pocket got it so that is how works
+[15:28] over here now so I think we have already
+[15:32] understood who can do on which sort of resources.
+[15:37] Now in IM we have three different types of
+[15:43] roles right one is basic predefined custom now
+[15:51] Google always says that I have created lots of roles I have already some
+[15:57] predefined roles like that data viewer access role like that job create role a
+[16:02] lots of roles like I already seen multiple types of roles Now I always
+[16:08] suggest Google says that I always suggest whoever is willing to assign
+[16:15] someone some permission first try to use my predefined roles because number one
+[16:22] that is a granular access that I have defined this is managed by me and I know
+[16:29] for which type of activities may need which type of rows because I am
+[16:34] managing the enter in managing the enter thing within the cloud right so it's
+[16:39] always preferred I would say the first preference would be to use that
+[16:44] predefined roles those are being defined already by Google but if some customer
+[16:49] comes here and say no Google I want something very specific for me I want
+[16:57] some roles to be defined by uh my uh employees specifically for my
+[17:05] organization So I want to customize those different
+[17:08] roles. The combination of those permissions I don't want to take use.
+[17:12] Google says hey fine you can do your own customization on top of those roles. I
+[17:19] will not ask you can do that. So that is where predefined role is that is
+[17:26] Google's own defined that is Google's recommended thing. But if an
+[17:28] organization wants no I want to use my own permissions I need to use my own
+[17:34] customized roles. they can go ahead and do that thing. Now the basic thing is a
+[17:40] bit more different. It's don't go with the name basic here. Basic means like
+[17:45] everything you can have a owner, editor and viewer role for all the resources
+[17:52] within GCP. Right? So uh let me just uh take it in a
+[17:58] broader sense specifically this basic one. Right? So as I told you basic have
+[18:03] owner, basic have editor and basic have viewer roles. Now this is for all the
+[18:09] resources. So if someone is giving a viewer access that means that person can
+[18:16] only examine different resources but they will not able to change the state
+[18:23] because it's a viewer one. If someone given you an editor role, you can do
+[18:27] everything a viewer can do. Plus you can able to change the state and if you have
+[18:36] a owner role that means yes everything that means everything an editor can do
+[18:42] plus two most important thing an owner have
+[18:47] they can manage the role and they can manage different
+[18:54] permissions on those resources. Not only that
+[19:00] they have an advantage of managing the billing part as well.
+[19:08] Right? So a owner has all the things a editor can have plus they can manage
+[19:15] different roles and permission as well as managing those billing accounts or
+[19:20] they can just set up those different billing possibilities activities. right
+[19:24] now it's a huge one right means huge now there's a small trick or uh I would say
+[19:31] catch over here guys some of the organization says that I don't want to
+[19:37] give such a huge responsibility to a single person like an owner so what I'm
+[19:44] planning is if I can split these two what a owner
+[19:50] with only managing those roles and permissions
+[19:54] uh and another person I will assign that person as a billing administrator who
+[20:01] will just do those billing or will just set up those billing activities. So they
+[20:07] want to just split this activity. But if you think from GCP's perspective, if you
+[20:12] think from Google's own perspective, Google says that uh both are owner. So
+[20:18] owner means as I told viewer plus managing those roles and permissions
+[20:25] plus setting up those billing activities. Okay. So that's a huge one
+[20:30] from basics perspective. Okay. So those are three different roles and these are
+[20:36] basics individual uh roles assignment. Okay. Now maybe uh final point from
+[20:43] simple supertore perspective at least at the initial stage like we can able to
+[20:48] communicate with GCP with the help of console maybe I'm showing those things
+[20:54] through console that UI screen or you can use some command line interface
+[21:00] maybe you can use your mobile app to interact with GCP or maybe someone can
+[21:05] able to use some rest APIs to connect with GCP and do those activities so
+[21:09] these are three four different ways through which we can interact with
+[21:13] Google cloud. Okay guys, any questions any doubt?
+[21:19] Lots of queries in the chat but let me see if anything for me
+[21:26] or are we good guys? I saw Suman is raising the is specifically for me. Sum
+[21:34] you have raised your hand. Yeah, I raised uh my hand because uh while doing
+[21:39] the uh lab exercise for the last session I faced some technical issues. So is it
+[21:45] the right time to discuss or uh at the end of the discussion we can discuss I
+[21:49] can show you
+[21:50] >> regarding lab issues I the perfect scenario if you can just mail the thing
+[21:55] in the online community. I don't know like the community is active yet or not.
+[22:00] I second able to confirm that but if it is active just take a screenshot or
+[22:04] write it whatever type of problem or difficulties you are facing in the lab
+[22:09] we can check it temp so
+[22:11] >> okay I am uh so it is the Google support team you want to say right
+[22:16] >> Google I think that is our group ID is do we have our group ID active
+[22:21] >> um no haven't yet support team it will be active next week
+[22:26] >> okay so once I is send you an email regarding an activation of Google group
+[22:31] that is where you can send the email first or at any time point of you can go
+[22:35] with the support team but if you want to connect with us first about this thing
+[22:39] or maybe with me about those thing then definitely just wait for the group to
+[22:44] >> yeah please share the group ID
+[22:47] >> yeah okay
+[22:48] >> thank you
+[22:49] >> yeah s I think you raised your hand go ahead quickly
+[22:54] >> asin I have one general question so in the last session while you showing you
+[23:00] showed about the exam guide where you showed the different sections that's
+[23:03] been involved what are all being covered in the exam guide so I was not sure if
+[23:08] that's been shared or we will be receiving at the later point of time or
+[23:13] is it just for the reference that you showed just want to get more detail on
+[23:16] >> exam guide link is already there in my week one deck
+[23:22] >> okay I'll have a look on that part
+[23:24] >> yes I suggest you search in Google with a certification exam provide they will
+[23:29] just provide you the link as well in Google.
+[23:31] >> Okay. Sure. And one quick question is that in the last session you showed that
+[23:35] on the five sections there are certain percentage expected.
+[23:40] >> So is it like let's say if a person is scoring an 85%age overall and in a
+[23:44] certain to score 20% but they have secured only
+[23:50] let's say five or 10%. So in that case will it be considered as a pass or is it
+[23:55] like you need to consider each and every session and also the overall
+[24:00] >> tough question for me but I would say uh you need to have a minimum qualification
+[24:07] marks for each and every section in order to qualify for the entire
+[24:13] certification. So Google set up that thing. So I think I've shown you in the
+[24:17] last week one if someone fails it just mark that maybe in section two or
+[24:23] section three someone is not able to clear the required criteria maybe they
+[24:29] have not cross the benchmark. So specifically it's every section that you
+[24:34] need to get that individual 80 85% criteria satisfied.
+[24:40] >> Okay.
+[24:41] >> Yes. That's thank you. Okay, thanks.
+[24:46] >> What is the time period to complete the lab? Like does it have any certain time
+[24:51] period to complete like between this time?
+[24:55] >> Time means the last date of completion of those skill badges you're telling
+[24:59] about that one.
+[25:01] >> Yes, like the last session was completed vual. So still haven't uh completed the
+[25:07] lap. So
+[25:09] >> I think it's not strictly uh that last session that we need to complete all
+[25:14] those SL maybe we have a date maybe around two three weeks plus the last
+[25:19] session I can able to give you the exact date but it's not I would say not the
+[25:23] sixth session within which we need to complete all those labs there's not
+[25:26] >> so I haven't uh got any link regarding the session to complete the lab session
+[25:32] >> yes I can definitely give you the date I I just ping the date where we need to
+[25:37] Yeah, summer that's it's 17th July. I won't see 17th
+[25:43] July is not the last day to complete the labs. I hope we need to activate the
+[25:48] skill account by
+[25:50] >> the activation and all those things just maybe I just ping the date if required I
+[25:54] think it will give you no worries
+[25:56] >> and in the deck whatever shared if we can directly have access to click on the
+[26:01] link that eventually takes you to the page the slide itself that's what I try
+[26:06] maybe
+[26:07] >> can try thank you
+[26:10] >> okay great uh any other question guys
+[26:15] >> uh Yes,
+[26:17] >> I have one regarding the mandatory skill that needs to be completed.
+[26:23] So last weekend I tried taking it uh the challenge lab but what happened was the
+[26:28] lab automatically assigned my account to US West 8 region and US west 8A zone but
+[26:34] those are those were not valid regions and zones. As a result I was not able to
+[26:38] create any resource and I kept getting error that the region and zone is set
+[26:43] valid. I couldn't change it as well. I don't know why I got automatically
+[26:47] assigned to it till the end.
+[26:50] >> I got your problem. So do one thing. This is not which we can suggest at this
+[26:54] point. So what you going to just mail to the support team maybe from their set
+[26:58] they need to do some changes over there.
+[27:02] >> I did not get any response from them and I
+[27:05] >> maybe you can rewrite the respon reite the mail. No issues just just maybe see
+[27:10] see I think you have a help button uh or help icon and use the chat
+[27:16] >> if not they were not getting any response from the email use the chat
+[27:20] option you will get okay they will help you no
+[27:25] >> okay
+[27:27] >> okay okay guys uh hope there is no other queries let me then quickly share some
+[27:35] quiz question yeah And yeah, here is the first one. Let's quickly try it out.
+[27:45] Starting with the easiest one. Yes. Yes. What about others? Fine. So
+[28:02] whenever we are asking for customer who takes the
+[28:07] responsibility for maintaining the operating system
+[28:12] that means it should be infrastructure as a service. Yes. Excellent. Is this
+[28:20] right? Uh I think couple of questions with the same sort of thing. Now now
+[28:25] what about this one? Let's see.
+[28:52] Okay. So, tailorm made role means where a user where a customer can define its
+[29:03] own permission its own group of permission privilege in a particular
+[29:08] role. That means it should be custom one right because this is tailor made if it
+[29:15] is Google's made or if it is predefined one or Google's recommendation one then
+[29:20] definitely that should be predefined thing but as it's a tailor made we will
+[29:25] select custom great next one
+[29:31] uh which one yeah let's discuss this one quickly
+[29:38] I have discussed this thing last week if you remember
+[29:46] perfect so all the GCP resources are associated with a project we can't
+[29:55] assign resources with any other service or any other option apart from project
+[30:01] so yes that's the answer perfect now if you remember last week I told all
+[30:10] of you to go through different services and find out which of the services are
+[30:17] regional which are multi-reional which are zonal or maybe which are global.
+[30:25] If you have done this then you're going to able to answer this one because here
+[30:29] I'm asking about global GCP resources and here we need to choose any two of
+[30:37] those options. Let's try
+[30:49] VPC and GCS good answer. What about others?
+[30:55] CloudSQL VPC subnet VPC. So one thing is sure and I'm also agreed with that is a
+[31:07] virtual private cloud is a global resource. Agreed guys. Fine.
+[31:15] Now one more. I need one more. Now there are lots of
+[31:21] options thinking. Okay. Let's maybe go to the console and find out uh which one
+[31:28] do I have that console. Let me quickly check. Yes. So if I go there
+[31:36] someone is telling about cloud SQL. So let's quickly start with that one.
+[31:44] Let's see. We need to wait a bit to just let it
+[31:52] load it. We create a sandbox instance.
+[32:19] We will check one by one but definitely guys uh we need to wait a bit the
+[32:25] console it should take some time. So if we are
+[32:29] there in cloud SQL and just scroll down say here they're asking me to choose a
+[32:36] region then they're asking me to select zone.
+[32:42] So by default it is single zone. But sometime
+[32:48] if we are trying to apply high availability
+[32:52] we can think of choosing multiple zones but it can't be beyond a region because
+[32:59] multiple zones are there within a region. That means cloud SQL is a zonal
+[33:07] at max a multi-zonal instance but it can't be
+[33:14] right global. So I think we need to cross
+[33:20] cloud SQL. Okay. Um
+[33:25] someone is telling about GCS bucket. So let's quickly go there and find out
+[33:33] if we can directly create a GSS bucket to check that. So I go there, I click on
+[33:38] buckets. Now then they will give me an option to create a bucket. Uh let's just
+[33:45] wait for that. Okay.
+[33:52] Yes. So I will just click on create. Let's see.
+[34:06] Once I click on create, it will first ask me to give a global unique permanent
+[34:14] name. I give that. Then I click on continue.
+[34:19] And here comes the option zone region dual region multi- region
+[34:27] that means at max within GCS bucket or we can make a GCS bucket available to
+[34:33] multiple regions. Multiple regions means either it can be in US, it can be in
+[34:39] Asia, it can be Europe, but it's not global,
+[34:46] right? Maybe within a region, within a continent, we can make
+[34:51] this available, but it's not for the entire globe. So again, GCS bucket is
+[35:00] not correct. What else?
+[35:05] There is one more thing in GCP subnets are regional.
+[35:12] Now I'm somehow getting uh some answers. In GCP subnets are regional.
+[35:20] Maybe for other cloud service provider it can be global but in GCP subnets are
+[35:24] regional. So again we need to eliminate subnets as well.
+[35:30] processing disk. See persisting disk are attached with
+[35:36] cloud comput with comput engine right that means if we just again go over here
+[35:43] and try to create a g uh disk right so as I told you disk are
+[35:51] associated with the virtual machine with a computer engine now I think if you
+[35:56] remember last day I've shown you that a virtual machine is a zonal instance now
+[36:00] if a VM is a zonal instance instance and a persistent disck is directly connected
+[36:05] with a virtual machine that that means the disk should also be a zonal
+[36:10] instance. Right? So if I just try to create a disk
+[36:14] they will ask me to make it zonal. But yes at some point of time or in maybe
+[36:25] some situation Google is telling that we can make a
+[36:32] disk a persistent disc regional but not global.
+[36:38] So as I told you majority of the persistent disk are zonal but sometimes
+[36:45] if required we can make it regional but not global. That means we can eliminate
+[36:53] this one. We are enimilating subnets. We have eliminated cloud SQL GCS bucket and
+[37:01] anththers GK clusters are at max regional again not global. So we left
+[37:08] with this one that is the correct one where not all again not all the load
+[37:14] balancers but some of the load balancers can be global.
+[37:19] So if someone asks me to select global GCP resources I would say some load
+[37:26] balancers are global that's correct and VPCs are definitely global. Okay guys,
+[37:33] any confusion? There is no global persistent disc.
+[37:39] We present some load balancers. That's perfect. P correct.
+[37:44] Uh GK at maths regional. We can't be global
+[37:53] I think. Yeah. Yeah. Everyone correct. So guys any question queries on this
+[37:57] one? Are we good on all the options? Can I get a quick confirmation from all of
+[38:02] you? Any slightest of doubt? No. Okay.
+[38:09] Then let's try to solve this one. Someone is again unmuted. Sorry. Can you
+[38:18] please move my please mute?
+[38:30] >> You are still unmuted.
+[38:37] >> So guys, let's try it out. Now this time sorry this time we're
+[38:46] asking about regional GCP resources and here we're asking about two point
+[39:10] are there any other global resources uh which is not in the list when we will
+[39:14] gradually discuss those thing okay I'm not revealing right now maybe you can
+[39:19] find or we will just in weekly b discuss all those things why okay but it's a
+[39:26] good question regional persistent disk regional
+[39:34] emerges those two
+[39:38] GC instances and regional persistent disc okay okay now guys
+[39:45] We are still in a confusion about GC instances.
+[39:51] I'm repeatedly telling one thing guys. GC instances means virtual machines and
+[39:57] virtual machines are zonal instances. Okay? So GC instances
+[40:06] can't be regional. It is a zonal one. So
+[40:35] now I can think of using
+[40:41] yes regional images though GC instances are zonal but when
+[40:47] we are moving from GC to emis manage instance groups we can make images
+[40:53] regional. Agreed. From zonal uh GK cluster is already
+[40:58] mentioned zonal. So no question at all. Regional persistent disk
+[41:06] all persistent disk. As I just shown you not all the persistent disk are
+[41:15] uh sorry regional but some of the pers can be made as regional. So this is
+[41:21] correct. That means this is wrong. This is wrong. So we have already selected
+[41:27] these two. Now
+[41:31] what about this one? IP addresses guys. Is it regional or can we make IP
+[41:40] addresses regional? Uh
+[41:45] we selling GC instances. No zal clusters those what we are eliminating with those
+[41:52] three that you told okay
+[42:01] IP contains regional info exactly so I I just told you that
+[42:09] subnets are regional now if subnets are regional
+[42:13] IP address which are directly connected with the subnets
+[42:17] that should be regional as well. So at some point of time we can also make IPS
+[42:24] as regional right. So in this option if
+[42:30] they ask you to select three maybe you can also select IP address as well.
+[42:37] But as this is two and I'm not selecting IP addresses because there is a small
+[42:42] confusion. What is the small confusion? If we use some global load balancer
+[42:50] and with that global load balancer we may connect some IPs
+[42:55] those IPS then becomes global right so that's why we are not keeping
+[43:05] that confusion in our mind we are not selecting IP address as regional as of
+[43:09] now because they are also asking me or asking us to select two
+[43:15] and we have already selected sorry these two.
+[43:21] Now if they ask us to select three then we can think of selecting IP address.
+[43:26] Okay as it is two we are not selecting IP address. So but maybe in the exam if
+[43:32] they will ask you like um choose three and there is an option called IP address
+[43:37] and other options it seems not at all regional then you can think of selecting
+[43:42] IP address over there but as it is choose two we are somehow neglecting IP
+[43:47] address and selecting the most regional option that is regional processing disk
+[43:51] and MIG okay seems good guys everyone on this this question any doubt no
+[43:59] Perfect. What else? Um, a quick one. Let's try it
+[44:05] out. Easy right now. But read each and every
+[44:29] word very carefully. If someone just stuck at this point of time like VPC
+[44:35] maybe they can think of selecting global but here we are talking about VPC subnet
+[44:42] which are definitely regional. Okay. Now
+[44:51] the last one maybe we haven't yet discussed this one
+[45:03] about minimum number of IP address for a VM 22.
+[45:14] Okay. Now let's keep this question as it is and let's move to GC and find
+[45:23] out exactly what is the answer. Okay. So let me move to that segment
+[45:30] first and we'll come back again on that question.
+[45:33] Okay. So yes let's switch to GC and as I told you at the very beginning this is
+[45:40] one of those three four very important topics that have been evalitated in the
+[45:44] exam. So try to understand this thing very deep man better. Now when working
+[45:50] with public cloud you usually or you need to usually make different technical
+[45:57] choices that allow you to achieve maybe the same end goal. So the exam question
+[46:03] will expect you to choose the optimal compute environment to deploy your
+[46:09] workloads. That means in other words you need to choose the optimal environment
+[46:14] where your application should land and that that depends on different
+[46:20] constraints and requirements. So let's say for example you have some
+[46:25] eventdriven application running in your on premises and you want the same thing
+[46:31] to be used or migrated in GCP. Now what is the manage service within GCP to help
+[46:38] you to achieve those event-driven activities that means you need to think
+[46:42] of using cloud function right now if you have some
+[46:48] infrastructure some uh sort of already running in your on premises and you want
+[46:52] to just lift and save some some things similar some virtual machines are there
+[46:56] you want to do the same thing in in GCP then definitely you should be using
+[47:00] selecting compute engine if you have some containerized application running
+[47:04] in your on premises and you want to use the same sort of approach in GCP to run
+[47:11] those containerized application then maybe you can think of using maybe
+[47:15] Kubernetes at some point of time cloud run as well
+[47:21] or if you want something like I just want to concentrate on code I just want
+[47:26] to focus on code I need to build some um I don't know like P uh in next one or
+[47:33] two is because I need to show that to to my client or those things. So that is
+[47:37] why I'm not at all thinking about the underlying infrastructure. I just want
+[47:41] to deploy my application and I want to get the endpoint to execute the
+[47:45] application. That is where you need to think about using cloud run or app
+[47:49] engine. Right? So that is why I'm telling based on your requirement based
+[47:53] on the use case based on customers own feasibility find out which option or
+[48:00] which compute option is the most suited one. And that is what Google wants from
+[48:04] EO site as well in the Excel. Okay. Now let's say your customer wants to choose
+[48:11] GC and that is where you need to help your customer a bit. So you need to
+[48:18] understand the service uh as well. Now uh maybe uh at some point of time it
+[48:24] seems that your VM is not booting up properly. Right? So how what to do that
+[48:33] if you have that link and already there in the tech there you need to check that
+[48:41] whether we have able to identify the reason of not booting up that disk. The
+[48:48] reason maybe we need to verify that our boot disk is full or not or maybe we
+[48:53] need to examine our virtual machine instances serial port output is working
+[48:57] properly or not or do we need to enable some interactive access to that serial
+[49:02] console or maybe sometimes we need to verify that boot loading is in progress
+[49:08] or not or sometimes what we need to do is we need to detach the disc from the
+[49:13] failed VM and then add that disk on a non boot disc in another VM and at least
+[49:21] where you can check that your VM is or that particular disck is working
+[49:27] properly or not. So there are different ways of finding whether our uh VM is why
+[49:35] my VM is not booting up properly or not. Okay. Now uh since exam tends you to ask
+[49:45] about different business scenarios, it may be beneficial to know like which
+[49:51] compute engine families would you choose suitable for different types of
+[49:56] workloads. Let's say for example someone is asking me to create a VM instance,
+[50:03] right? So I click on VM instance. I try to give a particular VM name based on my
+[50:10] organization's requirement and as I think I've already seen multiple times
+[50:15] that we need to choose a region then we need to choose a zone if I haven't
+[50:22] choose any zone then the VM will automatically assigned
+[50:27] in any of the zone within the region as per the availability right up to this we
+[50:33] are cleared now when it comes to choosing the proper machine family.
+[50:38] Again, that is where our task comes in. That mean that is where we need to find
+[50:44] out as an associate cloud engineer like what is the exact workload
+[50:50] right. So if the workload is very compute optimized
+[50:57] then I can choose any one of those again depending on a bit uh segregation of
+[51:04] what exactly the compute workload is or if it is memory optimized I can choose
+[51:11] any one of these if it is network optimized storage optimized and so on
+[51:15] and so forth right so that is where they are telling you can select with any of
+[51:21] those different machine type serieses. And if you want to be more precise on
+[51:27] this one, we you can go a bit down to find out the number of vCPUs, memory,
+[51:36] all those things. And again, these are predefined and based on exactly your
+[51:41] requirement, you can find out which one is most suitable. But what happen some
+[51:47] point of time customer asks to make it more customized. That means customer
+[51:53] says no I want exactly uh maybe this 14 or 18 vCPUs with I
+[52:03] don't know like maybe yes 39 GB memory and I want to use this one because this
+[52:10] is what my workload is all about. That means we can customize the machine's
+[52:16] requirement based on our exact workload, exact use case. Okay. But just to let
+[52:25] you know guys for your Christmas see even if it's fully customized on
+[52:31] selecting number of course and memory see if I just drag it memory is also
+[52:39] changing with this particular code you can able to see right that means Google
+[52:44] is somehow maintaining a proper ratio between the vpus and the memory right so
+[52:49] even if you can able to customize the inter but anyhow Google is somehow
+[52:53] trying to maintain a ratio between these two. Okay. So, um
+[53:01] that's why I'm telling that if you are thinking of finding a proper balanced
+[53:08] workload, choose whatever you like. If you're thinking of a workload optimized
+[53:14] thing, then think about those specific requirements. Right? So that is where we
+[53:19] are telling or Google is telling that maybe you can just go bottom up find out
+[53:23] the exact use case exact requirement and then select which one is most uh
+[53:31] valuable or most required or most matched uh machine type uh on the
+[53:38] particular requirement perspective. Okay, I think I've discussed about this
+[53:43] custom thing as well. So definitely check those thing.
+[53:49] Okay. Now this slide is more useful on understanding VM from networking
+[53:55] perspective. Now again let's let's move to the console where we have let's say
+[54:03] uh [ __ ] configuration I don't like uh maybe uh N2 series machine type. And now
+[54:12] I move to networking. And if I just go down a bit, see this is
+[54:19] where we have a bandwidth, a network bandwidth of 10 Gbps. That means
+[54:26] whatever machine configuration we have selected based on that we have this
+[54:30] particular network bandwidth. Now can it change or is it changing once we change
+[54:38] the machine type? Let's see. So if I select maybe around I don't know like uh
+[54:44] 8 vCPUs let's see is it changing it is now 16 Gbps the bandwidth that
+[54:53] means it's changing let me select one more
+[54:58] maybe if I move to like 32 VPCs uh so 30 vcpus and if I go to networking
+[55:09] it is 32 Gbps. That means one thing is pretty sure that this network bandwidth
+[55:18] is purely proportional to the number of vCPUs that we are using. Right? When the
+[55:23] number of vCPU is increasing, this bandwidth is also increasing. Now, can
+[55:27] we do one more time? Let's move there. Let's now select maybe
+[55:33] the maximum one of that perspective. And if I go to networking,
+[55:40] oh my good, still 32 Gbps. Yes, that is where Google is telling
+[55:46] guys we have a network bandwidth cap at this point of time at 32 Gbps. Okay,
+[55:56] that means after that whatever machine type you increase you change it will
+[56:02] still remain on that parameter 32 Gbps. But from user perspective if you want
+[56:09] more bandwidth what we can do we need to enable this one VM tier one networking
+[56:17] performance. Now once we enable this one now you can able to see that is already
+[56:22] 100 Gbps right. So Google is telling that if you need more bandwidth I have
+[56:29] an option what is the option that is VM tier one networking performance and once
+[56:34] you enable that thing you'll be getting a higher network bandwidth but do
+[56:38] remember you need to incur an extra cost on that first okay so that's the purpose
+[56:46] of using VM tier one network performance but don't go deeper into like how they
+[56:51] are increasing those things what is the internal infrastructure
+[56:54] go on that thing because we are not like doing some network engineering
+[56:58] certificate cloud agent. So if we know like this is
+[57:02] what the option is and what is the purpose of using the option we should be
+[57:05] good enough from the examples. Okay. Now fine, we are within networking
+[57:13] and this is where we have this network interface.
+[57:18] Right now by default I would say majority of the cases
+[57:25] we should be using a single network interface right and within that network
+[57:33] interface we can select different types of IPs. Now recollect that question we
+[57:41] can select primary or internal IP. We can use external IP address and we can
+[57:51] use some additional secondary IP address as alias IP addresses. Again this alias
+[57:57] IP address is used for very specific reasons like maybe when we are defining
+[58:01] GK some individual IP address for I don't know like ports some extra IP
+[58:06] addresses for services all those things but again for specific purpose we should
+[58:10] be using those alias IP address but in majority of the cases we should be using
+[58:14] primary IP address and external IP address but Google is telling that you
+[58:21] may or may not use external IP press. That's why we have a none option.
+[58:30] That means in order to create a VM, it's just an internal IP address that we
+[58:38] need. But definitely we need an internal IP address in order to create a virtual
+[58:46] machine. So if we go with the question guys, I'm just coming over here where
+[58:54] they're asking that minimum number of IPs that a VM can have that is only an
+[59:03] internal IP address. Though we have three different options like internal,
+[59:09] external and alias but those are optional.
+[59:14] But the mandary thing or the minimum requirement is definitely one.
+[59:22] Okay, I think you got the answer right now on that particular question. Okay,
+[59:29] now one more thing and another important thing guys. I just told you that in
+[59:33] majority of the cases we should be having one network interface.
+[59:39] One VPC will help us. But in some I don't know like in major in some
+[59:46] enterprise type of organizations let me show you or maybe um some specific
+[59:52] requirement for an organization where they need some hub and spoke
+[59:59] architecture that means uh right this
+[1:00:05] yes I have to stop this this type of architecture Right?
+[1:00:12] Where if some users want to communicate with this particular application, it
+[1:00:21] will not able to connect directly. Rather, it will first go to a
+[1:00:27] centralized app. This is the centralized hub.
+[1:00:32] Maybe our VM can act as a centralized hub. It will check, it will validate if
+[1:00:38] the request is good, if the request is valid, if the request can be accepted
+[1:00:43] and if the answer is yes, then it will move that request to this particular
+[1:00:48] application or maybe this particular application. So from a user perspective,
+[1:00:53] you can't go directly to an application. You need to go via some centralized app.
+[1:00:58] And if we need this type of architecture definitely we need to use
+[1:01:04] multiple network interface. So Google give us an option to create multiple uh
+[1:01:12] network interface like I have this one uh maybe uh
+[1:01:18] where it is. I can add more network interface by clicking add more. I can
+[1:01:23] add more network. I think sorry guys my story is better I can add more like that
+[1:01:28] is how we can add multiple network interface but as I told you maybe in 96
+[1:01:34] 97% of use cases where we should be using only one network interface but
+[1:01:39] those two maybe two three 5% use cases where we may need multiple network
+[1:01:46] interfaces okay
+[1:01:50] great let me see what we left with Uh okay. Now one more thing guys persisting
+[1:01:58] disck persisting disk is nothing else but a network disc attached with a VM.
+[1:02:03] So if persistent disc is a network disck then definitely it should also consume
+[1:02:09] some bandwidth. So whenever you are planning to use or get a VM with a
+[1:02:14] certain amount of bandwidth take care of the persistent disk as well because it
+[1:02:19] will definitely consume some amount of request bandwidth.
+[1:02:24] Okay, moving forward again make sure to
+[1:02:28] understand the metadata server. It's not so difficult. This exist within a
+[1:02:36] Google's VM and it's basically stores some information about itself only that
+[1:02:42] VM I would say. So VM can able to know its name, IP addresses it is, it has
+[1:02:49] maybe how many disk or or what are the different types of disk it has been
+[1:02:54] assigned so on and so forth. So a metadata server is acts as a knowledge
+[1:03:01] repository for each and every VM. Right? So just remember that.
+[1:03:07] Now another important thing spot instances or spot VMs or maybe
+[1:03:15] preemptable VMs we have multiple names over here. Now there are some business
+[1:03:21] use cases where we might need to use these type of specific VMs. And being an
+[1:03:28] associate cloud engineer guys, you need to find out on which use cases we may
+[1:03:33] use this lowriced VM or discounted VM. And I
+[1:03:40] would say it's it those VMs are around 90 91% cheaper compared to the normal
+[1:03:48] VMs. Now what are the use cases? Let's say
+[1:03:52] we have uh four VMs
+[1:03:58] which is running an application and maybe that application will definitely
+[1:04:02] gets completed in the next 4 hours and what is that is what we want. So being
+[1:04:08] an associate cloud engineer we are really good that we have our VMs ready
+[1:04:12] we have our resources configured we have the application running and definitely
+[1:04:17] the application will get it will just get completed in the next 3 4 hours but
+[1:04:24] somehow I want to make that thing completed in 2 hours in 2 and 1/2 hours
+[1:04:31] or at max 3 hours that means I want to expedite the process then what I can do
+[1:04:38] is I can go to Google and say, \"Hey Google, do you have any ideal VM sitting
+[1:04:44] with you? If yes, can you give me couple of those VMs?\"
+[1:04:50] But this time I will hire those VM in a lesser price, in a cheaper price. But I
+[1:04:56] can make sure that whenever you want those VM back, I will give back to you.
+[1:05:01] Maybe because uh Google can get some customer who are willing to take the VM
+[1:05:06] in normal price, not in a cheaper price. Definitely Google will ask me to give
+[1:05:10] that VM and definitely I will give that VM to you. You can maybe use that for a
+[1:05:16] normal price as a normal VM. But if you have some VM ideal sitting, I will just
+[1:05:23] lend those VM for expediting my process because I have four normal VMs sitting
+[1:05:30] who will definitely complete the process. But I just want to
+[1:05:35] expedite that process. That's why I'm asking you to give that VM. Definitely
+[1:05:40] Google will give that VM to you. This time Google will give that VM to you as
+[1:05:45] spot VM as preemptable VMs, right? Or maybe in some scenarios um you want
+[1:05:52] some application or you want some process to be completed by tomorrow
+[1:05:56] morning. So you you just ask Google give me four five teams for VMs.
+[1:06:03] All right. I just want to run some application
+[1:06:07] if if some of the VMs uh you can take away or later you can again give those
+[1:06:13] V. If some VMs go in and out in multiple times, I'm not bother about it and
+[1:06:18] unless I just got my process completed in the next mode. That is where you can
+[1:06:23] think of using those spot wheels. Right? So spot ws are for those uh nightly
+[1:06:29] activity. I would say spot waves are for those speeding up those activity. That
+[1:06:33] means those are somehow used as a catalyst over here. Okay. So those are
+[1:06:38] sp remember the use cases. Now these soul
+[1:06:43] tenant nodes are exactly some opposite to the spot wins where the organization
+[1:06:51] are forcing you to give you means forcing Google to
+[1:06:58] give some uh CPUs give some hardware infrastructure that is specifically or
+[1:07:07] dedicatedly working for that organization. Maybe due to some
+[1:07:12] compliance regulations, maybe for the security reasons, organization needs
+[1:07:16] that type of dedicated hardware. Okay, Google definitely give you that
+[1:07:21] type of Google has an option to give you that type of uh VMs but they will give
+[1:07:29] those VMs in a higher price definitely because of the dedicated hardware and
+[1:07:32] Google will give you a separate layer. Definitely the question will ask like
+[1:07:37] how they will maintain that sole tenant node specifically or solely uh created
+[1:07:43] or solely worked with the organization. Google will create a separate layer
+[1:07:49] intermediate. I'm not going to in depth about how it works because this is
+[1:07:53] beyond our uh exam pattern. But just to let you know that Google will keep a
+[1:07:58] separate layer that will differentiate this hardware configuration from others
+[1:08:05] which you are using and this should be solely using by your organization. Those
+[1:08:10] are sole tenant nodes. Okay. Now when it comes to uh managed instance
+[1:08:16] group again this topic is heavily tested in the exam with MIG
+[1:08:21] rather than managing individual VMs what you are doing you are managing a single
+[1:08:26] group thereby simplifying the overall operation
+[1:08:31] maybe keeping autoscaling autohealing increasing some sort of availability
+[1:08:38] uh of working multiple or deploy multiple workloads to that VM. So
+[1:08:43] virtual machines it's a single machine but when it comes about those MIG have
+[1:08:48] some more managed option and we have just discussed that maybe uh VM is a
+[1:08:53] zonal option but MIG can be regional as well that is why I'm telling that we can
+[1:09:00] able to increase the availability as well okay so that's about MIG and I
+[1:09:05] think we already have a lab to complete or to have a more understanding on MIG
+[1:09:11] complete that lab do Okay. Now there are some points that
+[1:09:17] where we need to differentiate and the major differentiation is the stateful
+[1:09:22] and the stateless thing because we have stateful MIS and stateless MIG. Now the
+[1:09:28] major difference is definitely this stateful work
+[1:09:32] right now what exactly we mean by this stateful and stateless. See
+[1:09:37] maybe we have let's have an example 10 different VMs working as a stateful VM.
+[1:09:43] Another 10 VMs working as a state stateless V. Right? Now when the
+[1:09:48] workloads goes up 10 Vs becomes 12 this also 12 V 10 VMs becomes 12. But when
+[1:09:56] the workloads goes down what happened in stateless VM the VMs can easily
+[1:10:03] scales down maybe to 7 8 maybe 5 10 but if it is stateful one it will not able
+[1:10:12] to m or scales down so easily because it is maintaining every states
+[1:10:20] right so that is where the difference between stateless and stateful web comes
+[1:10:24] into the picture. Now just remember one thing if you are planning to use a
+[1:10:29] stateless MIG your application should also be need to be stateless.
+[1:10:37] Okay. Now in parallel to stateful and stateless thing or stateless manage
+[1:10:44] instance group I would say you should also need to be aware about unmanaged
+[1:10:49] ones and those unmanaged minimizes might be
+[1:10:54] useful uh with some maybe non-cloud native workloads I would say like some
+[1:10:59] OS level clustering solutions for legacy for some monolithic applications right
+[1:11:06] so definitely Those are something
+[1:11:10] not modern but still something useful since some enterprise customers might
+[1:11:16] need to lift and save some of those kind of workloads that will match as
+[1:11:21] unmanaged images to GCP. Okay. But the most important thing or the most uh used
+[1:11:30] option is managed instance group that are stateless.
+[1:11:36] That is what we should be focusing on main right and as for the autoscaling of
+[1:11:40] an MIG you might need or I say you might get some questions about like uh should
+[1:11:46] you scale based on CPU or something else. Should you include some cool down
+[1:11:51] quers uh in your uh VM or your VM need to be more uh
+[1:11:58] able or more like serve or I would say able to serve multiple request on that
+[1:12:04] particular manner. So how many VMs we need to add, how many VMs we need to
+[1:12:09] remove those those different activities can be managed with those autoscaling.
+[1:12:14] So setting up autoscaling with different parameters are definitely
+[1:12:20] u depending on your application or on the characteristics of your application
+[1:12:26] over there. Okay. And maybe the last thing like let's say assume everything
+[1:12:33] is sorted out and you choose an optimum setup for your manage instance group.
+[1:12:38] Now guys nothing is static right? So specifically when you are using a public
+[1:12:43] cloud over there. So as the time goes by you will most likely be need to deploy
+[1:12:50] new version of your application. Now which technically means that you need to
+[1:12:56] create new VM templates. Then you need to decide how to roll them out and how
+[1:13:02] to test those different uh deployments. Right? Now what's the process? how to do
+[1:13:10] those things guys again I'm not going through all those thing in detail but we
+[1:13:14] have a document connected or linked in this particular slide which will give
+[1:13:19] you a detailed idea about how we can automatically apply VM configurations or
+[1:13:25] updation of those VM configuration in MIG like how to start canary update how
+[1:13:31] to roll back those canary operative required all those things so guys again
+[1:13:35] a very useful and vital document and that I would suggest you to cover
+[1:13:42] as a part of week number two. Okay. Um I think we are done with VMs.
+[1:13:53] Now before moving to data proc and data flow any question
+[1:14:02] anything for me though we have lots of queries.
+[1:14:11] Okay, I think uh I sort it out. So guys, are we good? Can I get a quick
+[1:14:15] confirmation? Yes. No. Thumbs up, thumbs down from everyone.
+[1:14:23] So I think I've cleared with PMS. Any question?
+[1:14:28] Man, go ahead quickly. Okay, fine. So let's quickly discuss a
+[1:14:36] bit about data proc and data flow. Now guys uh
+[1:14:42] see we need to just understand the use cases right. So data proc is a managed
+[1:14:49] spark and adob service that's like take advantage of those opensource data tools
+[1:14:56] for batch processing for query processing all those things. So you will
+[1:15:00] have some some uh use cases. If you have some infrastructure already there in uh
+[1:15:06] your onremises which follows Hadoop service which follows Hadoop
+[1:15:10] infrastructure which has some spark service running on over there you can or
+[1:15:16] you then you are planning to just move that thing to GCP
+[1:15:20] the best managed service is to use data proc right so data proc is a managed
+[1:15:26] Hadoop service and the major major advantage of using data proc is that
+[1:15:32] let's say we have no workloads at some point of time no Hadoop
+[1:15:38] workloads so if we are in onremises maybe we need to have our Adoop clusters
+[1:15:45] working ideally to keep the data in age base to keep the data in HDFS over there
+[1:15:53] but if we are in data pro and the workloads goes down then we can just
+[1:16:01] remove all the clusters because anyhow it will increase the cost but we can
+[1:16:07] keep the data in a separate service that means we can keep those HDFS type of
+[1:16:13] data to GCS bucket or those age based type of data to cloud big table that
+[1:16:20] means here compute part and storage is separated quite different so even if
+[1:16:26] compute part goes down we have our data intact in any other services. Okay. Now
+[1:16:33] when it comes to data flow, data flow is more about uh data processing service
+[1:16:39] that can able to execute both batch data as well as streaming data and it can
+[1:16:46] execute same algorithm to do the transformation for both batch data and
+[1:16:52] the streaming data at the same time. That's the advantage of using data flow.
+[1:16:57] Data flow doesn't have any processing storage within the service itself but it
+[1:17:03] can connect multiple sources and it can able to connect multiple syncs. That
+[1:17:09] means it can able to take data from some IoT devices through popsub or it can use
+[1:17:18] data from cloud storage bucket as a batch data. It can apply a same
+[1:17:22] algorithm for doing the transformation doing some uh I don't know like some
+[1:17:26] feature engineering activities and it can store the data to big query it can
+[1:17:31] store to big table whatever service you want. Okay that is how data flow works.
+[1:17:38] Now just a quick comparison between these two type of services just go
+[1:17:43] through it and I think you should be good enough from the exam perspective.
+[1:17:47] Okay. Now yes those are some links
+[1:17:54] okay though I written it optional but I would recommend you to go through all
+[1:18:00] the links all those topics maybe some for reading as a document some uh some
+[1:18:06] videos some podcast but try to cover all those things whenever you get some time
+[1:18:12] those will definitely clear some of the topics or I say majority of the topics
+[1:18:17] that I have covered over Okay, go through this.
+[1:18:22] Fine. Uh, any question guys? Any doubt? I think we are all good, right?
+[1:18:30] If yes, let's use the remaining 10 minutes to discuss some diagnostic
+[1:18:35] question and let's start with this one specifically related to IM.
+[1:18:44] Let's see guys. I request all of you to voluntarily contribute your answer.
+[1:18:53] Okay, let's see what you think about all those questions. Okay,
+[1:19:00] it may not be correct. We are at the very beginning phases. So, but let's try
+[1:19:06] it out. Let's see. Okay.
+[1:19:47] Mhm. Option C.
+[1:19:51] So, what's the query? Okay. A new member
+[1:19:57] of a team in your company has been put in a charge of monitoring VMs
+[1:20:05] in the organization. Now
+[1:20:10] first of all what should be the role of monitoring a VM and as there is a single
+[1:20:19] user what is Google's recommendation
+[1:20:29] that's the query and
+[1:20:35] I am really delighted that you all got the right answer
+[1:20:41] definitely add stiller to a group that is what
+[1:20:46] Google's recommendation is and in order to do monitoring do we need
+[1:20:54] to add some data or do we need to change the state of a resource the answer is no
+[1:21:03] just a viewer role will give me an option give me some privileges
+[1:21:10] to view something to monitor a particular resource. So yes, option C
+[1:21:17] will do the task for me. Uh
+[1:21:25] sir telling about option D assign the viewer policy to stealer.
+[1:21:31] A policy is a binding that is created when a user
+[1:21:38] or associated to a particular role. That means what I'm telling is that we are
+[1:21:45] not assigning policy to a user or a group. We are
+[1:21:50] assigning roles.
+[1:21:54] So here the word policy is not the correct one. That's the first
+[1:22:01] option. Second one definitely nothing uh there mentioned about the group thing.
+[1:22:07] So that's why I'm not taking option D. Okay, make sense guys? Any queries? Any
+[1:22:12] doubt on this one? Are we good everyone on this question?
+[1:22:22] Next one. Oh, very easy.
+[1:22:36] Resource hierarchy B.
+[1:22:50] So we start with the organization then folder
+[1:22:59] then project then resource that is how the entire
+[1:23:05] organizational hierarchy works or configures. So yes it should be
+[1:23:13] option B. Yes very easy. Next one.
+[1:23:39] Project name. So if we go to console and let's try to
+[1:23:50] create a project. I go there. I click on new project.
+[1:23:58] Let me see if I have that privilege. Yes. Now they are asking me to put a
+[1:24:05] project name. And they are also giving me an option to
+[1:24:11] select a project ID. Now see we have an option to edit the
+[1:24:19] project ID. That means now I can change the project
+[1:24:24] name. I can update the project ID. So if the question is asking about
+[1:24:39] Google cloud project attribute that can be changed.
+[1:24:44] I can change project ID and project name both.
+[1:24:52] Then also option B is correct. What do you say?
+[1:25:05] H question question is after project creation. Ah
+[1:25:09] >> that's the question it is after project creation and I'm I'm showing at the time
+[1:25:16] of project creation. So at the time of project creation you can change the
+[1:25:21] project name you can update the project ID but once the project is created under
+[1:25:28] this organization or maybe under a particular folder
+[1:25:33] then you can't able to change the project ID but definitely you have an
+[1:25:39] option to change to update the project name right so Yes, option B is the
+[1:25:48] correct one and the trick is after project creation. So again I'm repeating
+[1:25:53] at the time of project creation we can change we can update both project
+[1:26:00] name and project ID but once we have already created a project then the
+[1:26:06] project ID got fridged. We can able to change the project name
+[1:26:11] but no option of changing or updating the project ID.
+[1:26:17] Got it. Those who have selected option A nav or
+[1:26:26] is it clear? Okay. And other options are like very fixed time stamp everything
+[1:26:33] project number those are internally created. So we don't have an option to
+[1:26:37] change that at the time of project creation as well. Okay,
+[1:26:42] one more How to do it
+[1:27:18] need to manage objects in cloud storage bucket.
+[1:27:24] And the user needs to have access to the proper permission for every project
+[1:27:32] across the organization and that is the tricks.
+[1:27:40] Now when I'm planning to give a user some access where the user can implement
+[1:27:48] that access to all the project under organization.
+[1:27:53] The best one would be to assign some role at the organization level because
+[1:28:00] this will definitely flow down to the folders to the projects.
+[1:28:06] So it's not that we have I don't know like 152 projects in an organization and
+[1:28:13] we are assigning Jane in the same role to all those 150 projects rather just
+[1:28:21] assign one time at the organization level it will definitely flow down to
+[1:28:25] all those 150 odd projects. So that is how we should be assigning that thing at
+[1:28:31] the organization level and as it needs to manage objects for all those things.
+[1:28:39] I think object admin role will give the task
+[1:28:46] or to accomplish that particular task. Okay.
+[1:28:51] Uh oh seems everyone selected great. Uh can we do one more quickly?
+[1:28:58] be the last one for today. They're asking about Google's
+[1:29:13] recommendation using list privileges. H
+[1:29:35] okay now guys if you can able to recall what
+[1:29:40] I've said at the beginning of today's session when I'm defining those IM roles
+[1:29:45] all those things I have told you that we have three different types of roles
+[1:29:50] basic predefined and custom within those three Google always recommends us to use
+[1:29:59] predefined one because as I told you Google is telling that guys I know my
+[1:30:05] enter infrastructure I am the best person to know like which role is
+[1:30:09] connected or which type of permission is connected to which are the different
+[1:30:13] services so just use my predefined one and you should be good so Google's
+[1:30:21] recommendation would be to first go ahead and use the predefined Ed one. But
+[1:30:27] if you think okay no predefined one will not choose me at all then you or your
+[1:30:35] next step would be to think about using the custom one and when both the option
+[1:30:43] doesn't work that means predefined and custom role doesn't work then you can
+[1:30:48] think of using the basic role and that should be your last resort over there
+[1:30:57] right? So definitely first think of using a granting predefined one then go
+[1:31:07] to custom then if necessary go to basic. So it should be option B not any other
+[1:31:17] option. And whenever you get such type of question guys just follow these
+[1:31:21] tricks predefined as the first option most recommended one then custom and the
+[1:31:28] list or the last resort would be your basic one. Okay
+[1:31:34] they should be good. So guys I think we're already on time. So let's wrap up
+[1:31:39] today's session. But before concluding any question, any doubts, anything you
+[1:31:46] want to ask me or let me know if something missed in the chat.
+[1:31:52] >> Yeah. Uh so please share the group mail ID while I can raise the issue.
+[1:31:55] >> Group mail ID is do you can able to do that?
+[1:32:02] Um I don't think so because as for now it's still closed. Yeah.
+[1:32:06] >> When it should be open when we should be getting that.
+[1:32:09] >> It will be open by next week.
+[1:32:11] >> By next week. So you can just keep the lab as of now because still from those
+[1:32:17] rules regulations perspective we should be having our group open next week. By
+[1:32:21] then you try different labs and once that group ID opens then you share me
+[1:32:26] that email.
+[1:32:27] >> Hope it works.
+[1:32:28] >> So so it okay. So it means the the current issue will not uh restrict me of
+[1:32:34] doing the other labs.
+[1:32:35] >> No no no no nobody will restrict you to do or complete other labs.
+[1:32:40] >> Okay.
+[1:32:41] >> Okay. Fine. Great. Then thank you guys. Thank
+[1:32:46] you for joining. See you next week. Till then happy learning. Bye-bye.

@@ -1,0 +1,860 @@
+[0:02] Okay, the recording has been started. So, everyone uh I think you guys can see
+[0:08] that I've already pinned a chat and in that chat there's a survey link
+[0:16] uh please fill the survey link so that we could know that what uh section that
+[0:22] we could improve on and maybe if you have any feedback for all of us just uh
+[0:27] feel free to fill out the form. it is very valuable to us. Thank you so much
+[0:33] and I think I'll pass the mic to Supra team.
+[0:37] >> Yeah, thanks Aisha. Hi guys, welcome. Welcome to week number
+[0:43] six and obviously this is the last and final week. So any question any doubt
+[0:50] any queries whatsoever from the last four five
+[0:55] sessions that we are taking care of anything you want to ask
+[1:01] all good fine then let me quickly
+[1:09] six content okay and by the way I hope guys my voice is audible and you can
+[1:16] able to see my screen as Well, right. Yes. Okay. Fine. Thank you.
+[1:23] Great. So, what we have in week six, guys. Week six, the last week. So,
+[1:31] specifically it should be more interactive. So definitely I will start
+[1:36] with some quiz question then a bit of symbol superto. But this time just to
+[1:43] introduce you what is service account and how we can create a service account.
+[1:47] Then couple of brainstorming activities guys right this this this two three
+[1:53] things then as I told you the very first at the very beginning that I'll be
+[1:57] sharing you some bonus content in some terms of some quiz question where you
+[2:01] can practice those question where you can validate yourself uh before sitting
+[2:06] for the exam right so I'll be sharing those quiz those bonus content then
+[2:12] definitely uh today as the last I will try to show you how you can book your
+[2:18] exam slot right so I will take maybe five 7 minutes on describing that thing
+[2:25] then in time permits I definitely I will cover some diagnostic questions as well
+[2:30] okay so yeah lots of thing lots of content to share today let's start with
+[2:35] quiz what okay let me share the question
+[2:43] yeah another picture,
+[2:48] right? So, yeah, let's see what do you think on this question.
+[3:05] So we have a cloud storage bucket where you are uploading some image.
+[3:16] Right? Then there is a service sitting in between
+[3:23] that will help you to call a function when some activity occurs in this
+[3:30] bucket. And then the process goes to the other
+[3:36] setup. What do you say? H I got a solution. Maybe pops up.
+[3:43] Okay. What about others guys? I'm only seeing couple of answers.
+[3:50] Yeah. All pops. So perfect. So yes definitely it is pops
+[4:03] up. Now guys uh I just just uh call out a small story on this aspect. See uh
+[4:11] nowadays we are using if you remember cloud function second generation right
+[4:17] but earlier in the first generation what happens actually
+[4:22] when you create that that first generation function that has been
+[4:27] triggered or we need to triggered by this cloud storage bucket. What happens
+[4:32] actually? So when you deploy that function, Google automatically
+[4:39] creates a hidden yes it's a hidden Google managed popsup topic right like
+[4:47] this one and that has been created in the background it is hidden now let's
+[4:52] say you upload a file to a cloud storage bucket now at that moment cloud storage
+[4:59] automatically publish a message to that hidden pops subtopic
+[5:05] it has it own event I'm not going to that one I think we have already
+[5:08] discussed those events in one of our questions earlier in the second week or
+[5:12] third week but yeah just cloud storage automatically publishes a message to
+[5:18] that hidden popsup topic now the popsup topic directly invokes that cloud
+[5:25] function that you have created and then it pass the enter event to the Next step
+[5:33] of the session remaining. Okay. Now uh some
+[5:41] guys anyone is unmuted I think no one is please mute. Uh yeah thank you. So
+[5:50] that that is what first generation is now because Google is managing the
+[5:54] entire pipeline natively and Google is managing that thing
+[5:58] internally within its own infrastructure. you will not able to see
+[6:02] the entire popsup topic in your console and even you don't have to manage any IM
+[6:09] permissions roles etc. Right now what happens in second generation of the
+[6:15] cloud function is it is no longer that where uh the users truly direct that
+[6:22] background trigger that means it is not what only Google manages rather it
+[6:28] relies on uh intermediary is now being set up over
+[6:35] there. So when a file is uploaded cloud storage doesn't call the function
+[6:40] directly. Cloud storage doesn't create any uh triggering event like the first
+[6:45] generation rather cloud storage publish this event to event
+[6:52] is managing maybe it is had has its own popsup we don't know so event arc
+[6:57] receives the mass it receives the event and it triggers your cloud function
+[7:05] that means earlier it is the responsibility of cloud storage to
+[7:10] somehow execute that event or use some triggering activity to call the function
+[7:16] with the help of popsup that hidden popsub that is there in cloud storage uh
+[7:21] or maybe created by Google itself or managing by Google earlier but nowadays
+[7:26] Google says that no I'll be keeping someone in between I call it as event up
+[7:31] and you'll be passing that thing to event work will see everything and it
+[7:36] will then trigger that cloud function right so Now the question is why Google
+[7:41] is shifting from that fully managed to something uh uh middleman service type
+[7:48] of thing because Google is saying that if if
+[7:53] the transport thing is completely hidden.
+[7:57] You will not be able to monitor the event Q. You will not be able to check
+[8:04] something if if the event triggering fails. it is very difficult to debug uh
+[8:09] if you are if someone is not able to access something uh over the process
+[8:14] right so that's why second generation is telling that it is more uh of a users
+[8:22] visibility rather than uh Google managing this
+[8:27] underlying uh hidden pops subject right so maybe beyond your scope for the exam
+[8:33] but just for your curioity guys this is what the concept is but From the
+[8:36] question perspective, whichever generation you should be using, there
+[8:40] should be a popsup used like for this type of activities. So yes, popsup is
+[8:46] the correct one. Great. Any question guys on this one?
+[8:55] Okay, let's move to the second question. Maybe I can
+[9:01] increase the size. Yeah, let's come to the second one.
+[9:05] What is the best practice from which perspective
+[9:12] managing some PII data on cloud storage? So I I am maybe loading some patient
+[9:19] information. I'm loading some customer information having those credit card
+[9:25] number maybe transaction date blah blah blah all those things. Now what should
+[9:30] be the best practice to maintain that security?
+[9:35] Okay, someone is telling maybe we can use a signed URL with expiration. What
+[9:41] about others? What do you thinking guys? Mhm. Option C sounds good.
+[9:49] What else? D.
+[9:54] So we left with only one option to select
+[9:59] but definitely I feel we will not be selecting this one public access in one
+[10:04] side we are telling we are maintaining those PII data those sensitive data and
+[10:10] we want to create some security strategy the public access shouldn't be the right
+[10:17] option but guys even if see even If we give
+[10:25] someone some read only access do you think we are maintaining a enter
+[10:30] security keeping default ACL a separate thing but
+[10:35] if we give someone some read only access I don't like that someone can able to
+[10:40] see the data they can do uh something uh with those
+[10:46] data so it is not fully secured when it comes to using those very sensitive
+[10:55] information. So I will not go with read only definitely and yeah not at all from
+[11:03] public access as well. Now uh fine I I will go through those two options like
+[11:14] signed URL guys signed URL with expiration. See expiration is definitely
+[11:19] a good thing but in case of signed URL that means you
+[11:26] are sending a URL to anyone and that anyone can access the file till that
+[11:36] expiration time. That's the logic. Okay. So if the file is sent over the
+[11:42] public internet I don't know someone can intercept it
+[11:48] anyhow and you don't even know that that someone got it may use it in different
+[11:56] purpose we don't know so I would say signed URL is maybe not the proper way
+[12:03] at least for this particular uh use case sign URL is definitely good or I would
+[12:11] say a good way of sharing some not very sensitive content to someone who doesn't
+[12:17] have any access to GCS uh and and that's why we they or I would say they want to
+[12:23] access those nonsensitive content that that in that situation or
+[12:29] in those use cases we may think of using signed URL but that shouldn't be the
+[12:34] case for this work right so even if it is
+[12:39] expiration thing. So don't be misled with that particular word, right? Signal
+[12:44] shouldn't be the right choice on this particular cases. So
+[12:49] go with some very granular access to maintain
+[12:56] or to keep the security strategy intact on those PII data.
+[13:03] Okay. So those who have selected A, B or D if not D at least A, B is it that
+[13:12] makes sense for them guys. Why we have selected option C? Yes. No. Can I get a
+[13:17] quick confirmation because some of you have still have some confusion I feel.
+[13:21] Is it good everyone guys? Quick. Fine. Perfect.
+[13:27] Next question. Which one?
+[13:32] Hm. Why not this one? Guys, check this. Mhm.
+[14:04] We're asking about the easiest way to host
+[14:10] a static website. Fine. Fine. Agreed everyone. Option A,
+[14:21] app engine. Okay. Now guys uh yeah this is a bit
+[14:31] tricky. See we are not asking you about the best
+[14:38] way. Best way in the terms of cost. Best way in in latency
+[14:45] perspective. Definitely if we are asking something like what should be the best
+[14:52] way to host a website maybe definitely app engine is the correct answer.
+[14:58] No doubt about it. But here we are asking or finding out the easiest way
+[15:05] and it is a static website right. So what we can do is or maybe I at some
+[15:12] point of I can argue with you that we can use a load balancer
+[15:20] right and as this is a website it should be a application level load balancer
+[15:27] that definitely should be public facing right and we should be having some
+[15:33] global workload to work with. So it should be a global external application
+[15:39] load balancer and when we try to configure that load balancer
+[15:45] at this point of time we will configure the back end not with some backend
+[15:51] services like those services but rather we would
+[15:56] be selecting a backend bucket and at this point of time we have already
+[16:02] stored that static website content to that bucket and just point out that
+[16:08] bucket if required we can enable CDN. We can apply different security mechanism
+[16:15] those caching mechanism with the help of CDN apply some advanced configuration
+[16:20] and just click on create. We'll be having our endpoint created for that
+[16:26] website and we can just use that website but this time it should be a static
+[16:31] website that we are asking for. So yeah definitely the best way should be that
+[16:40] uh app engine option but as we are thinking of the easiest way for a static
+[16:47] website we will be using a GCS bucket where we'll be storing that website and
+[16:53] we'll be creating a global load balancer that will point out to the GCS bucket as
+[17:00] its back end and start working. Okay. So that is what the option should be. Okay.
+[17:10] Clear? A bit tricky but yeah just figure out the easiest keyword and the static
+[17:16] website. And if you can able to understand this question I have a small
+[17:22] followup question maybe. Uh do I have that? Yeah let's
+[17:29] this question. What about this one? More or less
+[17:45] similar. Here you have a new stateless Python web
+[17:51] app. And guys, you will not be able to
+[17:55] predict the load. Are you concentrating on this one? Those
+[18:08] who are selecting option B this is for uh no you are not
+[18:17] considering guys see when we don't have an option to predict the load that means
+[18:24] what we will do we will ask Google hey Google can you manage the infrastructure
+[18:31] because I will not be able to manage the infrastructure I don't have a consider I
+[18:35] don't have have that particular idea about how the workload will scale up or
+[18:40] when it will scale down. So why not you manage the infrastructure? I should only
+[18:45] be managing the application. I will be managing the code. So it shouldn't be
+[18:50] infrastructure as a service. We should always use platform as a service over
+[18:54] here. So straight away we can eliminate compute engine and kubernetes guys. As
+[19:02] simple as that because we are not able to predict the load. So we are handing
+[19:08] over this management of managing the load to Google to GCP. So just
+[19:16] cross out these two and when it's about a web app
+[19:23] we have already discussed earlier the best way out is app engine
+[19:29] confusion. Now compare those two question those who have confused that
+[19:34] was a easiest way and that was a static website here we have a stateless the
+[19:40] first thing stateless python web app and other important thing we can't able to
+[19:45] predict the load so just use app engine over here option number a anyone have
+[19:53] any confusion any problem between these two questions that we have discussed
+[19:58] guys I'm again asking are we good? Can I get a quick confirmation? Yes. Thumbs
+[20:02] up, thumbs down or still have confusion. Do let me know. I can repeat. Okay. If
+[20:09] we all understand this thing. Now just quickly let me know. Is there any other
+[20:16] service apart from App Engine that can help on this particular use case?
+[20:26] Any service apart from App Engine. Perfect. Excellent. Jeff, we can use
+[20:32] cloud run. No, no. CL cloud function. See, cloud
+[20:37] function it's totally different. It is for those event-driven activities.
+[20:43] I'm not telling that technically we can't like use this for web activity but
+[20:48] that should be very complex and that is not the actual use case of like using
+[20:54] this particular service. Okay. So I would say the two most or the two best
+[21:02] service for a web application especially this type of stateless web application
+[21:08] we can either use app engine or cloud and the last follow-up question on this
+[21:14] one if we have both the option like in a app engine in b cloud run then
+[21:23] what should we choose? Yes, then also we should be choosing
+[21:30] cloud run. So if both the options are there in the exam guys, just make cloud
+[21:35] run as one step ahead of app engine. Okay. Yes. So those are the things that
+[21:43] I'm going to tell you uh at the last day.
+[21:46] Uh okay. Let's wrap up the quiz one uh with this particular question. I think
+[21:52] we have discussed I should be there uh I can take this
+[21:58] question yeah good is telling but the same
+[22:02] question but it is not a web app can we use GK with autoscaler
+[22:09] we can use good no problem we can use we can use maybe autopilot one you can
+[22:15] apply within GK right where you don't need to think about those scaling
+[22:20] activities but Definitely agreed. Great. Fine. So what would be this one?
+[22:33] Advantage of App Engine standard over the flexible environment.
+[22:39] Very easy. Yes sir. Sagar
+[22:54] engine can you please mute I think. Yeah.
+[22:57] >> Sorry sir. S.
+[22:58] >> Okay. Uh
+[23:02] h that's right. It's very easy. We shouldn't be taking
+[23:07] such time guys. It is very easy. So the apping in standard
+[23:12] can able to scales to zero which is not possible for its flexible part because
+[23:21] in case of app engine flexible it should be like one instance up and running even
+[23:27] if uh we have no workloads or zero workload right so that's the
+[23:36] advantage of using app engine standard And by the way, if I'm not wrong, all
+[23:41] the remaining three are related to this flexible one.
+[23:48] Okay. So yes, definitely it should be scales to zero. Remember this very small
+[23:54] difference but very effective in terms of exam as well. Okay. So I think we can
+[23:59] wrap up with the question one and I hope we enjoy this question session guys.
+[24:04] Next quickly maybe use next four five minutes to have a discussion on symbol
+[24:10] superto. Now this time as an associate cloud
+[24:14] engineer your ongoing role in configuring and managing an IM service
+[24:21] is very vital. I am access I am roles responsibilities right and if I remember
+[24:28] correctly we have already discussed that thing at the very beginning at the first
+[24:31] session at the first date right now I should just give you some idea on
+[24:37] service account right so initially we have talked about the some basics of IM
+[24:42] now we should be giving you some idea on service account now guys we know that
+[24:48] service accounts are designed to enable Which what or specifically if I ask you
+[24:55] the question differently in which situation we should be using a service
+[25:00] account right service accounts are designed to enable a machine to machine
+[25:04] communication and is used by an application or maybe some compute
+[25:11] workload rather than a person. Okay that's the advantage of using service
+[25:18] account. So simple stores if you remember their supply chain app is built
+[25:23] on a LAMPstack and they have used computer engine VM instant and it also
+[25:28] uses cloud SQL as a backend data storage. So the app needs to talk to
+[25:36] cloud SQL to update different inventory levels. It does it through what that
+[25:45] service account and that service account is attached with the VM
+[25:50] and where this cloud SQL is running on. So we have a VM we have a service
+[25:54] account attached with the VM then when a cloud SQL is communicating that should
+[25:59] be communicated through that service account. So let me show you to give you
+[26:04] a better idea like how it is being used. So first of all
+[26:09] go to the project you want to add that service account. Service accounts are
+[26:15] both identities and some manager resources in Google cloud. So you can
+[26:20] find that thing uh in the left hand side of the panel. So just go there now
+[26:26] select uh at the top create service account.
+[26:31] In the dialogue that comes up, name your service account and definitely
+[26:37] definitely note that email address associated with the service account.
+[26:42] Okay. You can also provide a description of what the service account does if
+[26:47] required. Okay. Now once you select create your
+[26:53] new service account will be added to the list of all your service accounts.
+[27:00] Some service accounts are by default. If or maybe if earlier you have created
+[27:06] a service account or if anyone from your group have created some service account
+[27:10] all those things should be already listed there along with the service
+[27:14] account that you have created. Right now the service account that you have
+[27:18] created go to the right side you'll be seeing those different three eclipses
+[27:23] under an action option and you will find the list of actions that you can perform
+[27:28] on this particular new service account that you have created. Okay. Next you
+[27:33] will see one of those choices where you'll be finding uh like manage
+[27:37] permission over there. Now click on there. So after selecting that manage
+[27:43] permission under that action dialogue in the service account list a new menu lets
+[27:49] you pick up your service account permission which permission you want to
+[27:56] give to that service account right if required you need to search it you
+[28:02] need to browse it and if you remember for this symbol direct you need to find
+[28:06] out that cloud SQL instance user right because this VM will be able to use that
+[28:13] cloud SQL service right so it should be cloud SQL instance user and finally
+[28:19] for symbol superto you if you go to VM instance you can able to see something
+[28:27] this like this one identify and API access and if you just click the drop
+[28:33] option you will able to see that service account that you have created earlier
+[28:37] okay that is how you can able to authorize
+[28:42] everything when you're about communicating between two application.
+[28:48] Okay, that is how it work. So very simple but just remember what is service
+[28:53] account and how it works. Okay, that's it and that is about simple super.
+[29:00] Great. Uh I any question? Let me just check the chat quickly. Hopefully we are
+[29:07] good. Fine.
+[29:11] Now uh yeah that's all about symbol supertore and that was an artificial
+[29:17] case study. We discussed different task associated with the role of an associate
+[29:23] cloud engineer based on that case study and how we can involve ourself in
+[29:30] performing different activities related to symbol super right that's what now
+[29:38] being an associate cloud engineer we always try to deliver or we always
+[29:44] definitely will try to deliver quality performance right and handle different
+[29:49] loads and failures and we should be handling those thing with minimal or
+[29:54] zero downtime and that is where we will be starting our next
+[30:02] discussion that is high availability okay that is where this particular term
+[30:08] comes into the picture so let's try to design something that is highly
+[30:12] available in GCP now guys when we are talking about high availability it is
+[30:17] also about what business continuity right so it is not only having our
+[30:21] system up and running it is also about our application available to the end
+[30:27] users right and we need to have some technical means to implement those so
+[30:33] when we are planning for high availability we are planning what we're
+[30:39] planning to resist failure right so but we we need to understand one thing guys
+[30:45] this failure will Okay. But designing
+[30:51] something so by designing some sort of architecture with different option we
+[30:57] will try to minimize that downtime events right and our goal is to somehow
+[31:05] like implement some sort of automation. That means if something fails
+[31:14] some automation something they will detect it
+[31:19] something is already being configured in the back end once some once that failure
+[31:25] is detected and it will fail over to the other zone or like something like that.
+[31:34] Okay. So that should be the process when it comes to high availability when it
+[31:38] comes to business continuity. Okay. Now guys in order to understand it
+[31:43] in a better way why not sorry why not we play a small game now. Yeah it's a game.
+[31:50] Let's think about high availability and let's think about how you make those
+[31:56] environment yes those environment highly available.
+[32:00] That means in other words how would you protect some system from failure and how
+[32:06] would you automate those workaround so that your business system still up and
+[32:13] running even if some sort of setback happens right
+[32:19] so definitely that's that should be our aim okay so how you do it when you
+[32:26] deploy something let's say on Compute engine on VMs
+[32:33] how we can make them highly available. Any idea that comes in our mind guys?
+[32:40] Because if I remember correctly computer engine uh zonal instance but if that
+[32:46] particular zone fails what will happen? How we make him make that thing highly
+[32:52] available to continue our business? What do you say?
+[33:13] We need to brainstorm. Do you remember about MIG?
+[33:27] And you recall day two of session two where we discussed about managed
+[33:32] instance group and there we repeatedly told you that um
+[33:39] a manage instance group can be regional. So even if a compute engine or a VM is a
+[33:49] purely zonal instance, we can use managed instance group and we can make
+[33:56] it regional. Right? So as high availability is related to zonal
+[34:03] failure. If we have some sort of configuration where uh we
+[34:10] have uh something where a particular VM fails in a zone some sort of group has
+[34:17] this capability to manage something and it can able to fail over to another zone
+[34:23] because that is having a locality of regional coverage.
+[34:31] Right? So MIG can be zonal and regional. So here in case of high availability we
+[34:38] are planning to use uh regional MIG and on top of that if we want to distribute
+[34:46] the workload distribute the workload uh in those different zones we can apply a
+[34:54] load balancer. So combining this regional MIG and load balancer we can
+[35:02] make a compute engine highly available
+[35:07] even though a single VM is a zonal instance.
+[35:13] Got it? Any question guys on this one?
+[35:19] No. Then what about GK? How we can make GK
+[35:26] highly available. Tell me
+[35:32] sorry more or less similar to the earlier one
+[35:42] but this time what we doing using clusters definitely we should be using
+[35:46] clusters but which type of cluster we should yes perfect we should be using
+[35:53] regional clusters excellent and similar to the earlier Here also we should be
+[36:00] applying some load balancers. So yes, excellent answer. Regional clusters with
+[36:07] load balancers will make a GK highly available. Perfect.
+[36:14] What about app engine guys? Mhm.
+[36:30] It's a managed service platform as a service. That means what?
+[36:37] It is. Yes, it is by default already regional.
+[36:45] It's not multi-reion.
+[36:49] Uh Dam Chandra, it's not multi-reion. I think it is regional that I can assure
+[36:55] right. So app engine is regional. So if we try to create an app engine instance
+[37:02] they will first asks me to select a region that means by default it is
+[37:07] already regional and we know that it's a managed service it is regional and
+[37:12] someone told me that definitely it should be having those autoscaling
+[37:16] autohealing activity and definitely we do not or I would say not to think
+[37:23] about how to implement high availability because this is already implemented
+[37:29] here. Okay, great.
+[37:33] Now, what about Cloud SQL? How to implement high availability in
+[37:43] Cloud SQL? You remember when I covered Cloud SQL?
+[37:53] I've shown you that reader instance
+[38:01] not necessary that means um you're talking about read
+[38:06] replicas I would say not necessary at least from high availability perspective
+[38:10] multiszonal how to make it multiszonal
+[38:17] you are pointing out the right thing but how to make it multiszonal
+[38:25] So if I go there and I will try to create an instance
+[38:42] I get stuck over here anyhow. So maybe some problem got with
+[38:51] my console. So when I'm trying to create a cloud SQL instance, first of all, I'll
+[38:57] be selecting a database engine like MySQL or postsql
+[39:03] SQL server. Then they will ask me to give an instance name. And if I just go
+[39:10] down, we can able to see that it is a option where I need to select a region
+[39:20] and then they will ask me to select a zone.
+[39:25] That means at that point of time cloud SQL is a zonal instance.
+[39:31] Right? Now how to make it multiszonal? That's the question. If you go below
+[39:36] that option where I need to select a zone you can see some option as
+[39:41] multiszone and in the bracket it will be written as
+[39:46] highly available that means it's a matter of selecting a button selecting a
+[39:51] checkbox nothing more than that right so cloud SQL by default is zonal
+[39:58] right that means cloud in cloud SQL it is telling that okay you you you are
+[40:04] maybe creating a database in a development environment. That's fine. So
+[40:10] you just select zone. Now you have done everything and you want to move to
+[40:15] production environment. There you can ask your boss. You can ask the client. a
+[40:20] boss. This is this is where we are moving to production. And if some sort
+[40:25] of disaster happens, if something is there where I I need to have some data
+[40:34] failed over that means if some zonal problem occurs and I need that fail over
+[40:40] to another zone how to do that thing yes that's where you can select this
+[40:46] multiple zone option right so yes that is how where we can able to implement
+[40:51] high availability in clouds SQL. So again I'm repeating even if a cloud SQL
+[40:56] instance is by default zonal we can make it multi-al.
+[41:04] Okay that is how it works. Fine.
+[41:09] Next one. What about cloud spanner? What is it?
+[41:25] Spanner, regional
+[41:33] and multi-reion.
+[41:45] So yes uh spanner definitely
+[41:51] starts with regional instance and within spanner we can make it dual region we
+[42:02] can make it multi- region as well in spanner see and just click on continue
+[42:11] with we just need to give the See starting with regional
+[42:22] with four 9ths of availability we can make it dual region we can make it
+[42:28] multi-reion with five 9s of availability right so definitely we need not to think
+[42:35] about spanner at least in terms of high availability because it is by default
+[42:41] highly available and What about cloud storage is
+[42:51] sorry I'm running out of control program guys sorry uh we can choose mult yes
+[42:57] more or less similar to sorry cloud spanner where a cloud
+[43:03] storage is also started with regional it can be dual region it can be
+[43:09] multi-reion as well and just to let you know I think I've already covered this
+[43:12] thing earlier that nowadays cloud storage is giving other option to select
+[43:17] zone as a location to create a bucket right but definitely we can make it till
+[43:23] multi- region okay so yes that that's a small thing that I want to discuss with
+[43:29] you but what is the outcome of this discussion what is the takeaway guys see
+[43:36] the more the managed service is like app engine like spanner like cloud storage
+[43:42] more the managed service is less you concern about I availability about all
+[43:48] tolerance. Okay, great. If you want to go more
+[43:52] deeper on this one guys, I have a link shared with you over here. Just go
+[43:57] there. Maybe not fully important or from the exam perspective but definitely you
+[44:03] can for your knowledge you can go through that particular way. Okay,
+[44:08] great. Now guys, next step. So till now we have covered HA that means high
+[44:14] availability which is all about protecting your application from failing
+[44:18] when something like goes wrong. Now with disaster recovery with DR we also
+[44:28] saying that we want to protect our application. We want to increase the
+[44:33] business continuity when
+[44:36] something serious happens. that means the whole region fails.
+[44:43] Okay. So that that is what we mean by disaster recovery. Now when designing a
+[44:47] disaster recovery, we need to come across two different matrices. One is
+[44:52] RPO, another is RPO. That means recovery point objective and recovery time
+[44:58] objective. I will not going into deeper on those two matrices because I hope you
+[45:03] already know those things. But do remember one thing is like that there
+[45:11] is no such straight away option
+[45:17] for a disaster recovery uh compared to high availability. That means it's not
+[45:24] about selecting some check box and we are fully automated way of managing the
+[45:30] disaster like high availability. No, that shouldn't be there. So in disaster
+[45:34] recovery there should be some sort of manual intervention.
+[45:39] Okay. There shouldn't be any straight away automated end to end automated
+[45:43] process like high availability. Okay. Now why I have discussed this RT or RPO
+[45:50] thing guys? Because based on those two matrices we can have different flavors
+[45:54] of disaster recovery. Right? So based on the criticality factor of the
+[45:59] application we can have those different flavors. Flavors in the sense we can
+[46:04] have cold disaster recovery, we can have warm disaster recovery, we can have uh
+[46:09] hot disaster recovery, right? So those are different flavors. So let's try
+[46:14] those things by taking a small example I would say and that is related to cloud
+[46:20] SQL. So how would you design your cloud SQL instance that should have disaster
+[46:28] recovery right? So let's say what happens if we
+[46:34] are thinking about some cold disaster recovery that means we are not very
+[46:38] aggressive on that RT or RPO we are good if we get back the data that's it okay
+[46:47] so how we can implement old disaster recovery in cloud SQL
+[46:56] instance that's the Check how to do that. Any idea quickly.
+[47:13] Mhm. In cloud sign we know we know backup
+[47:19] right. So if we have some backup already done
+[47:24] and that particular region fails, we can restore that backup to another region.
+[47:29] The simplest way guys here no one is saying that it will be very first. It
+[47:34] should be very optimal. We need to get back data within a second or so. No, you
+[47:40] can take time to do those backups or maybe to restore
+[47:44] those things in other regions. That's the simple thing. It's a cold disaster
+[47:48] recovery. Okay, got it. Very easy. Just
+[47:56] Okay, maybe think of using frequent backups as well. No problem. But
+[48:01] definitely those are related to cold disaster recovery. Great.
+[48:07] Next one. What happens if you want to be a bit more aggressive? That means your
+[48:12] application need to be up and running much faster. What do you think? How
+[48:20] would you design a worm disaster recovery specifically for cloud SQL
+[48:29] cross regional read replicas? Okay.
+[48:35] Any other solution? I'm taking the solution but any other
+[48:45] solution guys. No
+[48:50] and I would say this is the only one solution that we have at least in cloud
+[48:53] SQL. Great. So maybe someone can tell me why not if you can take some very
+[48:59] frequent backups some immediate backups guys those thing those backups maybe uh
+[49:06] it will help on on on reducing the RPO maybe you can you can
+[49:12] add I don't know like point in time uh recovery as well but all those things
+[49:17] will reduce the RPO but the time to restore right the time restore will
+[49:25] remains the same. It will not been reduced. So even if someone is telling
+[49:30] about those immediate backups about the point in time recovery, no that will
+[49:34] again considered as a cold disaster recovery. But yes definitely I got a
+[49:39] very good answer if we can use rate replicas.
+[49:43] But here do remember one thing red replicas are do not done automatically
+[49:48] that means will not bring automatically fail fail over right. So with read
+[49:52] replicas this is where you who have to take some decisions that fail failover
+[49:58] will happen and what to do what not to do all those things right so high
+[50:02] availability has a full end to end automation but in case of disaster
+[50:07] recovery that should be having some human in the middle that is taking care
+[50:11] of this overall failover thing right but yeah excellent rate replicas are used
+[50:16] for warm disaster recovery Great final one third level that means you are much
+[50:25] more ambitious how would you design if you said that I
+[50:30] don't want like any sort of outage whatsoever or maybe some
+[50:37] fraction of seconds of outages at max how we can design a cloud SQL instance
+[50:43] on on hot disaster recovery designated crossover
+[50:53] pickup with advanced deer. Now I'm not sure about what do you mean
+[50:58] by advanced deer. Can it able to like make and hold disaster recovery
+[51:06] within fraction of second load balancer
+[51:12] but again there should be some human working in
+[51:17] the middle for rich replicas which will not make it fully automated
+[51:23] to have a instant failover like high availability
+[51:30] But yeah, good approach.
+[51:34] Something else I can keep load balancer. But is there
+[51:40] any other way out without read replicas
+[51:55] guys? The next question is can we actually do it in cloud SQL?
+[52:03] Answer is no. There is no option in cloud SQL where we can apply this hot
+[52:12] disaster recovery. That means we need to move to any other service
+[52:20] like cloud spanner.
+[52:27] Cloud SQL enterprise cross region recovery feature angel everything will
+[52:32] lead you to a max warm disaster recovery but not or because cloud SQL doesn't
+[52:40] have any option for such ambitious recovery
+[52:46] like or desert SQL right so we need to think about something where we can use
+[52:53] spanner or at the very beginning uh Angel is telling that okay if we can
+[52:59] have um maybe some VMs in two different region we apply some
+[53:07] sort of uh distributed technique like load balancer
+[53:12] and which will able to automatically fail over. So there is some ways there
+[53:19] is some infrastructure that can be created for hot disaster recovery in
+[53:25] case of cloud SQL but that is not at all managed that is not at all where Google
+[53:30] will help you in some respect. Definitely Google can give you the
+[53:33] infrastructure but everything should be managed by your own and there should be
+[53:37] have some complex architecture some sort of a typical uh advanced option that you
+[53:43] need to use in order to have that disaster equal rather if you are
+[53:49] thinking of an RDBMS you can just move the enter thing to
+[53:55] cloud spanner which is already regional which is already dual region you can
+[53:59] think of using multi-reion Definitely you can
+[54:05] are health checks available on cloud SQL instance
+[54:13] I don't think so uh no what type of health checks you want
+[54:22] if some instance fails or not failure checks failure checks if you use high
+[54:27] availability definitely you have checks But if you need to have some other
+[54:33] advantages, we can then apply cloud monitoring technique other thing to to
+[54:39] cover other options. But yeah when you think about those failure checks only we
+[54:45] can use high availability and other option as I told you we can
+[54:50] think of using rate replicas with some manual intervention
+[54:53] that makes I think what we have in cloud SQL but we have other internal
+[54:57] activities definitely Google manages other very internal activities if
+[55:02] something goes wrong on that so we have those cloud monitoring system to work
+[55:06] with that's a different aspect altogether
+[55:09] got it Maybe this is what I know at this point. Okay, great. So yes, as I told
+[55:16] you, um those are the options when it comes to disaster recovery. So hope you
+[55:22] enjoy those things. Now, yeah, last day. So why not invest maybe another five odd
+[55:31] minutes on another game? I hope you are not
+[55:35] bored on this one. Okay. So yeah uh in the exam guys again you might face some
+[55:42] questions where they may give you a scenario where they are planning to
+[55:46] deploy their code right. So you need to think or you need
+[55:52] to plan how you run them or what are the environments are more optimal
+[56:00] considering the specific requirement. Right? So let's say
+[56:06] we have a scenario where you are planning to run your workloads in
+[56:12] containers. So in GCP what are the service available
+[56:17] to help you out to run some workloads which needs some containerized option
+[56:24] containerized infrastructure and
+[56:35] cloud run accepted And some of you are forgetting about app
+[56:52] engine guys. Not VM. VM are not used for containerized
+[57:00] workloads I would say. Okay. But these three are definitely GK cloud frog app
+[57:06] engine. Kubernetes
+[57:10] Kubernetes app engine has its own containerized workload created by
+[57:16] Google. Google is managing that thing. No kubernetes over here. Just for you
+[57:20] idea don't need from the exam perspective. I'm giving you some deeper
+[57:24] idea. Okay. Next one. Specific OS.
+[57:34] some sort of licensing, maybe some sort of customized backup that we want.
+[57:49] So easy, right? Perfect. Computer engine. Excellent.
+[57:53] Next one. We have some hybrid infrastructure. We
+[58:02] have some multicloud infrastructure. That means something is there in
+[58:06] onremises. They or they have already used let's say
+[58:12] Azio as a other other cloud provider. They're also implementing something in
+[58:18] GCP. So I need a hybrid infrastructure some sort of ways to manage to maintain
+[58:27] those multicloud hybrid infrastructure is it comput engine comput engine can
+[58:33] able to handle that hybrid infrastructure
+[58:37] I think I've used the term when it comes to hybrid infrastructure
+[58:42] can anyone recall that name
+[58:50] >> it is anththers which will give you a or an infrastructure where you have
+[58:57] everything uh uh that means in a single glass or what it says a single pane of
+[59:03] glass visibility that type of phrases right so everything under a single layer
+[59:10] that is anththers where you can add on promises infrastructure where you can
+[59:14] add as you can add GCP you can start working right so yeah we can have that
+[59:20] type of hybrid infrastructure go ahead and use anthas remember that term anthas
+[59:26] very very important when it comes to hybrid infrastructure next one we have
+[59:31] some web application running and we have discussed couple of question on the same
+[59:38] platform we need to run some web application what type of service are
+[59:44] mostly used in GCP GKE
+[59:50] cloud run. What else?
+[59:56] Now guys, when it comes to web application, the best the optimal I'm
+[1:00:00] not telling we can't run a web application in VM. I'm not telling we
+[1:00:04] can't run application in G. The most optimal service that GCP prefers that
+[1:00:10] Google recommends is to use app engine. Yes. Along with cloud run anyone anyone
+[1:00:18] you can use when it comes to web application. Right. So guys whenever we
+[1:00:24] you got some question try to think about the optimal usage of
+[1:00:29] the service. It's not about which we can do maybe we can use any of the platform
+[1:00:34] to learn web application but yes the most optimal thing is to use cloud run
+[1:00:40] or app engine. Okay sorry next one
+[1:00:46] event based processing very very easy
+[1:00:56] exactly. So whenever you you see something event based where event being
+[1:01:01] triggered just try to find out where is the term cloud function is there in the
+[1:01:08] answer in those options. Okay so definitely event based means cloud
+[1:01:13] function. Okay
+[1:01:16] next one want to squeeze every drop from
+[1:01:22] provisioned resources. tricky tricky words also some some very
+[1:01:28] juggler of words right now. So what the meaning actually is? So like if you want
+[1:01:34] to really make the best use of your resources because you are paying for
+[1:01:40] those resources, right? So you you want to
+[1:01:45] like uh use every vCPU cycle, you want to use every gigabyte of memory. So you
+[1:01:53] are very very specific on the usage of the infrastructure
+[1:02:00] and you should only be paying on the infrastructure that you have designed
+[1:02:08] and your design uh cloud run will scales to zero is it?
+[1:02:16] So do you have any control on the infrastructure if we use cloud run?
+[1:02:23] Yes or no? Do we have any control on the
+[1:02:27] infrastructure if we use cloud run or app engine? The answer should be no.
+[1:02:32] Right? Yes, definitely no because it is managed by Google. We are only
+[1:02:37] concentrating on the application. We're only concentrating on the code. But here
+[1:02:43] as per the requirement we need a very specific infrastructure. I'm paying for
+[1:02:50] four vCPUs. So I'll be using four vCPUs even if my workload is high. Even if my
+[1:02:57] workload goes down to zero, right? That means it is definitely we can use GC
+[1:03:07] or to some extent GK if we use the standard version of GK.
+[1:03:13] Okay. So here we are pretty much concerned about what type of
+[1:03:18] infrastructure we are using because we should be paying
+[1:03:22] for that infrastructure. I'm not bothering about whether workload will go
+[1:03:27] high or low. Okay, that's it. And the next option is actually the reverse one.
+[1:03:34] Here we want to have or here we prefer to have a managed serverless
+[1:03:41] architecture where we can only focus on the code. Agreed. Agreed. You all are
+[1:03:48] perfectly correct. But guys, not only cloud run.
+[1:03:52] What else? Not GKE.
+[1:04:01] It is Gigg is not a fully platform as a service option but here if you want in
+[1:04:08] fact uh here it is thinking about a fully managed serverless where we can
+[1:04:14] focus on code. So yeah cloud run cloud function app engine those are the things
+[1:04:20] sorry next one billing based on resources
+[1:04:28] that means you want to be built based on the technical resources you are using.
+[1:04:39] I think it is similar to this one right asking the same thing I want to be built
+[1:04:46] based on what type of resources we are using yes actually that's the answer
+[1:04:55] perfect again
+[1:04:59] good great excellent hope you all enjoy this thing
+[1:05:04] guys quickly moving uh what are the different
+[1:05:08] materials materials. Yes, I have already shared you all those materials earlier
+[1:05:13] and this time also I'm sharing you more much more materials. So again whenever
+[1:05:18] you get time go through those materials guys. Okay. Now uh
+[1:05:24] diagnostic question. Now guys before diagnostic question uh let me just cover
+[1:05:30] a small non-technical part where I will show you how you can register for your
+[1:05:36] exam. then I will come back to the bonus content and maybe then serve and all
+[1:05:44] those things and then finally some diagnostic question right so let me just
+[1:05:48] show you how you can register for the exam okay
+[1:05:53] it will not take much time guys don't get bored and maybe some of you have
+[1:05:58] already booked your exam lot I don't know some of you already got the voucher
+[1:06:02] but yeah this is for everyone where hey they are planning to book their exams
+[1:06:07] Now guys, in order to book your exam slot, this is what the um link is. So
+[1:06:15] let me just share the link in the chat. I think the link is already shared in
+[1:06:18] the deck as well. In fact, Aisha will also share you the process detail uh in
+[1:06:25] a different resource within your tribe, right? So you can check that as well.
+[1:06:28] But yeah, I'm showing you a live option. So if you go to this particular website
+[1:06:33] startresses.com you need to log in this website first.
+[1:06:39] Now if you already have a login credential you can go ahead and use that
+[1:06:44] login. If you don't then just click and create your credentials right now. Uh I
+[1:06:51] already have my ID created. So just give me
+[1:06:59] some time to log in with my ID and I'll be sharing that with you uh the screen.
+[1:07:07] Yeah. So yeah, here I've already logged in and after logged in you'll be seeing
+[1:07:13] this type of screen where in the left hand side you have something called exam
+[1:07:19] scheduling. So click on schedule an exam.
+[1:07:24] Okay. Now if you just go down you'll be seeing those different exams which you
+[1:07:31] need to select. Now for you it should be s associate cloud engineer right. So I
+[1:07:37] have selected different one because I have already cleared it. So I don't have
+[1:07:40] an option visible my credentials. So I select a different option and what comes
+[1:07:47] over is like this one. Now just ignore the last one. You need to select
+[1:07:53] any one from these two. The left hand side this is where if you want to give
+[1:07:58] the exam going to an examination center and this middle one is where you can
+[1:08:03] able to give the exam sitting in your home. It's up to you which one you want
+[1:08:08] to select right I will show you some pros and cons definitely but let's me
+[1:08:12] select the left one right that means I'm planning to give the exam by going to an
+[1:08:18] examination center. So I'm just selecting the language.
+[1:08:23] Um I need to agree on some conditions.
+[1:08:30] Then yes based on my address it is providing
+[1:08:36] me some some locations. So maybe this is the location that I prefer and I click
+[1:08:42] on next. Right now those locations should be based on what address you
+[1:08:48] filled up when when you are creating your login ID and all those things.
+[1:08:52] Right? So uh now after selecting the examination
+[1:08:58] center you need to select the date. Let's say this is what the date I
+[1:09:02] prefer. You need to select the time. I don't know maybe I prefer morning slots
+[1:09:09] always. So maybe I'll select this slot and then I click on book this
+[1:09:15] appointment. Okay. So I have created that this is
+[1:09:20] associate cloud engineer for you. So let me assume that this is this is the
+[1:09:24] appointment date time. This is the location. Everything seems good. Now I
+[1:09:29] click on process to check out. Okay. Now that is where your voucher will come
+[1:09:35] into picture. So if you got the voucher, put your voucher code. This button will
+[1:09:40] get activated. Click on apply. And once you click on apply, you will see that
+[1:09:45] this value comes to zero. And when you click on next, your exam will be booked
+[1:09:50] on that particular date, location and time that you mentioned over here.
+[1:09:57] Right? Now the difference between booking this this give an exam to an
+[1:10:01] examination center and the thing that you want to give the exam in your home
+[1:10:06] the difference is very simple you need not to select the location if you want
+[1:10:12] to apply to give the exam sitting in your home. Okay. So that's it that
+[1:10:18] that's the very simple process of booking your exam slot and whether you
+[1:10:22] have booked by giving that exam in examination center or in home you should
+[1:10:27] keep your government provided ID photo ID proof handy they will ask
+[1:10:34] you to show that okay so I'm going back to the slide to just uh cover the
+[1:10:42] remaining thing but before that any question on booking part Guys,
+[1:10:48] it should be very easy, right? No questions. Now, just to tell you that if
+[1:10:52] you are planning to give the exam sitting in your home, you need to take
+[1:10:56] care of the infrastructure a bit more compared to giving some giving the exam
+[1:11:01] in the examination center. Okay? Why? Because in examination center, you need
+[1:11:05] to just go there at that particular time. Show your government ID proof.
+[1:11:10] Show your approval email of exam booking. Maybe keep your belongings in a
+[1:11:15] locker. They will ask you to give the exam. They will provide you a seat. Give
+[1:11:20] the exam. Okay. Nothing. But if you're thinking to give the exam sitting in
+[1:11:24] your home there, you need to use your personal laptop. That's the first thing.
+[1:11:31] No corporate laptop. personal laptop having
+[1:11:36] camera and mic in our belt because there will be a proctor in the other side of
+[1:11:41] the screen who will continuously monitor you. They will ask you to show the room
+[1:11:48] every wall. They will ask you to show any object that they feel is suspicious
+[1:11:55] to some extent. Right? Even if they will ask you to show the text, the chair
+[1:11:59] everything once they are satisfied then only they will give you option to start
+[1:12:04] the exam. Okay. Now in in that point of time they will not give you an option to
+[1:12:13] keep any pen, any pencil, any paper, any sort of electronic gadget, no food,
+[1:12:18] sometimes not even like water or whatever else. Right? So those are
+[1:12:23] pretty much restricted when give the exam in your home over here. Okay. So
+[1:12:29] you need to manage everything then you can start the exam but from
+[1:12:32] certification validity or or any sort of credentials per anything those are same
+[1:12:38] for both the process. Okay. So that is what I want to tell about booking exam
+[1:12:45] and all those things. Um I think I've covered this two.
+[1:12:51] So uh that's about those first non-technical thing that I'm planning to
+[1:12:57] cover today and the second thing is yeah those bonus content that I plan to share
+[1:13:05] with you guys. Now those two are the quiz set that I have created for you
+[1:13:14] to practice to validate yourself to test yourself at any point of time of the
+[1:13:20] journey. But I would prefer you to put this thing at the last whenever you just
+[1:13:25] complete the overall learning phase. You have complete those labs, you got the
+[1:13:29] voucher and you are planning to book your exams. At that point of time, yes,
+[1:13:34] do this practice test. it it's a Google form. So from access perspective
+[1:13:39] shouldn't be a problem. So yeah just some questions go through those question
+[1:13:45] I think every uh slot have around um around 30 odd questions that you need to
+[1:13:52] practice or you need to apply and if you can able to achieve I don't know like
+[1:13:56] 80% plus accuracy level you should be good
+[1:14:01] enough from the exam perspective. Okay. Now apart from this if you want to uh
+[1:14:08] like practice more question I think I have this app still running. Yes some
+[1:14:16] sort of app that we have created for your practice. This is not what Google
+[1:14:21] recommend us or is what Google shared with us. This is from the trainer
+[1:14:24] perspective. We have created a small app where you need to just put your email id
+[1:14:30] um to log in. Select your competency level. If you want some easy question at
+[1:14:36] the easier level, select you can select any of the topic or just select all
+[1:14:41] topics. Number of questions. Let me put it five as well. Now this app will able
+[1:14:48] to generate some question for you for the practice. Right? So this is purely
+[1:14:53] for your practice. Don't think that these are the questions that be coming
+[1:14:56] in the exam. No, but these are the questions which be having or similar
+[1:15:00] sort of complexity level that you may have in the exam. Right? So this is
+[1:15:05] those two things. One is that practice set another is this this particular app.
+[1:15:10] You can use both of them to check to validate yourself at any point of time
+[1:15:15] throughout your learning process. Okay. So uh I think those are the two bonus
+[1:15:22] content that I want to share with you. Any questions till now on this
+[1:15:29] non-technical part guys those bonus thing or or the booking process
+[1:15:34] if not then definitely then I can move to the
+[1:15:41] diagonistic one but uh how many questions in the exam and time is for it
+[1:15:47] should be around 50 odd questions 2 hours time
+[1:15:55] no Nothing nothing no paid guys nothing okay you can you can use this randomly
+[1:16:03] no problem uh where we can find the bonus link in
+[1:16:07] my deck I'll be sharing the deck with Aisha after the session so you can find
+[1:16:11] that those questions okay no worries and if you have any access issue on the quiz
+[1:16:16] buddy thing or what those quiz questions do let me know in the online community
+[1:16:20] okay no problem okay guys I think is shared view a
+[1:16:25] survey link just maybe give me 2 minutes I'm pausing
+[1:16:31] for 2 minutes in that meantime complete the survey guys this is a highly
+[1:16:37] requested from our side to complete the survey complete that thing within the
+[1:16:41] session itself so that we got those responses quickly right so as I told you
+[1:16:46] I'll be pausing myself for the next two minutes maybe 3 minutes or so it will
+[1:16:50] not take more than two to three minutes to complete this one complete this thing
+[1:16:54] I'll come and cover how much as many as any question I can on the remaining 10
+[1:16:59] odd minutes. Okay. Yeah. And by the way once done do let me know
+[1:17:05] by giving a thumbs up maybe writing something down in the chat like that.
+[1:17:09] Okay. Yep. Is it done guys? Maybe I think one more
+[1:18:51] minute. Do let me know if it is done everyone.
+[1:19:08] Okay, I think uh majority of you completed the survey.
+[1:19:15] So, yeah, first of all, thank you for sharing your uh feedback.
+[1:19:19] Uh we will definitely work on your feedback, guys. Thank you.
+[1:19:24] Now, let me quickly move to the diagonistic
+[1:19:30] questions. Okay, great. So why not let's start with
+[1:19:39] this question guys. Use the remaining 10 minutes for
+[1:19:45] the diagram. Mhm. Option C.
+[1:20:16] What about others? Is it C
+[1:20:22] or maybe thinking on different option? Sorry.
+[1:20:29] Access to cloud spanner
+[1:20:37] from GK cluster. Just recall symbol supertore where we want to access cloud
+[1:20:44] SQL from a VM, right? And there we told that
+[1:20:50] what the best one would be to use
+[1:21:00] H I'm waiting. I'm waiting. Machine to miss communication
+[1:21:05] application to application communication. It should be service
+[1:21:09] account. Yes. Right. Excellent. That is service account. Perfect. It's not about
+[1:21:15] having some Google account references because Google account again we have
+[1:21:19] some user ID and password. Human managed user name and password. So that those
+[1:21:25] authenticates the user. No option A. Uh I think someone have selected option D
+[1:21:30] as well. Assign permission through a cloud entity account across your
+[1:21:33] application. Now cloud entity again is a user
+[1:21:39] management tool. If you remember in cloud entity I told
+[1:21:43] you if we want to manage the users the users are coming from I don't know
+[1:21:49] some active directory stored within my organization. I want to import those
+[1:21:56] users within GCP within cloud environment
+[1:22:00] use cloud identity. So those are for managing the users not to give some
+[1:22:05] access within cloud spanner and GK cluster. So that is the purpose where we
+[1:22:12] need to use service account. Yeah great. Next question.
+[1:22:22] A tricky one. Uh have you able to find the keywords?
+[1:23:03] Maybe on that aspect I can help you. Okay.
+[1:23:09] E-commerce folder and I would say this is the most important keyword.
+[1:23:20] V. Okay. So I'm very glad that you can able to
+[1:23:28] now figure out the optimal solution. Excellent.
+[1:23:34] So when something need to be assigned at the folder level so definitely why not
+[1:23:42] give some sort of role at the folder level so that the user and able to
+[1:23:49] assign those roles for the different different projects. not required to give
+[1:23:54] that that that permission at the project level the lower level because everything
+[1:23:58] should be imposed at the folder level because we are selecting e-commerce as a
+[1:24:05] folder. So just apply the the the rules the logic at the folder level that will
+[1:24:12] flow down to all the projects and yeah excellent guys perfect.
+[1:24:18] One more Mhm.
+[1:24:50] What it? Let me just highlight the keywords.
+[1:25:02] Some sort of updation needed. Is it a for everyone?
+[1:25:25] is a definitely for this answer. Now guys, I
+[1:25:30] have a link shared with you over here, right? So, uh I click that. Yeah,
+[1:25:39] let me share you the link. Uh
+[1:25:49] yes see in order to edit an existing custom
+[1:25:57] role. What is the common pattern? The common pattern for updating a resource
+[1:26:04] metadata such as custom role in the is a specific pattern that is read modify
+[1:26:11] write pattern where you read the roles current state
+[1:26:18] update the data locally and then send the modified data for
+[1:26:24] writing. Right? Um that is uh oh I got a question which
+[1:26:33] link to click no is uh I have shared that link in my take so once you get the
+[1:26:41] de you'll see that quiz body just click on quiz body you'll have the link to
+[1:26:48] generate the quizzes and before that particular slide I have those couple of
+[1:26:53] pre-est quiz link as well just click on that you'll have everything. So no
+[1:26:59] worries on that. Okay. Even if you feel some problem on using the link on
+[1:27:04] selecting those link do let me know in the community. No problem. Great. So for
+[1:27:09] this question I think this is what where we'll find the answer. But I would also
+[1:27:17] request you all guys to highlight on this particular paragraph
+[1:27:23] right to check how this read modify read uh
+[1:27:28] sorry read modify write pattern can cause a conflict if two or more
+[1:27:34] independent process attempt the sequence simultaneously. Right? I'm not going
+[1:27:38] into deep over here but I request you to cover these two paragraph from the
+[1:27:43] examples. Okay. The link again is shared within the tech itself here. Here here
+[1:27:51] is the link. Okay.
+[1:27:55] Next question. now with the interest of time guys I
+[1:28:21] need to share you one thing like here in the question they're asking us to select
+[1:28:28] any of these four and based on the requirement what is the requirement a
+[1:28:35] mobile uh some organization is implementing a mobile app for the user
+[1:28:40] to track truck deliveries uh and their roots
+[1:28:45] right now. Now the app needs to access data about truck location from popsup
+[1:28:51] using some Google recommended practice. Now what type of authentication or
+[1:28:56] credential keys that we need to use? Now the answer is service account key. Now
+[1:29:02] why we have service account key? because we have that pause mentioned means API
+[1:29:08] keys when to use API keys when to use o2.0 O
+[1:29:14] client when to use environmental provider service account and when to use
+[1:29:18] service account. Just to let you know guys one more minute if you are
+[1:29:22] accessing some public data then the recommendation is to use API key. If you
+[1:29:27] are accessing private data then you can use any of the remaining threes. But
+[1:29:33] again you are using a private data on behalf of end user
+[1:29:39] then you should be using the second one o 2.0 client. If you are accessing the
+[1:29:48] private data on behalf of the service account. So for the user second one on
+[1:29:54] behalf of service account and the resources are inside Google cloud
+[1:29:59] environment then it should be the third one.
+[1:30:04] Okay. And if you are accessing the private data on behalf of service
+[1:30:10] account but this time it is outside of Google cloud that is the fourth one. So
+[1:30:16] from that question perspective it is satisfying the fourth one private data
+[1:30:21] outside of Google service account that is the fourth one. Okay. So maybe we're
+[1:30:28] already on time. So let me take one more minute and ask you if you have any
+[1:30:32] questions, any doubt whatsoever from any technical topic, any nontechnical topic
+[1:30:38] that you have discussed, let me know.
+[1:30:43] Any queries, any doubt whatsoever myself of getting is right.
+[1:30:54] uh the first uh so this is a very tough question for
+[1:30:59] me but but what I can suggest you is cover the tricks the process that I've
+[1:31:06] shown you from the very beginning maybe you can go through my recordings couple
+[1:31:10] of times find out how how I am pointing that question how I am finding out those
+[1:31:16] keywords because that is that is what I told you those are the major aspect that
+[1:31:20] you need to cover from the exam perspective So go through the learning
+[1:31:26] plan, go through my tech, go through how how I am I am covering all those
+[1:31:31] questions, quiz questions, diagnostic questions, everything right and I think
+[1:31:35] you should be good enough. Don't worry, it's a practice that make you perfect
+[1:31:39] over here. So do practice it. Use the quiz app that I've shared you use those
+[1:31:43] practice question set definitely going to be able to do that. Okay,
+[1:31:48] any other question guys? Any other queries?
+[1:31:54] Can you please share important dates of applying the vouchers that should be
+[1:31:58] shared by ISIS? Can you please just quickly pinpoint those dates and
+[1:32:03] everything if possible? Mhm. Aisha.
+[1:32:14] Okay, great. Thank you. Any other question, guys?
+[1:32:25] Then I would say thank you. Thank you for joining the sessions. Thank you for
+[1:32:31] joining all those six sessions the entire journey. It's a very uh
+[1:32:37] interesting group that I have covered find lots of queries questions that I
+[1:32:41] come across. So I hope we both learn in in either way and definitely we will be
+[1:32:49] covering or you going able to complete the certification at the earliest. Fine.
+[1:32:54] So all the best for you guys. See you in any other cohort with any other top
+[1:32:59] right. Thank you. Thank you. Yes sir.

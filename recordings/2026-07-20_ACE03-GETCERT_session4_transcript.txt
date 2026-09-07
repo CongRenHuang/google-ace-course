@@ -1,0 +1,852 @@
+[0:00] All right.
+[0:26] So, are you there? Just wait for a few minutes. Yeah.
+[0:52] >> All right. Is here uh at class it might be. Thank you so much everyone.
+[1:05] Yeah, thanks A. Thank you. Okay, guys. Yeah, welcome to week number
+[1:12] four. So,
+[1:17] any questions, any doubt from the last couple of weeks,
+[1:23] anything you want to ask me or Aisha? Nothing. Let me see in the chat if there
+[1:31] is any questions. Okay. And by the way guys, uh I hope my
+[1:39] screen is visible and my voice is loud and clear to all of you.
+[1:43] >> Yes, screen is
+[1:46] >> yes no. Okay, perfect.
+[1:52] Great. So if we don't have any questions send it out doubt from the last couple
+[1:58] of weeks then let's jump to today's agenda guys. So yeah uh we will start
+[2:04] with quizzes as usual. Um maybe we'll take first 10 minutes or so on that
+[2:10] particular part. Then we will directly jump to another section of symbol
+[2:15] supposed to but this time we will discuss based on security and compliance
+[2:21] how symbol supposed to is planning to maintain those couple of uh properties
+[2:28] uh on their part right then definitely some technical part like app engine
+[2:35] cloud function key cloud fraud all those things I'll be discussing
+[2:41] all of them and then some diagnostic questions should cover
+[2:48] right okay so quickly jump to the quiz one
+[2:54] let me share this
+[2:59] >> yeah here comes the first This is Read the question carefully.
+[3:29] We want a NoSQL feature that is not available in relational
+[3:36] database. H
+[3:44] in relational database we definitely definitely have a fixed schema a proper
+[3:49] structure of the database. We can apply indexes as well as a relational database
+[3:55] supports the acid property. Right? Yes. The thing that a relational
+[4:03] database doesn't support and maybe the main feature of nonsql database is this
+[4:10] flexible schema. That means that you offload lots of the logic, lots of the
+[4:16] activity outside the schema.
+[4:21] Right? So you can't apply any logic within the schema. Maybe you need to
+[4:28] apply those logic uh to the application layer. So the but in case of relational
+[4:35] database you may apply those logic within the database. Right? So that's
+[4:40] the difference and just for your information NoSQL database supports base
+[4:45] property not asset property. That means basically available soft state
+[4:52] eventually consistent as they I'm not going to deep over that one beyond our
+[4:57] scope but yeah just for your information that is what a NoSQL database suppose
+[5:02] okay next question guys I will lower in voice a bit because
+[5:13] I'm having some throat problem if you feel Anything not able to
+[5:18] understand or maybe boys is lo okay sorry
+[5:26] which product provides a managed Hadoop cluster which onequery
+[5:34] is a warehouse popsup is a messaging service
+[5:41] and data prog is where it provides a managed Hadoop clusters. So within the
+[5:49] exam wherever you see something like we already have a spark for Hadoop
+[5:53] infrastructure on premises and we want similar sort of support similar sort of
+[5:58] service in Google cloud definitely search where is data pro in the option.
+[6:04] Okay. Let's move on.
+[6:13] Yeah. Next question. So there is a specific mandate
+[6:40] that all access permission must be managed.
+[6:45] solely using IM roles at the bucket level. That means there is
+[6:52] no scope of applying some granular level access like ACL at the object level.
+[7:07] So this uniform bucket level access guys is a specific
+[7:14] GCS settings
+[7:18] that enforce a single or a uniform IM policy
+[7:25] that is used to access an enter bucket. Right? That means when we enable this
+[7:31] option that means uniform bucket level access option it automatically disables
+[7:37] the use of ACL access control place right
+[7:44] and it also ensures that access control for the bucket and all the objects is
+[7:51] managed solely through those IM roles and policies. Okay. So definitely this
+[7:59] is the answer. Other one I think we have already discussed more or less all the
+[8:03] things. So others are not at all related to this sort of permissions. So yes this
+[8:10] is a very important property on GCS bucket where we forced or we enforce
+[8:17] that we can only apply IM at the bucket level and there is no such option of
+[8:23] ground level access like SCL. Okay.
+[8:30] Oh yeah, we can check this one.
+[8:58] quite tricky. What do you say? Okay, I got some option A.
+[9:06] Okay, fine. Now maybe let let's first think like how
+[9:14] would you lock out those SSH connectivity?
+[9:18] What are the options through which we can lock out the SSH access? opportunity
+[9:28] appropri That's the option that you are telling
+[9:32] the fine agreed but my first question is how we can log
+[9:38] down the SSH access who can talk to whom. So definitely we
+[9:50] can use uh firewall rules. So the access can be
+[9:56] restricted with the help of fire rules. So from that perspective like if you
+[10:02] configure VPN right then you will see the VM but
+[10:09] you will not be allowed to access through SSH
+[10:15] right so that's the problem we have those VM we have some VPN connection but
+[10:25] then only then also I would say we will not have that option
+[10:29] to SSH into those webs. So irrespective of you try to connect
+[10:38] with like using VPN using cloud cell or anything it you will not be able to
+[10:47] access that BM through SSH option but it doesn't mean that you cannot manage the
+[10:55] VM. Now what does actually mean by managing
+[10:59] a VM? Managing a VM means you can start the VM, you can stop the VM, you can
+[11:04] resize it, right? So on and so forth. All those things. So all those actions
+[11:10] you can do without even sshagging into the VM.
+[11:16] You can do those things with the help of a simple G-Cloud command. But not so
+[11:21] simple like G-Cloud compute. But definitely there is other option with
+[11:25] the G-Cloud through which you can manage those VM. You can start it, you can stop
+[11:31] it, can do resizing all those things. Right? So that is where we need to
+[11:37] select this option where you should have some sort of permission to manage the VM
+[11:43] with the help of G-Cloud command even if you don't have an option to SSH to that
+[11:50] VM. Right? So it's option A and as I told you Sarah like even if if we use
+[11:58] VPN it will able or it will give me an option to see the VM but it will not
+[12:05] give me an option to SSH into the VM because we have some sort of restriction
+[12:10] already applied on that VM. Right? So our purpose is not to SSH into the VM.
+[12:18] purpose is to manage the VM and just by applying those G-Cloud command we can
+[12:24] definitely manage those VMs. So that's a tricky one but yeah that is how it goes.
+[12:31] Is it clear guys on this question? Any doubt?
+[12:37] So are we good on this question guys? Can I
+[12:40] get a quick confirmation? Yes, no. Thumbs up down everyone.
+[12:46] Great. Uh, can we do one more? Yeah, let's do
+[12:51] it quickly. One easy question then we can move to next level.
+[12:59] We want a globally consistent horizontal scalable uh sorry scalable RDBMS which
+[13:06] should be the right answer. Yes,
+[13:18] if we think about a global consistent horizontal scalability property, it
+[13:25] should always be cloud spanner. Okay, so yeah, that's the correct
+[13:31] answer. Fine, I think we are good with the quiz question. So, let me quickly
+[13:36] move to the next part, guys. And let me please know if you have any questions,
+[13:42] any doubt, whatever we have discussed till now.
+[13:47] Okay. So guys, when it comes to like simple
+[13:51] supertore, it has a straightforward environment from a security point of
+[13:57] view. So you have like several different types of users who are going to have
+[14:03] different level of access to maybe different services.
+[14:08] Some will be employees, maybe other will be customers who need to access uh that
+[14:15] web-based portal on that part from that particular store, right? That means as a
+[14:20] baseline, you want to make sure that you expose the service as little as possible
+[14:28] being an associate cloud engineer, right? And when a service is accessed,
+[14:33] user only can access what they need. Nothing more than that. And if you
+[14:41] remember at the very first day, we talked about the principle of le
+[14:46] privilege. Yes, this is what we call it as principle of le privilege. Right? Now
+[14:52] additional to that your customer requires some added
+[14:59] compliance as like they carry some sort of like
+[15:04] sensitive information right maybe they are providing their credit card
+[15:08] information some financial data maybe if it's an medical organization they may
+[15:13] provide some medical data like that okay but because Simba superto is in a bank
+[15:19] or a healthcare center. So they did not to take care of those
+[15:26] high level compliance but at least they need to take care or they need to
+[15:29] concern about fewer compliances because compl companies working you any know
+[15:35] with some e-commerce sector and they are dealing with uh some sort of customers
+[15:41] information some sort of customers PII data so they need to maintain some sort
+[15:47] of compliance as well. Okay. Now guys, u as a whole Google has to deal with this
+[15:56] kind of issues. Fine. And they offer different tools to leverage those
+[16:05] compliance requirements. And I can tell you that Google has tons of those
+[16:10] security and compliance requirements and they need to fulfill those different
+[16:14] requirements. So the whole platform always under goes a regular external
+[16:22] audit and the audit confirms that the whole platform is like fully compliance.
+[16:29] The platform is compliance against PCI TSS against SOC2 against ISO against GDP
+[16:36] against HIP etc. Right? Now this comes or or I would say
+[16:44] there comes another question in my mind like if your system
+[16:50] that is implemented on top of GCP that system is also compliance against
+[16:57] those regulation. Let me make it more precise. See
+[17:03] GCP is compliance with GDPR. Then do you think that your system also
+[17:10] complies with the same because you have build a system on top of GCP. What do
+[17:16] you think? No. Someone is telling.
+[17:27] What about others? Yes. No. Not always. Okay. Makes sense.
+[17:38] What about others similar direction?
+[17:45] Mhm. So even if
+[17:49] GCP is compliance with all those regulations,
+[17:54] if we build something on top of GCP, it may or may not but majority is going
+[18:00] with no that is not complies with uh those rules and regulations.
+[18:08] Okay. So, um maybe I I can take that answer. Yes, it it's it's not always the
+[18:15] same or majority is definitely no because see Google is providing you tons
+[18:21] of things. Okay. But Google also says that something is also with customer
+[18:28] hands like granting privileges, configuring shared VPCs, taking
+[18:34] different decisions. So in other words like Google provides
+[18:40] you those tools, gives you those options for all those best practices, right? But
+[18:47] it's your responsibility from a customer's point of view to add her to
+[18:53] those roles as per your compliance requirements. It's your choice of
+[18:58] implementation guys. Right? Google will not enforce you to do or to maintain all
+[19:04] those best practices. Google will not ask you to like uh to take backups to
+[19:10] enable point in time recovery. Google will not ask you to like store the
+[19:15] encryption keys outside of GCP. They will not ensure that you are granting
+[19:21] just enough privileges. Okay, they will not ensure that you are creating a VM
+[19:27] without an external IPs. Okay, so those are definitely best practices that you
+[19:33] should follow maybe to to be compliance with some regulations.
+[19:38] So, so I say that guys the nut is that your task is to follow rules and
+[19:44] regulation as per your requirement. Okay, Google will definitely not enforce
+[19:50] you to follow those things even if Google has all the option all the tools
+[19:55] to help you to implement those compliance thing. Okay. Now guys in the
+[20:01] exam they will not ask you that uh say say hey you are building a system on GCP
+[20:10] for your customer and uh you should like follow GDPR compliance regulations.
+[20:18] Not like that. Rather they will ask you how do you make sure that the system or
+[20:25] your data stay in a specific region right or whenever you are creating a VM
+[20:34] that VM should be created in a within a specific region right so this is a
+[20:41] technical explanation uh from the part of privileges right so we need to sit
+[20:46] and think how our data stays in a specific region or whenever someone is
+[20:52] creating a VM that VM specifically being created in a specific region. Now guys,
+[20:57] can you quickly uh tell me that how we can ensure or how we can enforce
+[21:05] that whenever someone is creating a VM should be there in a specific region or
+[21:11] if someone is trying to store the data that should be stored in a specific
+[21:15] region. What should we do? How we can enforce the user to do the
+[21:24] same thing? Is there any policy
+[21:34] you do that as you got my question? Again I'm
+[21:39] repeating. Ah yes sir. So we are planning or we
+[21:46] want that whenever a user is storing our data that should be stored in a specific
+[21:51] region. Now in order to maintain that specific compliance we want to or we
+[21:58] need to use organization policies or OP policies right so ox policies helps us
+[22:06] to enforce that type of constraint to the users for a specific project for a
+[22:12] specific folder or for a specific organizations over there. Okay.
+[22:19] So now you going to able to understand that in the exam it will be more about
+[22:26] security right. So we will be concentrating on on all those different
+[22:32] services different options different features available based on security. So
+[22:37] guys do remember one thing there is no such central global security service in
+[22:44] GCP right. So instead when you are
+[22:49] architecting for the customer you will be or I'll say you will have to apply
+[22:55] different security policies like binary authorization you need to apply data
+[22:59] loss prevention. So so you need to apply those different encryption u key storing
+[23:06] concept that we have. So whenever you are designing a VPC, you need to take
+[23:11] the decision. Should it be a normal VPC or I would be planning for a shared VPC.
+[23:18] When I am creating a VM, should I restrict public IPs? Yes or no. Right
+[23:24] now, do I allow people to SSH into my VMs? Yes or no? Do I arrange some locks?
+[23:33] Yes or no? Or or what should be my plan to design an IM? Right. So those things
+[23:39] you need to build brick by brick. It's not that like central global security
+[23:47] service where I just press the switch. I I just click a radio button and and
+[23:53] okay, I'm secured fine. I do not need to do anything over there. No, it's not
+[23:58] like that. I need to build those service step by step break by break and uh I
+[24:06] should be the or should be the process to maintain the entire security and
+[24:10] compliance things right so that's the process not a single step of clicking
+[24:15] something and being secure on every aspect okay remember that tip now that's
+[24:21] it about symbol super from security and compliance perspective
+[24:26] if we have any question. Let me check. No. Then let me switch to the next topic
+[24:34] that is GK. Now guys, GK is another uh important topic from the
+[24:41] exam point of view. So let's spend a bit of time on this particular topic. But
+[24:47] again, I will here I will try to highlight some of those GK topics that
+[24:52] that are important. I will left you with some slides or maybe some links to cover
+[24:58] by your own, right? So yeah, let's see how it goes.
+[25:04] So guys, first of all, the recommended and default type of GK cluster is the
+[25:12] autopilot one. Okay. But uh maybe in the exam
+[25:20] you may expect some question from the standard GT cluster as well. Right? So
+[25:28] from the exam perspective we should be aware about the difference between these
+[25:35] two like autopilot mode and the standard mode of GKE cluster. like maybe G
+[25:40] autopilot is a fully managed cubernet that offer
+[25:46] or offering the eliminates or it I would say eliminates the need for those I
+[25:52] probably yeah manual cluster management concept right
+[25:58] compared to G standard which provides you I would say more flexible and
+[26:04] control over the cluster configuration and the management Right. Major
+[26:09] difference. Now when it again when it comes to GQ autopilot that offers
+[26:14] automatic scaling and resource optimizations which makes it an ideal
+[26:21] for workloads with like unpredictable traffic pattern again compared to the
+[26:27] standard mode which allows you to take more granular control over the cluster
+[26:35] resources I would say. Okay. And as the name suggest autopilot. So Gi autopilot
+[26:41] has those automatic concept which again has those higher costs compared to the
+[26:50] standard one which offers those simplified management and
+[26:56] uh like better control on the operational overhead. Okay. So that is
+[27:00] how the difference between this autopilot and standard mode
+[27:04] is there and again from the exam perspective try to remember those
+[27:08] differences. Okay. Now maybe you might see some question again uh in the
+[27:15] concept over here like pod disruption budget basically they allow you to keep
+[27:21] your application healthy as well as available even if like you are updating
+[27:27] it to a newer release I would say. So for example like when you want to
+[27:35] quickly replace one version of your micros service with a new one in that
+[27:42] circumstances we know that being quick might be important but at the same time
+[27:49] it's also very important to have our application up and running while while
+[27:54] while it is being updated and and this is where you should be familiar with
+[28:00] this particular concept that respion right. So u maybe from the exam point of
+[28:06] view if you want to go a bit deeper guys there is a link provided in the exam
+[28:11] tips definitely go through that particular link okay
+[28:16] now here we see a couple of best practices regarding G upgrades mostly at
+[28:22] an infrastructure layer it's more about letting you to go and Google will do the
+[28:28] update for you so you should enroll to one of the channels and Google is able
+[28:33] able to like update the cubernetes layer both for the control plane and the
+[28:41] worker nodes. Okay, so it's like nothing complex. It's simplest thing that you
+[28:46] make your cluster up to date and definitely secure over there. Right now
+[28:52] guys, another important thing from G perspective like when it comes to
+[28:57] controlling access to your GKE cluster, you can follow here two different app
+[29:03] code that is one is IM
+[29:07] or or that means another one is AB. So you can use just IM or you might use IM
+[29:14] at the project level I would say. And if you have different group of developers
+[29:20] using different name space or clusters that's where you might supplement IM
+[29:26] with arbback which is kubernetes native way
+[29:32] of managing the permission. Okay, that's what ourback is. Now what is should be
+[29:38] the best practice? Now guys, Google tells you that you might use IM at the
+[29:43] high level at the project level where someone is giving
+[29:49] or given an IM roles for managing clusters by themselves and if required
+[29:55] you can supplement that approach with arbback so that the cubernet specific
+[30:01] access control can be done at the lower level
+[30:06] that means maybe uh let's say for your developers
+[30:10] that you want to give them or grant access for a specific
+[30:16] name space not to the entire cluster. Right? So for them ABback is good where
+[30:24] one set of developers have access to a specific name space or
+[30:29] another set of developer have an access to another name space. So they have
+[30:34] privileges to do something on their own name space without interfering with
+[30:39] others. So to make sec this ground level access to make it it more secure to make
+[30:46] it more
+[30:49] like compliance with different activities better to use AB at the
+[30:55] namespace level or if you want something okay I can I want to control at the
+[30:59] higher level at the top level at the cluster level then you can use IM access
+[31:05] over there. So that is how you can plan when it comes to using IM or arbback
+[31:10] when for controlling access of GK clusters. Okay.
+[31:16] Now another important thing over here is GK sandbox which is something again I
+[31:22] would say you need to understand at the very high level mostly
+[31:27] at the use case perspective not too much deep. Now this feature basically
+[31:33] prevents untrusted code from affecting your kernel on the VM level. Right? So
+[31:40] maybe you need to use a Docker image that you don't trust at all. For
+[31:47] example, you are using one from a third party provider. You download that kind
+[31:54] of a GK image that you don't even create it. So you
+[31:59] don't able to see what is there inside again then the security best practice
+[32:04] would be to use an additional preventive mechanism right and that is where we are
+[32:11] planning to use this GK sandbox it's like another security layer another
+[32:17] security mechanism right so basically for it is for those
+[32:23] docker containers where you don't have a full insight about
+[32:28] Right. And that's it I would say. So from exam perspective, it should be
+[32:33] pretty enough for you to know uh what uh like GS and boxes. That's it.
+[32:41] Now guys, in the exam you also expected to know how do you
+[32:47] count the C ranges like when it comes to GK networking again it's a pretty
+[32:52] complex topic. You have different subnets for GK nodes. Then you have
+[32:57] subnets for your like for every ports because see Ps gets its own IP address
+[33:04] for GCP also you have different C range for your services right now we have
+[33:12] different layers of C ranges for within G right for for for services for
+[33:19] clusters everything now if we just select a default C range what will
+[33:25] happen it may waste maybe tens or even hundreds or I'll say even thousands of
+[33:30] IP addresses. Okay. So we need to explicitly plan the size of the cluster
+[33:37] as well as the amount of ports that we will be having or we will be using for
+[33:41] my project. That means the exam guys expects that you can able to optimize IP
+[33:48] usage for GK by calculating subnet sizes for your GK nodes for your course for
+[33:53] your services based on your business assumption I would say right. So the
+[33:59] questions may ask you like hey you are planning to have a GKE cluster okay it
+[34:05] will have like up to 12 nodes and up to like 20 ports per node what is the C
+[34:15] range that you need to assign to your nodes for your ports or or maybe for
+[34:19] your services right and that's where guys you need to do some calculation
+[34:25] okay so um if you know that thing like 2 to the^ 32
+[34:32] minus the mask size. So that's the basic formula or if you have some confusion
+[34:36] how to do those calculation I have a nice video attached within this deck
+[34:41] under this exam tips you can just go through that right so u I think you'll
+[34:47] feel confident when you go through that video um to do this type of like for
+[34:52] this example right uh the question ask you to choose an optimal subnet size for
+[34:57] a GK cluster with those like four nodes up to I don't know like 110 ports for
+[35:03] each of them. So if you need know the rules, I think it should be very easy to
+[35:09] do those calculation, right? So do couple of uh those practices to
+[35:14] calculate those area ranges. I think from exam point of it should be good
+[35:18] enough for you. Okay. Now one more interesting thing guys, private
+[35:24] clusters. Now what are private clusters? Private clusters are like or I would say
+[35:31] similar to VMs without external IPs. Okay. Now here you just need to
+[35:39] understand that what is the surrounding concept
+[35:44] I mean in a simple term like uh your VM within a cluster wants to reach
+[35:54] GCP services but this time that VM is having or or is not having any external
+[36:02] IP that means it is a private cluster. So you have a private cluster but your
+[36:08] private cluster wants to access other GCP services how you can do that thing
+[36:15] with the help of private Google access. So if someone needs to communicate
+[36:22] with Google services, you need to use private Google access. Right? Just
+[36:29] remember this term. And if the same node wants to access
+[36:36] some external services, some external resources,
+[36:41] definitely they can do that with the help of cloudnet. So again from exam
+[36:46] perspective we just need to remember these two term.
+[36:53] Okay I think the audio is clear now. Fine.
+[37:03] Okay guys a couple of words with workload identity.
+[37:08] Now in the past if your G key ports needed to access a GCS bucket or let's
+[37:16] say any GCP services what should you do? First you should like create a service
+[37:24] account then grant it appropriate permission then you would create a key
+[37:31] that means service account key right and then you would inject this key to the
+[37:38] board in the GKE cluster so that's a standard approach I would say that was a
+[37:45] standard approach but nowadays Google says that service Account keys are not
+[37:52] the best practices. Why? Because those are like encrypted password to be flying
+[37:58] around those public network not secured right that is why they are now telling
+[38:05] use workload identity. Okay, that means in in short I would say
+[38:12] workload identity is a mechanism where you allow your Kubernetes service
+[38:16] account to use the GCP service account. Right? See the process one service
+[38:24] account is using another service account. Kubernet service account is
+[38:29] allowed to use the GCP service account and if they are been allowed then you
+[38:36] don't need to generate any keys and this will allow your cubernet sorry
+[38:44] ports. So this will allow your cubernet pods to take to your or or to like
+[38:50] connect or maybe talk to your GCP services without creating your service
+[38:56] account keys or without injecting those keys because as we said those are not
+[39:03] secure. So workload identity will help us to communicate one service account to
+[39:09] another service account and those communication happens without any key.
+[39:13] That's the idea of using workload identity over here. Okay, we will not go
+[39:18] into depth wise on this topic. Okay, I think uh if we know those things, we
+[39:25] should be good enough from the GCB perspective within the exam. Okay, but
+[39:29] don't miss to cover those exam tips, those links, those video that I've given
+[39:34] on those different slides. Okay, now let's move to Cloud Run. Before that,
+[39:41] let me check if we have anything in the chat.
+[39:45] Okay, I think so. Let's now move to cloud run guys if you don't have any
+[39:50] question. Okay, now see you can think about cloud
+[39:58] run like a serverless kubernetes in GCP.
+[40:05] Okay. So here you don't want to focus on the clusters at all. You don't want to
+[40:13] build a cluster. You don't want to set it up. Rather you want to focus on your
+[40:19] GK uh sorry focus on your Docker images. You just want to focus on your
+[40:24] application on your logic on on the microservices. Right? Then you just say
+[40:32] okay Google let me deploy it let me use the HTTPS
+[40:38] endpoint that you are providing me for the application right the scalability
+[40:44] part you just take care of it I'm not going to see those things okay so on
+[40:51] that circumstances guys Google always preferred cloud run it's it's purely
+[40:57] serverless so let's say for an example Example,
+[41:01] you want to create a proof of concept by tomorrow. You want to show that thing to
+[41:06] your boss. Maybe boss wants to show that thing to the client. In that case, you
+[41:10] need to concentrate on the logic. You need to concentrate on the application
+[41:14] rather than like wasting time on on those underlying
+[41:19] infrastructure, right? So that is why you can think of using cloud run. That's
+[41:24] the best use case. Okay? So guys, the prerequisite for cloud run is a
+[41:29] stateless micros service. To remember one thing, maybe some of you
+[41:35] can be get confused like stateless means somehow you move the state outside of
+[41:41] the cluster maybe to cloud SQL, maybe to memory
+[41:46] store, maybe uh like to any storage and then you deploy it to cloud run.
+[41:53] But if it is stateful then again you need to think of using some other
+[42:00] service like GKE. Okay. So but the stateless
+[42:08] that is what cloud run is. So guys the takeaway is the difference is not only
+[42:14] about whether it's a full serverless or not but also about stateless or stateful
+[42:21] nature of the service or the application that you are thinking of using
+[42:26] okay a fine
+[42:30] guys uh till now I think we don't have any chance to get or to discuss about
+[42:37] app engine But please make sure to know the basics
+[42:43] of app engine as well. Now app engine is a platform as a service type of
+[42:50] environment. Meaning similar thing like you basically don't
+[42:56] care what underneath is. You just need to like deploy your application
+[43:03] right maybe uh it it had some sort of limitation. We
+[43:08] always respect those limitation of app engine but you can enjoy a lot of out of
+[43:14] the box features like automatic scaling maybe easy canary deployment or new
+[43:20] versions all those things within app engine right and app engine is suitable
+[43:26] for web applications without those typical request response kind of traffic
+[43:31] like we have in HTTP or HTTPS okay and it's Always good to differentiate
+[43:39] between the two environment of app engine that is the standard one and the
+[43:44] flexible one. At least we need to know the exact or
+[43:50] major differences that we have. Like in App Engine standard, it can scales down
+[43:57] to zero. But App Engine flexible there should be
+[44:04] at least one instance up and running even if there is no such workloads.
+[44:12] A good difference. Maybe another difference is like flexible environment
+[44:17] supports multiple programming languages compared to a standard environment where
+[44:23] we have some specific programming languages that it supports. So those two
+[44:28] environments has different pros and cons I would say or maybe subtechnical date
+[44:33] that that they want to uh keep in those two different environments
+[44:39] and keeping those different I would say technical depth in mind
+[44:46] Google cloud moves to cloud run right so at this
+[44:52] point of time maybe a question comes in your mind if we have Everything in app
+[44:57] engine is also a performance service is also uh uh like doing more or less
+[45:03] everything that we can do with the cloud run. Then why we are using or why cloud
+[45:10] run is so popular all those things. Now guys uh let me just tell this thing in a
+[45:16] more precise way. See app engine was developed by GC. This is the first
+[45:26] stable service or stable platform as a service
+[45:30] within GCP is app engine and it is developed in the year 2008 if I'm not
+[45:36] wrong on that. Okay. Now and at that time there is not even we have those
+[45:41] like containerized approach of cubernetes
+[45:45] right at that time because cubernetes if I'm not wrong it's developed around 2014
+[45:51] or so but it is in 2008 app engine. Okay.
+[45:55] Now after that they come up with some sort of technical like those those
+[46:02] something it's not able to scales down to zero. there is something where they
+[46:06] are not being supported on those different programming language. So
+[46:09] that's why they try to come up with different environments to cope up those
+[46:13] technical debt. Okay. And it is going fine till 2018 or 19 where GCP comes up
+[46:20] with cloud run which has all the advantages of those app in environment.
+[46:28] That means cloud run can scales down to zero as well as it supports all the
+[46:34] programming language uh that we want to develop an application. Okay. So
+[46:41] that's why small slowly but gradually the market
+[46:47] share the popularity of cloud run increases
+[46:53] and maybe um I'm I'm not so much speculative but maybe in the next four
+[46:58] five years we will only see cloud run because the graph is very much
+[47:05] increasing on that prospective okay so that's
+[47:10] I'll say this is more or less the basic difference uh between app engine and
+[47:14] cloud run and why cloud run is so much popular nowadays. Okay. Now with both
+[47:21] app engine and cloud run you can or I'll say both are like used with to create a
+[47:28] complete application. We have another uh platform as a service
+[47:34] but which is not used to create a into an application but this is again very
+[47:39] useful that is this one cloud function. Okay, it's a serverless compute
+[47:44] environment but specifically used for some eventdriven activities. So it's
+[47:50] like a small piece of code somehow sleeping
+[47:55] but when some event is being triggered that code wakes up executes
+[48:05] do some activity again goes to sleep right so that's the purpose of using
+[48:11] cloud function or that is how cloud function is being executed it is it it
+[48:15] is it is also has those automatic scaling features it can also scales
+[48:19] round to zero. It has a billing feature of like
+[48:24] or I would say billing calculator based on 100 milliseconds or per 100
+[48:29] milliseconds like that. Okay. So even if uh so from the exam point of view you
+[48:34] see some questions where it's likely can written as eventdriven activities
+[48:40] some event is being triggered like that then try to find out where is cloud
+[48:45] calls. Okay. So any doubt till now guys
+[48:53] please provide a use case to define the use of app engine and cloud front. I
+[48:59] want to western web application I can use app engine I can use cloud run
+[49:07] that's a basic simple use case. Okay sum
+[49:15] is it clear? Uh no but uh which one to choose? What what are the
+[49:21] >> anyone technically anyone you can choose
+[49:26] >> now again it's your so now what point of what should be your
+[49:32] question I can choose anyone I can use anyone but as I told you from market
+[49:35] share perspective from those pros and cons thing it's always better to use
+[49:40] cloud run above app engine we always prefer to use cloud run
+[49:47] okay because when you use app engine which one to choose flexible or uh the
+[49:52] standard one that may be a question and both has some advantages some I would
+[49:57] not say disadvantage but some technical debt okay so better to go with cloud run
+[50:03] that's the thing that we from uh that perspective technically we can't
+[50:09] differentiate these two but we have those small differentiation that it's
+[50:15] always better to use cloud run above app engine.
+[50:20] Am I make you understand or still some queries?
+[50:24] >> Yeah, I'm able to but not able to uh um define the in which use cases the which
+[50:31] uh uh module will be used and it is beneficiary.
+[50:35] >> See see both is a platform as a service.
+[50:38] >> So from use case perspective we can choose anyone. Now if you dig drive a
+[50:44] bit like I want something some platform that can scales to zero that and
+[50:51] definitely we can apply any sort of programming languages we can apply some
+[50:55] containerized approach then I should use cloud run above app engine.
+[51:04] >> Okay.
+[51:05] >> Okay. So th those small difference are there. But if you think as a use case
+[51:10] perspective as a whole both works the same from that place that activities
+[51:16] like I want to host a web application I can use anyone now I need to think like
+[51:21] those small small things
+[51:24] >> then I can choose so that's why we use or we prefer app engine has those small
+[51:30] days those technical things so why not use cloud even if from the exam point of
+[51:35] view guys for everyone in the exam If you got similar sort of question like
+[51:39] I want to host an web application and you have both the option like app engine
+[51:45] and cloud run in the uh on those four uh options then I would suggest you to
+[51:51] choose cloud run not app because of those small advantages that we have in
+[51:56] cloud. Yeah. Great.
+[52:06] Okay. Now I think a bit more clear.
+[52:10] >> Okay.
+[52:13] >> Again repeating both from use case perspective both are same but from those
+[52:20] technicalities those advancements those popularity
+[52:25] we prefer cloud run compared to app engine but still we have both the
+[52:30] service within GCP. But as I told you uh as the current trend suggest in next
+[52:36] four five years maybe we will see uh lower or maybe some I don't know I I
+[52:43] can't be speculative but maybe more use of cloud run very very less use of app
+[52:48] engine and GCP is upgrading itself at every every time it's I'm not again be
+[52:54] speculative on deprecating that service but maybe we will as I told you maybe 5
+[52:59] 10% of app engine majority will be using cloud work. Okay. But yeah, if I see or
+[53:06] if I find some very specific use case to different those things, someone
+[53:09] definitely I will share with the globe. Okay. But yeah, I would say this is the
+[53:14] major thing when it comes to differentiating these two.
+[53:21] Okay. Moving on to is there any cost benefit on comparing
+[53:26] these two? I would say not such cost benefit.
+[53:35] The major difference should be from the technity perspective
+[53:39] as my opinion. It's not a huge cost benefit that we can
+[53:44] earn by using any one of them. Okay.
+[53:52] Fine. Let let maybe um let me see if any questions. Okay. Then let let's shift
+[53:58] the focus a bit to the next part and let's think about this standard IT
+[54:06] infrastructure. Now now when it comes to that standard IT infrastructure
+[54:11] I would say that any infrastructure can be broken down into hardware, software
+[54:17] and networking. Now
+[54:22] interacting directly with Google Cloud Console is like obviously great thing
+[54:27] but if you have some repetitive task if we
+[54:33] need to do or implement some resources repetitively.
+[54:40] It's always better to have something done in a automatic way and in that
+[54:47] sense we have some tools like Terraform that takes the resource requirement
+[54:55] which like provided via some configuration file and those
+[55:00] infrastructure that are written or that are required
+[55:05] that are mentioned within that configuration file should be built.
+[55:11] automatically. So yes, that is how we have the
+[55:15] terapform. So in Google cloud, we store teraf config file
+[55:21] where the configuration is written in a cloud storage bucket. Maybe by applying
+[55:26] those object versioning enabled if require right cloud build submits
+[55:32] terapform command via some file. it needs to access that cloud storage
+[55:37] bucket and we can do that. Okay. So, Terraform is infrastructure as a service
+[55:44] through which we can configure uh infrastructure automatically. But in
+[55:50] order to do that thing, we have different files
+[55:54] to maintain. I would say there are majorly four files
+[55:58] that we have within teraphform. first
+[56:02] cloud build file that is the configuration file where it is being
+[56:08] instructed like I need to configure this this this infrastructure we have a
+[56:12] backendtf file that stores remote terapform state information we have
+[56:18] another file called terapformtf state it stores the it stores terapform state and
+[56:26] it is it's a local file or it acts as a local file I would say we have another
+[56:30] file called main.tf that contains the overall terapform configuration.
+[56:37] So and in those are the four different files like in order to run a terapform
+[56:43] we have four different commands to follow.
+[56:47] One is terapform initialization command. If we use that particular command it
+[56:54] downloads the latest version of the terapform provider. Then we have
+[56:58] terapform plan. It verifies
+[57:03] syntax, ensures supported files exist, shows a preview of the resources
+[57:10] uh that that will be created. So those things are there within plan. And when
+[57:14] the preview is done, now it's time to apply that is terapform apply that
+[57:20] actually sets up the resources out based on that plan and or based on the thing
+[57:28] that I have written in the file. But if you want no that infrastructure is done,
+[57:35] I don't want those infrastructure now. I want to destroy those resources. Use
+[57:41] terafform destroy command. So it will list the resources of that specific
+[57:46] configuration file. So in it that downloads the latest version of the data
+[57:53] provider plan that verifies that everything is written clearly and it
+[57:58] shows you the preview that okay I am going to build that thing that is the
+[58:03] plan. Now if you agreed with the plan execute the plan that means apply that
+[58:10] plan apply terapform and once the work completed you want to destroy it use
+[58:16] destroy. Okay. So those are the four commands and previously it gives you
+[58:20] those four different clients. Again from exam point of view mainly we need to
+[58:25] know about the command and those files. That's it.
+[58:30] Okay. Uh those are some
+[58:37] useful materials uh for you again to cover.
+[58:43] So as I told you whenever you got time go through those materials right it's
+[58:47] those maybe they are termed optional but I would say try to cover whenever good
+[58:53] sub so any any question any other question
+[58:59] apart from this one are we good guys uh to destroy the data
+[59:07] from config you need to specify the file name as well Yes. Yes.
+[59:15] Need to complete the entire command. Okay. Any other question guys? Are we
+[59:21] good? Yeah. Thumbs up, thumbs down. Yes. No. Can I get a quick confirmation so
+[59:26] that I can move to the registy question guys? Everyone.
+[59:33] Yeah, I see some. Okay. Great. Fine. So let's start with question number one.
+[59:41] Here it is. A tricky question. Let's see. Take your
+[59:51] time. Read it. I got a B.
+[1:00:30] Okay. So,
+[1:00:39] it has a mediumsized MySQL database. The database already has some
+[1:00:48] userdefined function and those functions are used internally. That mean somehow
+[1:00:55] they have already created internally and for their own use they are also
+[1:01:01] using them. The sales department asks you to migrate
+[1:01:07] the database to G-Cloud in the most timely and economical way.
+[1:01:18] H good
+[1:01:24] implement a cloud database instance using cloud SQL back up your local data
+[1:01:29] and restore. So we are definitely going with option B
+[1:01:36] and I would say this is as of now the best option. Why?
+[1:01:43] Because they are using cloud SQL the manage service and we have started
+[1:01:48] discussing at the very first day that whenever we are trying to migrate to GCP
+[1:01:54] it's always good it's always better to use a managed service. So definitely
+[1:02:01] option B is the right answer. But let me highlight the keywords.
+[1:02:10] So guys from this particular keywords medium size my SQL database I agreed to
+[1:02:16] use cloud SQL definitely
+[1:02:21] and in terms of timely and economical way again I agreed to use cloud SQL
+[1:02:28] but I have a small problem what is that about this one userdefined
+[1:02:36] function cloud CloudSQL
+[1:02:41] does not support userdefined function. That's the problem. If we don't have
+[1:02:51] those local or internal userdefined function, we can easily use cloud SQL to
+[1:02:59] migrate the entire thing and this should be the most timely and economical way.
+[1:03:05] But as we have those userdefined function,
+[1:03:10] cloud SQL doesn't support this thing. Maybe we can use those CloudSQL specific
+[1:03:17] function those uh aggregated function and all those things that are there in
+[1:03:22] cloud SQL definitely but like using create function we can
+[1:03:29] create our own function within cloud SQL but here as they're telling that they
+[1:03:34] are they're having those userdefined functions those functions are created
+[1:03:39] internally that means maybe they are using I don't know any programming
+[1:03:45] languages to to create those functions which are doesn't being supported by
+[1:03:52] cloud SQL as of now I'm eliminating option B guys
+[1:03:59] that's the problem now can we shift our answer if we agreed
+[1:04:05] with why not to select option Okay. So if we eliminate option B
+[1:04:16] because of that typical userdefined function. Now among A, C and D which one
+[1:04:22] to choose? See option A tells that find a MySQL
+[1:04:39] machine image in cloud marketplace and configure it to meet the need. Again
+[1:04:43] technically this is correct. I don't have any issue on this one. Technically
+[1:04:47] this is correct. But in order to use something from
+[1:04:53] marketplace and
+[1:04:57] configure that thing within a VM need some manual configuration.
+[1:05:07] Okay. So Google always ask us to avoid marketplace or maybe keep this concept
+[1:05:15] as the last resort because it's having those like more
+[1:05:19] manual intervention uh more manual configuration
+[1:05:24] more manual work to deal with. So let's find out if something there in option C
+[1:05:31] and D to work with. So within C and D they're asking like
+[1:05:40] configure a compute engine VM with a specific machine type then install MySQL
+[1:05:48] restore your data to new instance. Option D more or less doing the same
+[1:05:53] thing with a different machine type. So C and D are giving us a lift and
+[1:06:00] shift approach. Maybe it's also timely
+[1:06:06] some economical way done. But which one is more optimal now? C or
+[1:06:13] D? That's the thing. C.
+[1:06:20] Okay. I'll also go with C. Now why I'm telling that? Let me go to the console.
+[1:06:28] Maybe let me try to check.
+[1:06:42] >> Maybe let me try to game. I think someone is unmuted guys.
+[1:06:47] Please mute. Can you please mute?
+[1:07:03] Please mute. You're unmuted. You're talking.
+[1:07:11] >> Uh so create an instance.
+[1:07:21] >> Okay. Ash is an option to mute from your end.
+[1:07:36] >> Still not muted. Okay guys, so if I just go down,
+[1:07:50] see they're giving us two different machine
+[1:07:53] type, right? Just come back. One is N2, another one is E2. Now why you have
+[1:07:59] selected N2? Because see in E2 is telling low cost dayto-day computing.
+[1:08:05] end to telling that surprise performance again puja I'm repeatedly asking you to
+[1:08:14] just mute yourself this is this is like a very noisy thing is disturbing thing
+[1:08:19] for the other participants
+[1:08:26] >> I think he's away from the mic can't ad can't admin mute him
+[1:08:32] >> no it's not again from I said yeah I think now it is muted okay the person is
+[1:08:39] please take care of this please don't disturb others
+[1:08:45] okay sorry guys I'm back yeah as I as I'm telling you they are asking for a
+[1:08:53] mediumsiz my SQL database now it's always better to have something a good
+[1:09:01] have some balance between the price and the performance Okay, rather than those
+[1:09:06] low cost thing. So keeping that thing in mind, we have used
+[1:09:13] N2 or we have selected N2 machine time and other concept remains
+[1:09:19] the same. Okay. So yes, option C is the correct one.
+[1:09:25] So guys, definitely this is an ideal question to make you understand that is
+[1:09:31] not always technically thing that we choose. we always think of finding the
+[1:09:36] optimal solution. So at first maybe 80% we are agreed with option A but somehow
+[1:09:43] we stuck in that userdefined function. So we move to another phases another
+[1:09:51] step and between C and D again both are somehow technically correct but optimal
+[1:09:58] solution when we moved about this medium size. Every keyword counts. Every
+[1:10:04] keyword is important. That's why we selected option C. Could not be it more
+[1:10:10] economical. Definitely that it be more economical. I
+[1:10:15] agreed with you. But that thing will come. Second, first we need to justify
+[1:10:22] the technical requirement of a mediumsiz thing.
+[1:10:27] keeping something or or reducing the price if it hampers the technical
+[1:10:32] requirement then it doesn't make any sense to like make something in a lower
+[1:10:36] price. So first of all we need to think about the technicalities then find out
+[1:10:43] how to keep the same technical aspect in mind and reducing the cost. Okay. So
+[1:10:49] that's why we just take the technical measure first then we think about
+[1:10:57] economical thing. So that's why we see I agreed it should be technical uh
+[1:11:02] economically more feasible but C is technically more feasible and we would
+[1:11:08] keep technical thing ahead of economical. So technical first priority
+[1:11:12] then economical things comes at the second thing. Okay. One difference is
+[1:11:17] store your data to new instance which is not mentioned in D.
+[1:11:23] Maybe this is a good point Z once again. Yeah, excellent point but uh this
+[1:11:33] would be the second difference not the primary one. Primary makes again on that
+[1:11:40] medium size thing I would say. Okay. But yeah, good good point. Good. Yeah.
+[1:11:47] Any question guys on this one? I think everyone is good. So let's let's
+[1:11:53] move to the next question. What do you say?
+[1:12:43] So uh e-commerce department of the organization
+[1:12:49] has some manage instance groups. Fine. Okay. I got one D. You need to update
+[1:12:56] the operating system of the instance in an automated way. That's the myth. Now
+[1:13:04] if we use VMs or let's say this manage instance
+[1:13:10] group we have an option to automatically update those configuration right
+[1:13:20] it is somehow easy but not so easy compared to those platform as a service
+[1:13:25] because they are taking because their Google is taking care of all the
+[1:13:28] responsibilities over there but here we definitely has an option to update
+[1:13:34] computation independent the VM in MIG based on those different configuration.
+[1:13:39] I'll be sharing you with this particular link. You can check that link and I'm
+[1:13:44] putting that in the chat. And if I want something to update automatically
+[1:13:52] uh where it is see this one update type we have two
+[1:13:58] different update types. One is proactive which is automatic
+[1:14:04] update. Another one is opportunistic which is a selective update. Right. But
+[1:14:09] as the question suggest I need some automatic update.
+[1:14:15] So which one to select the proactive one. Okay. Now sometimes
+[1:14:22] this type of direct question we can face. So just go through the document
+[1:14:27] and just remember that automatic update is always related to this proactive
+[1:14:32] word. Okay. That's it.
+[1:14:40] Now some mod you have selected option D I think is this abandon each of the
+[1:14:45] instances in the main instance group delete the instance template do you
+[1:14:49] think this is an automatic approach no it's not at all an automatic approach
+[1:14:58] the abandoned instances are not like deleted or replaced and it also doesn't
+[1:15:03] minimize the resource use but yeah this is not at automatic one. Okay, straight
+[1:15:09] away. Yeah, I think it's clear.
+[1:15:14] Good. Next one. uh questions related to GKE, right?
+[1:16:05] Let me just show you the keywords. So the development team want to build a
+[1:16:18] small cluster for pilot use
+[1:16:24] and they doesn't want that thing to be highly available.
+[1:16:34] See? What about others? I'm waiting still
+[1:16:49] guys for others to answer. Think it think in terms of those
+[1:16:56] keywords. does not need to be a highly available
+[1:17:02] means we want something to be zonal in a very small area because
+[1:17:10] we are using this for a pilot one right so better to use some zonal cluster to
+[1:17:15] test to start with yes uh so I'm really great so you should be thinking on the
+[1:17:22] zonal part so if we use option C it is thinking for
+[1:17:30] some regional cluster I don't think so
+[1:17:41] which one so on that circumstances
+[1:17:48] yes option B is the correct answer and I can tell you some more uh yes option B
+[1:17:57] other interesting difference. Just remind me. Uh let me go to the console
+[1:18:02] and let me show you. See GKE just let me show you uh let me try to
+[1:18:10] create a cubernet. I think I have time. So I can show you
+[1:18:16] a very interesting difference that will also help us to understand
+[1:18:22] this question a bit in a better way. See, I'm going to create a cluster
+[1:18:31] in Kubernetes. So, I go there.
+[1:18:36] Now, when I'm uh uh showing you GK, see I'm telling you that it's all about auto
+[1:18:44] cluster, right? So, auto mode. Now, if I click on create,
+[1:18:50] this is already autopilot one. So by default the option is autopilot
+[1:18:58] NGK right and it gives me a name. Now the thing that I want to show you see
+[1:19:06] regional that means when I'm trying to create a autopilot cluster
+[1:19:14] we need a specific name and region that means autopilot clusters are regional.
+[1:19:22] Got it? We can't create a zonal autopilot cluster.
+[1:19:29] Now, if we switch to a standard mode like this one, if I go there, switch to
+[1:19:35] standard cluster.
+[1:19:39] What I can see here I have uh
+[1:19:49] two different option. I can create a zonal standard cluster as well as I can
+[1:19:56] create a regional. Okay, that means one thing uh we are sure if we think about
+[1:20:04] creating autopilot it should be zonal there is sorry it should be regional
+[1:20:08] there is no zonal autopilot but if we think of using or creating something
+[1:20:14] zonal it should be a standard cluster not autopilot one. Now if we go
+[1:20:22] to option AC they are telling implement an autopilot cluster in US central 1A.
+[1:20:29] This is a zone and they're asking about autopilot. So
+[1:20:33] the option itself incorrect. Eliminate it.
+[1:20:38] In option C they are telling implement a private standard regional cluster
+[1:20:45] in US central one with something some option. This is acceptable technically
+[1:20:51] but from the use case perspective we are eliminating this thing. Option D
+[1:20:57] implement an autopilot cluster in this region
+[1:21:03] uh with an Ubuntu image type again technically accepted but not use case
+[1:21:09] specific. So we are eliminating this word
+[1:21:16] right. So is it clear that what see concept technically we need to be more
+[1:21:23] sharp on differentiating or eliminating those option
+[1:21:27] right so this highly available gives us a clear idea about what we need to think
+[1:21:33] but also additionally I show you those technical differences which maybe on not
+[1:21:38] this question but on other question will help us to differentiate right so just
+[1:21:43] remember again once again autopilot should always be regional. Standard
+[1:21:49] maybe regional maybe zonal. Okay.
+[1:21:55] Private clusters because they want something to be in the pilot one. They
+[1:21:59] want something to be u within uh its own periphery within a single zone. That's
+[1:22:06] why private standard and private cluster also that they don't want to expose that
+[1:22:11] thing. So they don't have those actual IPs when they're creating those uh VMs
+[1:22:16] within those clusters. That's why private one right. So private
+[1:22:21] specifically to you to be used on within this their
+[1:22:26] small group. What is the link?
+[1:22:35] Just I will show you. I think the same thing is this one. this one guys about
+[1:22:41] those cluster configuration different autopilot one standard one so just get a
+[1:22:47] clear idea about those different clusters along with the basic concept of
+[1:22:51] GK useful one check this okay that's the link
+[1:23:05] any doubt on this one but
+[1:23:09] What about this one? Somebody doesn't ask me about this one with a default
+[1:23:13] pool and container optimized image tag. Can anyone tell me about this option?
+[1:23:35] Hm very basic concept
+[1:23:41] recall what I have given the difference between autopilot and standard
+[1:23:45] autopilot where the class 10 management is solely taken care by Google now here
+[1:23:52] you are thinking of a container optimized image that means you want
+[1:23:57] something customized and in the same time you want to use Um,
+[1:24:06] no it's standard, right? Oh yeah, you want to use default pool. I
+[1:24:15] missed this word. You want a default pool at the same time you want a
+[1:24:20] container optimized thing. Does it match?
+[1:24:25] Default means default whatever you given into take but at the same time you want
+[1:24:31] yeah you want some very customized that doesn't match default pool and counter
+[1:24:37] optimized word doesn't match that's why we also eliminate option C
+[1:24:45] yeah that that is one thing that's another part but just a technical
+[1:24:48] difference I'm telling you it's always region so we definitely eliminate option
+[1:24:53] D on that respect But also this is another difference why not to take C is
+[1:24:58] that default pool doesn't match with this container optimized image. Okay
+[1:25:03] another difference and another in option D as well see we
+[1:25:10] are using autopilot and we're also trying to use Ubuntu image
+[1:25:14] something customized but trying to use autopilot doesn't make
+[1:25:20] sense. So yeah, why I'm figuring out this thing to find out those differences
+[1:25:24] that you need to find out in your exam as well to differentiate or to select
+[1:25:29] the most optimal solution. Okay, let's do one more guys.
+[1:25:46] Now somebody's asking right difference between app engine cloud run. You can
+[1:25:52] get exactly this type of question in the exam.
+[1:25:59] Quickly deploy a containerized web application.
+[1:26:04] Let's give you the enter solution. And we have discussed we have talked
+[1:26:23] about this one multiple times right. We did not want to manage the
+[1:26:28] infrastructure you only want to pay when request that means autoscaling thing and
+[1:26:34] if we use app engine we have those technical debt. So better to use cloud
+[1:26:41] run guys and cloud function is not for those web application is more about
+[1:26:47] those eventdriven activities. So yes option C is the right one. Perfect.
+[1:26:54] Next in the exam they will not ask you direct
+[1:27:10] command but definitely uh you should remember some common command
+[1:27:19] or those differences among those common like this
+[1:27:24] I think I have a link to show you where it is.
+[1:27:31] So the purpose is what you need to analyze and act on files
+[1:27:38] being added. So which trigger? See straight away if we just go there we
+[1:27:45] have those two or so those four different triggers or four different
+[1:27:49] event types. Finalize, delete, archived, metadata
+[1:27:55] updated. Finalize used or occurs when you create a new object or override an
+[1:28:02] existing object and cloud storage creates a new generation of all those
+[1:28:06] things. So those are finalized. This delete occurs when an object is
+[1:28:11] soft deleted. Archived occurs when a live version of an object becomes a
+[1:28:15] non-current version and ma when the changes of the ma happens in an existing
+[1:28:20] object. So if I just come back to the question
+[1:28:24] first of all say within those four different option
+[1:28:29] finalize create change add we only have
+[1:28:35] finalize as the yes only uh possible event those are not
+[1:28:44] at all the event create change at nothing it's just the finalized work and
+[1:28:50] also So we have seen that over here is that
+[1:28:54] once occurs once you create a new object or override an existing object and that
+[1:28:58] is what the requirement is as well being added right so and the link or the
+[1:29:06] document that I showed you is already have there in the link. Okay, great. Uh
+[1:29:12] I think we can cover one more another important one guys quickly.
+[1:29:38] Right. In the uh interest of time, let me just uh describe this to you in the
+[1:29:43] next one minute. First of all, G-Cloud MB is not a command used to
+[1:29:51] create bucket. Okay. So, straight away eliminate option
+[1:29:57] A. Among those three options,
+[1:30:02] all are using JS till MB. Now, let me go back to the question. They're asking
+[1:30:08] that you do not plan to use ACL. Now
+[1:30:18] by default ACL's are
+[1:30:24] uh active means ACL evaluation is on by default.
+[1:30:31] I got a solution. Great. So by default ACL are on. So if you want not to use or
+[1:30:39] if you have a planning not to use ACL you need to explicitly turn this off
+[1:30:45] right that means T is also eliminated I it is being between B and C again I'm
+[1:30:55] repeating I have eliminated A because of this command I have eliminated option D
+[1:31:00] because they are not explicitly uh evaluating of or keeping this option off
+[1:31:06] ACL off so that's why we are emitting B between B and C
+[1:31:13] why we choose C uh any reason
+[1:31:19] those who have selected C H
+[1:31:27] why we have selected C guys dual region geo redundancy yes it is for dual region
+[1:31:34] mult multi-reional more about the entire country and other rather you will say
+[1:31:37] Asia Europe that is multi-reion but there we are asking for new year so
+[1:31:42] maybe if I selected two different region that will cater the entire new year or
+[1:31:49] it will get a major major portion of the new year right so that's why we select
+[1:31:55] option C not B if they asking uh that serving using
+[1:32:02] Asia then you will select multi region but as it's for New York city only it
+[1:32:08] will use dual region perfect it's maybe single region will not cater but dual
+[1:32:14] region will definitely c the ent um is it clear this question any doubt
+[1:32:26] fine before uh concluding today's session one more thing on this question
+[1:32:33] Guys, nowadays gs util command is also duplicated.
+[1:32:40] Nowadays we use g-cloud storage command. Again I'm repeating now we use g-cloud
+[1:32:47] storage not g-cloud lb. So anyhow this option isn't excluded but it's G-Cloud
+[1:32:52] storage command that we used to create a cloud storage bucket. GS command is
+[1:32:58] deprecated. So I like in exam I think if if they are
+[1:33:05] you can still see this GS2 type combined in the exam as well because not yet
+[1:33:09] updated at that point of time. So yeah but do remember that nowadays it is
+[1:33:16] G-Cloud storage not GST. Okay great any cloud or we are good to wrap up today's
+[1:33:25] session guys. I hope I got those thumbs ups. So yeah,
+[1:33:32] thank you. Thank you for joining the session. See you next week with some
+[1:33:35] more techno topic. Till then guys, happy learning and by the way complete those
+[1:33:39] labs and those technical uh training sessions that we have uh in
+[1:33:44] our learning plan. Okay, great. Thank you.

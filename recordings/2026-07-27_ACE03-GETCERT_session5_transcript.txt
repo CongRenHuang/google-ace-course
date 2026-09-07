@@ -1,0 +1,869 @@
+[0:00] Yeah. Uh I have completed all my seven laps but uh I got only two budges. I
+[0:07] don't know how uh I got I where I have left and what I have skipped. I I just
+[0:14] wanted to know about
+[0:16] >> so for this issue you have to contact the Google skills support team
+[0:23] um because it is related to their system. So maybe the progress is not
+[0:28] counted. So you have to contact the support team for Google skills.
+[0:33] >> Thank you. So the recording has started. Um also you sprink.
+[0:42] >> Okay. Yeah. But I saw a hand restra. Yes. You go ahead. Yeah. Before starting
+[0:47] my journey.
+[0:51] >> Hi.
+[0:52] >> Yeah. Hi. Uh just quick question. So the labs with star marks are necessary. What
+[0:59] about the action plans below like the courses we have to take that's written
+[1:04] in the drive are those necessary as well? I mean required to complete the
+[1:10] exam.
+[1:11] >> So um no the the ones that have no stars are not required to com to be completed.
+[1:19] However, they are helpful for you to complete the skill badges with the stars
+[1:24] mark. So because we have 400 credits, you are
+[1:30] free to use them for the learning.
+[1:34] >> Okay, sounds good. So basically, but the important ones are the starred ones,
+[1:38] right? The ones that are included in please complete.
+[1:42] >> Yes, that's correct.
+[1:44] >> I would not say important one, but yeah.
+[1:48] >> Yeah, like fill the watcher form.
+[1:51] >> Exactly. Yes. Exactly.
+[1:52] >> Yeah. Yeah. like I'm completing the other ones as well but I just wanted to
+[1:56] know that I'm on time to complete what's necessary first. Yes
+[2:01] for your voucher.
+[2:04] >> Okay, thank you. And one more question. This was conducted on Google Cloud. Uh
+[2:09] there is something called shell, right? But there is a similar platform within
+[2:14] the Google console. How to access that?
+[2:20] >> Let show that.
+[2:22] >> Tell is one programming command window. Yes,
+[2:26] >> I'm see you can see an activate cloud cell. If you click over here,
+[2:33] >> right, it will drive you to that command prompt where you can
+[2:37] >> no that thing I understand. But there is one more terminal window, right? Other
+[2:42] than Google shell or there's only one I'm confused but she
+[2:48] showed different ways to access them I guess. then you can just show me that
+[2:54] what you have seen or what is that in the online community I will check there
+[2:58] and let you know
+[2:59] >> it's like it was done on the first class that was conducted on YouTube live by
+[3:04] Hannah
+[3:06] >> just show me the link just show me the link or maybe you can just put that
+[3:11] thing the course name in the online community let me let me check
+[3:15] >> okay sure even I was going to go through but it is 4hour session so I didn't know
+[3:19] how to pinpoint to that but I'll go through that Yeah, no problem. Just just
+[3:23] show me the link. Let me just maybe I I have also some confused where it is or
+[3:27] whatever. Let me just go through that and template.
+[3:30] >> Sure. And one more thing, the quiz list you're sharing, it is this it is also
+[3:35] attached in our shared drive, right? The the Google forms quiz.
+[3:41] >> Yes. Yes.
+[3:43] >> Yes.
+[3:45] >> Okay. And how are the exams conducted? Should we go to a physical location or
+[3:49] it is like online? I will give I will give that information next week last
+[3:54] day.
+[3:55] >> Okay. Thank you. And are we allowed to use uh AI within the labs like we do in
+[4:02] current labs?
+[4:04] >> No no no not at all over there because there will no there is no such question
+[4:08] in the exam regarding labs. So there is no option.
+[4:11] >> We are not going to perform any labs.
+[4:13] >> No no no nothing
+[4:15] >> just uh quizzes multiple
+[4:17] >> MCQ questions. just MCQ question that you need to cover.
+[4:22] >> Okay. Okay. Thank you so much. Thank you.
+[4:25] >> Yeah. Welcome. Yeah. Yeah. Anyone else?
+[4:28] >> Hi, Ma here. Uh I think he's looking for the SSH window. Um there we can give the
+[4:36] comments. I'm not sure.
+[4:39] >> Yeah, let's check what is checking maybe. Yeah, I will check the offline.
+[4:42] No worries. Just share me the link or whatever information you have in the
+[4:47] online community. Okay, great. Thank you.
+[4:53] >> Okay, great. So, what else? Any question? Fine. So, let's start guys.
+[4:59] Welcome to week number five and I hope my screen is visible and already I have
+[5:04] some discussion so my voice is already clear to all of you. Fine. So, let's see
+[5:09] what we have in our plate for today. We will again start with some quiz
+[5:13] question, right? Then I will cover a bit of uh symbol super let's see what are
+[5:19] their next planning and what we can help in those aspect
+[5:24] then I will try to cover some more data storage services that we have in GCP I
+[5:31] think we have already covered GCS bucket we have covered cloud SQL a bit so I
+[5:36] will cover file store file store memory store a bit of spanner big query big
+[5:42] table so yeah lot of things that I'll be discussing today
+[5:46] and finally I'll be some diagnostic questions as well. Yeah. So that's what
+[5:51] we have for today. Let's begin with some quiz question. Uh let me quickly share
+[5:58] that screen. Maybe is it Yeah, I think
+[6:11] now it should be visible a bit more. Yeah, there it is.
+[6:16] What do you think guys? We have a
+[6:21] cloud source repository where we are storing our code. Right now, why we need
+[6:30] that source repository? Because maybe we have a team of developers who are
+[6:35] contributing or everyone is contributing on a particular code. So we are storing
+[6:41] those code over here. Now something is there in the middle.
+[6:46] I've already started getting some solution. Fine. That solution
+[6:52] will I don't know do something. Maybe it will compile code that code.
+[6:58] It will debug. It will check. So it will do some sort of activities over there
+[7:04] and then it will move that thing to container registry but guys do remember
+[7:11] that nowadays it's not container registry it's artifact registry okay and
+[7:16] then the rest of the things goes on as it is
+[7:19] so we got a solution yes it is cloud build so we have a source code
+[7:27] and cloud build use that source repository
+[7:34] to compile to debug and it creates some artifacts right so even if we haven't
+[7:40] yet covered this thing it's a good answer great answer so let me just
+[7:45] describe this thing in a bit elaborate way guys because we may expect one or
+[7:51] two question from this CI/CD pipeline that I'm just discussing right now so we
+[7:55] have that code over here then cloud will takes the code and put it into the
+[8:03] artifact registry. That is what we have discussed right now. Then what we have
+[8:07] what is the next step? We have that vulnerability scanning. Now what is
+[8:11] this? Vulnerability scanning is one sort of soft mechanism I would say. Now the
+[8:16] version is scanned over here and you have a report right that report may have
+[8:22] around I don't know like 5,000 lines over there. Now you can say like so what
+[8:29] what should I do with that report? Okay. And this is where uh the concept of
+[8:36] binary authorization comes into the picture. Right? Binary authorization is
+[8:41] a technical thing that allows you to either accept an artifact or maybe
+[8:48] reject it. meaning it will block some unsecured
+[8:54] untrusted object specifically in case of GKE and cloud. So it is acting as a
+[9:00] gatekeeper right. So initially the code is built then it does that vulnerability
+[9:07] scanning and before deploying it into the cluster binary authorization asks
+[9:12] wait let me check if you cleared the vulnerability scanning option yes or no.
+[9:19] If you did that without any maybe major loopholes
+[9:25] then I will give you the permission and take you to the productive cluster.
+[9:32] Okay. But if I found something wrong then I will I will not give you the
+[9:39] permission. I will be treating this as an untrusted thing. I will write some
+[9:43] audit logs for this activity and you will not be technically deployed to the
+[9:49] production cluster. Okay. Then maybe the developer comes to you and say hey where
+[9:53] is my image? I'm not finding that image in the production cluster. What should I
+[9:57] do? Then you can say like because of this and that your your image is not
+[10:02] there in the production cluster. That means you need to go back to your seat
+[10:07] do some changes. Maybe you need to add some uh some packages, some library
+[10:12] files. You need to do some changes on the code and again you need to start the
+[10:17] process from the very beginning. Okay. So that's an overall uh CI/CD pipeline
+[10:24] that we are talking and I think from exam perspective is that much we need to
+[10:28] know uh in a high level. Okay. So we are moving back to the question.
+[10:36] So yes, the answer is cloudp. Any queries on this one?
+[10:45] So let me move to the next question then.
+[10:52] Here it is. We need to test a risky update to an app
+[11:08] engine application, what to do.
+[11:17] So guys, again being an associate cloud engineer at least at a high level you
+[11:23] need to know how you can apply a new version of your application
+[11:29] and that next level how you can test it because this is again a part of a CI/CD
+[11:36] process that means let's say like you generate a new version every day and you
+[11:43] want to test that thing in the production because everything can't be
+[11:49] done in non-productive environment right so
+[11:53] you will be testing something that new version in the protein environment and
+[11:59] yes and if required you need to roll it back as well. Okay. Now
+[12:07] uh we if we are using virtual machine if we are using u some instance um
+[12:18] group uh let me just go there right gcp rolling update.
+[12:28] Okay I'm not sure. Yeah, let me go there. Right.
+[12:36] So if we are doing the same activity those update with the MIGs we can do the
+[12:42] same thing but with some extra effort. We can do those scannery update we can
+[12:48] do different activities if required. We can roll it back. Everything can be done
+[12:53] within the VM itself but with some added effort. But if we do the same within app
+[13:00] engine, if I just go there and try to do the same thing in the app engine
+[13:09] like if I have the version over there. Yes, we can do that thing very easily.
+[13:16] How? If our application is running in app engine, there we have a concept
+[13:23] called versioning. I'm just showing over here.
+[13:30] Uh this taking up time today. Yeah. It is right. See in app engine we
+[13:44] have a concept called versioning. That means say you have two different
+[13:49] versions already there uh in app engine. Right now I don't have a version to show
+[13:54] you but there should be a bug. There is a bug like in the top we have version
+[13:59] one in the top we have version two and there is a bar where you can adjust the
+[14:04] traffic by just scrolling the bug. Let's say you want maybe two three% of traffic
+[14:12] to be diverse to version two. You can do that and the remaining traffic at same
+[14:18] as in version one. Now gradually if you see okay version two is working properly
+[14:23] we don't have any any complaint we don't have any glitches so definitely we will
+[14:29] start increasing the bar and moving the traffic from version one to version two
+[14:35] right so that is how the entire concept grows over here so here we need to
+[14:43] deploy a version and as I told you we should be having a bar we should be
+[14:48] having that option of splitting the traffic with some sort of percentage in
+[14:54] the newer version and later on gradually we can increase those traffic from older
+[14:59] one to the newer one from zero to 100 and we can just after covering 100% of
+[15:05] the newer version remove the older one right so that is how we can test a risky
+[15:11] update in app engine very easily okay I hope there shouldn't be any queries on
+[15:17] this one Let me check in the chat.
+[15:22] Great. Fine. Let me I could quickly move to
+[15:28] some other type of question. Yes. Let's check this question. I think it is easy,
+[15:35] right? Very easy. A quick one.
+[15:46] What do you say part?
+[15:51] So the basic unit of deployment in kubernetes definitely it's part. So you
+[15:59] create a micros service and you deploy that into the port. Great. Right now
+[16:07] guys, when you try to expose the application to some endpoints, what you
+[16:13] need, we now need to expose the application.
+[16:23] Yes, perfect. You need to use service. So in case of GK, it is the load
+[16:29] balancer that works as the endpoints. But in case of gubernetes technically we
+[16:34] termed it as service. Great. Next one. What about this question?
+[17:00] Option C. Um, I got an A, uh, D. Okay,
+[17:12] fine. A bit of confusion, guys. Where's the question? Which command is used to
+[17:19] create a cubernet cluster? Right? That means first we need to create a cluster.
+[17:25] And if we have the cluster in our hand then only we can do any operation on top
+[17:32] of that cluster that means we need to talk to the GCP
+[17:38] infrastructure provider by saying hey give me a new cluster or or I want to
+[17:46] update the cluster or maybe just give me an output right that means we need to
+[17:50] talk to that GCP infrastructure provider. Now if we want to talk to the
+[17:56] GCP infrastructure provider we need to use which command? It should be Gcloud
+[18:04] not cubectl. Okay that means we can directly
+[18:10] eliminate these two. Fine. And by the way there is no such command called
+[18:17] G-Cloud Kubernetes. It is G-Cloud container. Yes.
+[18:26] Okay. So definitely you are correct on the
+[18:31] first part that we need to communicate with the GCP infrastructure provider.
+[18:35] That means we need to use G-Cloud command. But there is no such command
+[18:41] called gubern G-Cloud Kubernetes right. So it should be G-Cloud container.
+[18:47] That means option A is the correct answer. And after that you can talk to
+[18:52] the control plane to the master node of the cluster.
+[18:57] Then you can take the help of cubectl command. Right? Like like hey I already
+[19:03] I have a cluster. Let me now deploy a p to that cluster.
+[19:09] That means then I need to create a ml file. Push the ml file with the help of
+[19:14] that cubectl command and then kubernet will help to create a path for you. So
+[19:20] if you want to create or manage or maybe update a cluster use G-Cloud container
+[19:28] and if you want to do some activities inside that cluster you need to use
+[19:35] cubectl cover right so yeah that is how it works okay any confusion guys on this
+[19:41] one are we good
+[19:47] Okay, then I think I need to move to the next
+[19:51] topic and let me just ask once again if you
+[19:55] have any question any doubt on quizzes or the quiz questions that we have
+[20:00] discussed anything in the chat
+[20:04] please no fine so guys can I get a quick confirmation yes no thumbs up thumbs
+[20:08] down to move to the next topic okay getting all fine great so now that
+[20:15] let's let's move or let's switch our uh thinking on symbol supererstore and if
+[20:22] you remember that symbol supertore cloud solution has deployed and implemented.
+[20:29] Now your role as an associate cloud engineer for symbol superto is to
+[20:38] maintain the entire operation successfully
+[20:42] right so let's explore that thing okay now to ensure successful operation an
+[20:49] associate cloud engineer needs the knowledge and skills definitely to
+[20:55] manage those resources that have been used in the organization so you also
+[20:59] to be able to know about different operational sues, how GCP helps us to
+[21:06] monitor those different services, what are the logging activities that we have,
+[21:11] what are the logs that we can store later, we can analyze those logs, right?
+[21:17] So, we need to go through those aspect. Now when it comes to managing the
+[21:21] resources guys, the managed instance group MIG will make sure that the number
+[21:27] of instances matches exactly what you have requested
+[21:32] and then monitors those instances. They have the concept of health check through
+[21:37] which they can monitor those things. So if an instance goes down the manage
+[21:42] instance group will start another instance to just replace the uh bad
+[21:47] instance or so-al bad one right and remember that manage instance group can
+[21:54] be zonal as well as regional and we know that regional instance groups create
+[22:01] instances across multiple zones in a single region. So your application can
+[22:09] still run in case of what? Any zonal outage. That's the advantage of using
+[22:15] MIG. Okay. And symbol superto supply chain
+[22:20] management tab is made of resources uh that those are implemented if you
+[22:26] remember currently the use cases those resources are implemented very close to
+[22:31] their headquarter and their headquarter is situated in Minneapolis right. It is
+[22:36] architected using compute engine and here we are maybe planning to thinking
+[22:44] what because they are using computer engine so why not we can replace them
+[22:48] with emis man inance group so that it can scale automatically it can remain
+[22:55] available um across those zonal outpages all those things right
+[23:01] and we need to if required ired to do some updates updates on on the operating
+[23:09] system update on on the AB testing on canary testing or we need to do those
+[23:15] testing we need to conduct those testing we need to change this time so I've just
+[23:20] shown you that particular document where I told you like definitely we we have an
+[23:25] option to do those updates similar to app engine in virtual machine but yeah a
+[23:31] bit of more effort but definitely we have an option to automatically apply VM
+[23:36] configuration update on MIG. So that's why they are telling that why not we use
+[23:42] those MIG in place of simple virtual machine when we are thinking of using
+[23:48] simple super supply chain management app. Okay, that's one changes helps us
+[23:54] to do managing those activities. Now comes to their e-commerce app that is
+[24:02] architected using containers deployed to those GK port right. So again as as an
+[24:08] associate cloud engineer on that e-commerce team you might be asked to
+[24:14] configure and monitor external connectivity e-commerce app definitely
+[24:19] lots of users are connecting lots of users are contributing on the same app
+[24:25] so why not we think of using external HTTPS load balancer which have a single
+[24:31] global IP that like provides content closer to those users.
+[24:37] That means user latency will decrease and we also have a backend service that
+[24:42] is controlled with those similar sort of IPs and we have a global visibility on
+[24:49] the users perspective on our database perspective uh if we like involved in
+[24:54] those different act admin or database administrating
+[25:00] terms right so yeah if we can move to that global load balancer that will
+[25:07] definitely help on managing the entire e-commerce app. Third one,
+[25:14] transportation management tab. They are using cloud function to monitor incoming
+[25:19] sensor data and if you remember they have implemented or we have asked them
+[25:24] to implement cloud data flow pipeline where we we will collect the data from
+[25:31] those popsub with the help of cloud function. those data will move to cloud
+[25:35] data flow. There they will do those different transformation activity and
+[25:39] then it will move to either big query database or or or maybe to big table.
+[25:46] Right now as an associate cloud engineer, it is very common to provide
+[25:51] those information about the source and sync that are required uh or the you
+[25:58] that we use in those pipeline and we need to share those information to the
+[26:02] data engineers or maybe the database engineers right because they are
+[26:07] developing they want to do some sort of uh additional activity so they need some
+[26:12] basic information when it comes to data streaming.
+[26:16] and managing those uh cloud functions, managing those data flow technique all
+[26:22] those things. So what you can do there you can use bigquery SQL to query your
+[26:28] bigquery data by defining a permanent external table using Google cloud
+[26:35] console or or maybe a BQ command. Fine. And this allow you to leverage
+[26:42] BigQuery's powerful analytical capabilities
+[26:45] because it is already familiar with SQL. And you can use the SQL query staying in
+[26:52] BigQuery and you can trigger that SQL query to big table
+[26:58] to do those analytical activities. That means what I'm telling is that let's say
+[27:03] you are storing the data in big table and you want to do some analical
+[27:07] activity staying in big query. So why not we can get an external table where
+[27:12] we just using some query triggering from our big query to big table and we will
+[27:18] be extracting our just required data for analysis to that external table so that
+[27:23] we will not be involving such complex uh data management activity even if we are
+[27:30] just staying in big query not going to big table. So that's that's different
+[27:36] ways, different concept, different logic that you can build to manage those
+[27:42] different apps that are there in our uh uh symbol superto different processing
+[27:50] activities that we have. Okay. So any question guys on this one what we have
+[27:56] discussed regarding symbol superto. So here we are mainly concentrating on how
+[28:01] we can enhance the management of those three different apps that we use in
+[28:07] symbol super okay any question anything great so let's
+[28:15] move to our next technical topic that is uh file store now guys I plan to cover
+[28:23] those topics definitely in a high level not so much
+[28:29] in depth like we cover for ECS bucket and to be cloud for cloud SQL and we
+[28:34] will be starting using this first data storage service that is file store. Now
+[28:39] guys, it is a managed NFS solution, right? It is not at all a database. So
+[28:46] if we go to file store, if you already have an instance created,
+[28:53] you will be getting a single IP address, a file store name, and you can attach it
+[29:01] with any of your VMs and you can use that thing to read and write activities.
+[29:08] So it's very easy to use that way right. And from exam perspective that's it. We
+[29:12] need to know just exactly what the purpose of using this file store. Right?
+[29:16] That is one service. Now there is another one called fire store. It is not
+[29:24] file store. Right? Remember that it is fire store. It is serverless.
+[29:29] It is fully managed and it is a no SQL document database. Right? And it can
+[29:34] able to scales from zero to global scale without any sort of configuration or
+[29:40] downtime. Now where we should be using fast store which are the ideal use cases
+[29:46] for using fire store or if what are the situation where we would not be using
+[29:51] fire store like if we have a OLTP relational database and we need a full
+[29:58] SQL support that is where we not be using fire store. If we want to store
+[30:02] some unstructured data like images, like movies, like videos, again we will not
+[30:07] be considering faster to. So just go through this particular slide and you
+[30:11] can able to know that where are the or which are the useful or which are the
+[30:15] ideal use case where you should be using faster or which are not those ideal use
+[30:20] case for using faster and also you need to differentiate between these two modes
+[30:29] there. That means you can use the earlier mode that is the data store mode
+[30:36] or the newer one we call it as fast two or and and actually this is the native
+[30:42] mode as well. Now the main advantage of using this native mode is that it
+[30:48] supports offline data persistence that means you can cache some fire store data
+[30:56] in your app. So and you need those data to be
+[31:01] accessed when your device is offline right. So let's say you are traveling
+[31:09] in a plane or maybe you are somewhere underground and then also you need to
+[31:13] access those data within this particular app you can do that staying offline. So
+[31:19] that's the advantage of using fire store the native one. Okay. Now, so you can
+[31:25] able to differentiate between the file store and the file store. Right? Now,
+[31:31] there is one more service which is very much similar from the name perspective
+[31:38] that is Firebase. Now let's look at that thing. Now the
+[31:45] most important thing about Firebase is that it is a platform. It is not at all
+[31:52] a database. It is not storing a single bit of data, right? It's simple a
+[31:58] platform. It is not even a part of GCP I would
+[32:03] say. But somehow it is backed by Google, right? So it is a mobile and app
+[32:08] development application. So if you are like writing an
+[32:13] application for your mobile you there you can use that firebase and you can
+[32:20] create the whole life cycle of that application that means you can build it
+[32:26] you can have some insights like to express that you can have an option to
+[32:31] integrate with other solution you have some ways some like some sort of
+[32:36] authentication etc etc right so the whole platform form is allowing you to
+[32:44] build a mobile application. Okay. So Firebase as a platform if required can
+[32:52] use fire store underneath it. Why to store the data? So if you are thinking
+[32:58] of creating an application, creating a mobile application with the help of fire
+[33:02] store and you want to use a NoSQL database underneath that application for
+[33:08] storing some data or maybe doing some sort of transaction. Yes, you can use
+[33:12] that thing and that is where you can combine those two different services.
+[33:16] But apart from that there is no such relation among Firebase, Fire Store or
+[33:21] Firebase. Okay. So what we have done right till now those we have discussed
+[33:28] those three similar name but different application
+[33:32] one is a nosql database another one is an NFS solution right and the last one
+[33:39] that we have discussed it's a platform altogether right now when it comes to
+[33:44] memory store I think you again need not to know much of this but it is just a
+[33:52] managed Radius right so it is used when you need to cache your data in memory
+[33:59] right so mostly it helps to speed up the processing and also reduce the latency
+[34:05] say for example maybe your user is suffering from high latency why because
+[34:11] you need to go to the database from here to here fetch some data again come back
+[34:19] to your application right now there are lots of ways to reduce this latency but
+[34:25] I would say uh the best or the easiest way is to grow up a memory store over
+[34:31] here right then what will happen then you need not to go to or travel the long
+[34:37] distance from your application to your database rather you can quickly fetch
+[34:42] the data from the memory store and use them as it is already being there within
+[34:48] the memory so that's it that's that so don't drive into detail about memory
+[34:53] store or all those services at least from exam point of view you should be
+[34:57] good enough if you know this thing okay now let's move to the next data storage
+[35:02] service that is spanner and again I think that you already have some idea on
+[35:09] cloud spanner but let's check couple of more advantages and first one is those
+[35:15] sorted RDBMS that means if you want more powers
+[35:21] cloud spanner can give it to you by adding
+[35:27] extra nodes. That is it will not increase the size of
+[35:34] a single node. That means it will not increase vertically rather it will add
+[35:42] multiple nodes that mean it will scale horizontally. So it will not follow the
+[35:48] traditional concept of vertical scaling. it it follows some unique some very
+[35:56] interesting uh thing of horizontal scalability. It's a unique property from
+[36:02] a RDMMS perspective that holds within this spanner, right? And if we go to
+[36:09] spanner, let me just show you once again. Why not? If we go to spanner,
+[36:17] um, it will definitely asks me to create an
+[36:22] instance. And I think you already remember that
+[36:27] spanner is already regional and we can make it dual region. We can make it
+[36:36] multiple region as well. Right? But before that we need to put maybe any
+[36:44] let's say any addition. If I click on continue, let me give any instance name
+[36:51] and let's click continue. And as I told you can see that it's already regional
+[36:57] having four 9ths of availability. But if we move to dwell region or multi-reion
+[37:04] it is already having five 9ths of availability. So it's like spread across
+[37:12] those multiple regions and if I select any of those regions let's say and if I
+[37:17] go right side see how unique they have built this this thing they have two read
+[37:24] write replicas in one region they have one more read write or maybe two more
+[37:31] readr replicas in in another region and one witness replica in another region so
+[37:38] it's unique unique structure that they have built when it comes to using a
+[37:44] relational database. Right? So that is what cloud spanner is. But on the other
+[37:50] hand, if you don't even need a relational database or your use case is
+[37:57] very much latency sensitive, maybe Spanner is not the right choice
+[38:03] for you. Okay? And also like keep in mind that when migrating to spanner you
+[38:11] need to offload most of the logic that you have within your database. That
+[38:17] means maybe you have created some database trigger you have created some
+[38:20] stored procedure within the database. Now you need to
+[38:25] offload those logic from the database level or the database layer to the
+[38:30] application layer. Why? because spanner does not support those thing.
+[38:36] Okay. And lastly, one more thing remember that moving to spanner means it
+[38:44] will not be easy to move to any other cloud provider again. Why? Because
+[38:51] spanner is only available within GCP. Okay. So you need to be aware of about
+[38:58] those those different concept those logic that I've just told you regarding
+[39:03] all those different datas services because they will not ask you directly
+[39:08] about the advantages or disadvantages of spanner rather they will ask you to find
+[39:14] out some optimal data storage solution based on some use cases right so
+[39:19] remember those small points that I have discussed for all those services fine
+[39:25] Now let's move to BigQuery here. I want to spend a bit more time.
+[39:32] Okay. Now let's let's start guys. First of all, you should have a solid
+[39:39] understanding of BigQuery hierarchy with difference data set physical location
+[39:44] and so on and so forth. Right? So in BigQuery
+[39:48] your speed and cost depends on how much data it reads. As simple as that because
+[39:55] every search scans the entire column. Why? Because BigQuery is a column
+[40:01] database. So when you first make a data set
+[40:08] you must choose its physical location keeping keeping in mind that the name
+[40:15] will definitely be sensitive uh in terms of those capital and lowerase letter
+[40:20] right and why I'm telling the location is important because any table you
+[40:26] search at the same time or or you try to copy it directly th those tables should
+[40:32] be there in the in the same exact location in the same exact space. So if
+[40:37] you need to move an entire data set to a different region you cannot simply copy
+[40:43] those things. That means in order to do those copy thing in order to do some
+[40:47] searches in a table your project location and your data set location
+[40:51] should be in the same direction interception in the same location. But
+[40:56] if those are in different location then you can't simply use uh a single copy
+[41:01] command to use that thing. But you know to move from one location to another
+[41:06] location you need to think of using a data transfer tool that we have within
+[41:10] BigQuery. Okay. So those small things just go through those things and you
+[41:14] should be good from the exam perspective and I and also guys I've seen some
+[41:19] questions about I am. Okay. So just try to remember some roles for BigQuery.
+[41:26] Specifically, I would say BigQuery has a quite common theme where you have a
+[41:32] project with your data set and then someone who is quaring your data set
+[41:39] does it from a different project. very very common uh thing that means like
+[41:44] maybe E or C is from a different department or maybe uh you shared your
+[41:50] data set with different company and the different company wants to query your
+[41:56] data set staying in in a different project in a
+[42:01] different location so whatever so so on so this this type of question this type
+[42:05] of use cases you may expect in the exam and this is why guys you need to
+[42:10] understand that from the project that you are quering the data you need to
+[42:16] have at least the job user role again I'm repeating the project from where you
+[42:22] are quering the data you should be having that job user role because
+[42:27] everything in bigquery is being treated as job
+[42:32] okay and then if you are executing a query from that project against a data
+[42:40] data set in another project then you need to have the privilege to
+[42:47] see the data to view the data and there you should be having a data
+[42:55] viewer or maybe a data owner role. So you might need to have a job user
+[43:04] role in your project and if the data is in different project you should be
+[43:11] having a data viewer or a data owner role. Okay. So that's it. Just remember
+[43:17] these two concept and again you'll be good on this part. Moving forward just
+[43:24] like we talked about storage transfer service where we talked about storage
+[43:30] server service in GCS bucket where I told you like if I want to transfer some
+[43:34] data from outside world within GCS bucket the major option or I would say
+[43:39] the majority of the cases around 90 95% of the cases we should be using storage
+[43:44] transfer service until unless we have a lesser bandwidth or the data size is
+[43:49] very small right so as I told you for GCS bucket It is majorly storage
+[43:54] reference service. For BigQuery, we also have similar sort of service called
+[43:59] BigQuery data transfer service, right? Where if we want to move the data from
+[44:07] any other source to BigQuery, we can use this service. Okay, great. And I'll add
+[44:17] one more thing over here is that it can be made as regular. That means if uh you
+[44:26] may not load the data at once but you need to load some data every day or
+[44:33] every hour. So in that particular situation also you can use this bigquery
+[44:39] data transfer service. Okay. So that's the advantage of using data transfer
+[44:44] service within BigQuery. Now when uploading data to BigQuery
+[44:50] regardless of how how you do it, you have a default option of of do it in in
+[44:56] batches with the we I would say those those thing doesn't cost you anything
+[45:02] for transferring at least. But if you have something where the data
+[45:08] is flowing um all the time that means you want to have some streaming uploads.
+[45:15] Yes, that is where definitely BigQuery will give you the option of streaming
+[45:19] uploads but you need to incur some additional cost. So for a batch upload
+[45:26] no cost for streaming upload yes we're having some cost over there. Okay. And
+[45:34] BigQuery also allow you to share data very easily to others. Like suppose your
+[45:41] partner wants to get some insights from the data. So for that you might need to
+[45:49] give him the data. He might need to like store it somewhere. Then your partner
+[45:55] can maybe extract any logic by by by importing some I don't know some SQL
+[46:01] queries or all those things. So, so that that's one thing or one approach that we
+[46:06] can have but somehow it is problematic sharing the enter data to my partners
+[46:12] rather if you have the data in big query what you can say to your partner like
+[46:18] hey I have the data in big query data set I will not share the entire data
+[46:25] rather I will just share you the data set
+[46:29] right and you should only be paying for your query.
+[46:36] That's it. So the data should be with me. I'll be sharing with you with you
+[46:39] the data set and in order to execute those query I will just give you some
+[46:44] permissions some privileges. That's it. So with the help of those
+[46:49] collaboration thing you can do those activity or you can help someone to
+[46:55] extract some query from the data set where you are the owner of those data
+[47:00] set. Right? So that is how it goes and I would say just like you you share
+[47:06] your data you can also share your queries. Maybe you have designed an
+[47:11] important query a complex query and you want your team to use the exact same
+[47:18] query right because that query is very
+[47:21] effective and it will clear the entire objective of your requirement. So why
+[47:26] not you just share the queries to the others to your team members so that they
+[47:31] do not need to create the query or write the query from the scratch. They need
+[47:36] not to do those brainstorming thing to to waste those time right. They will be
+[47:40] just using your query that you have already created and they will get the
+[47:45] exact required insights that your inter team wants. Okay. And there's one more
+[47:52] thing. You can also schedule your queries, right? So maybe you need to run
+[47:57] some queries every day in a specific hour, right? Then then uh then you a
+[48:04] report should be generated uh and you need to like do in order to generate
+[48:11] those report maybe you need to uh create some contact based uh scheduling which
+[48:17] will trigger which will execute after some time span let's say 30 minutes 40
+[48:22] minutes for that report it's it's again troublesome rather than why not we use
+[48:29] the bigquery features bigquery features of scheduling, right? So those
+[48:34] scheduling things they run automatically and they will run automatically at a
+[48:38] specific time at a specific recurrence and you will get the exact required
+[48:43] thing that you want or that we're planning to do with those um maybe
+[48:48] counter activities that you plan. Okay. So yeah, we have that bigquery
+[48:52] scheduling thing already there. And very interesting thing guys, as soon as your
+[48:58] data is retrieved from BigQuery, that means as you select uh or I say as you
+[49:04] execute a select query, right now you have executing a select query on top of
+[49:10] a big query data set. Exactly the data that is being selected
+[49:15] based on that query is being cached automatically.
+[49:21] And that data that have been cached automatically will stay in the cache
+[49:25] memory for the next 24 hours. That means if you execute the same query uh with
+[49:34] the same data set, it will not cost you again because those
+[49:41] are already there in the cache and it will also reduce your execution time
+[49:46] overall. So guys, this is a very good cost and speed optimization technique.
+[49:52] But one thing we need to remember, there are some uh constraint that you need to
+[49:58] uh take care while applying this caching concept. Right? But if you have the
+[50:02] concept in mind definitely it's a good one as an optimization technique in
+[50:07] terms of speed and cost. Okay. Now next thing let's check about this expiration
+[50:15] thing. Now what is that guys? Bigquery allows you to turn on automatic data
+[50:21] expiration again which is very useful if your data
+[50:26] is relevant only for a specific duration. So you want to optimize your
+[50:33] storage cost, you want to reduce some manual action, you want to speed up the
+[50:40] entire process, this is a very good option to do that thing. See uh uh
+[50:46] BigQuery uh let's say we we we are storing some data and I need that data
+[50:53] for the next 60 days. After that not at all required that means I'll be storing
+[50:58] or I want to store the data for the next 60 days.
+[51:03] Now that means I need to write it somewhere. I need to remember I need to
+[51:07] set a alarm for that. Okay, after 60 days today's this and this and that date
+[51:13] and after 60 days that will be the date and I need to delete this data on that
+[51:19] particular date. No, you need not to remember that thing. just use this uh
+[51:23] property of BigQuery that means this expiration thing where you set a 60 days
+[51:28] uh time span right so after 60 days bigquery will automatically delete the
+[51:34] data right so you and you did not to do anything manually so it will definitely
+[51:42] save time it will definitely save cost because after 60 days you will not be
+[51:49] charged for the data at least from the storage perspective as well, right? So,
+[51:54] yes, this is another cost optimization thing that BigQuery offers us.
+[52:00] Okay. And finally, two more concept specifically with BigQuery. One is table
+[52:08] partitioning, another one is clustering. Guys, now let's first cover the
+[52:14] partitioning thing which is basically lets you automatically partition
+[52:19] bigquery tables and that partition will happen based on two parameters. That is
+[52:27] the most important thing. We can partition query table with the help of
+[52:32] time stamp and an integer value. Right? And I would say from a warehouse
+[52:39] perspective partitioning is super super useful.
+[52:44] So because as a data warehouse every time the data
+[52:48] is coming in the storage is increasing. Now if we want to execute a query that
+[52:55] doesn't need all the data. So why should you execute that query on top of the
+[53:00] entire data set? Let's say I want to execute a query uh where I want to
+[53:05] extract some insight for the last one month. So why should I execute the same
+[53:09] query on top of the enter yearly data? So if we have a table that is
+[53:16] partitioned monthly then I will just trigger my my query on that specific
+[53:22] month data not the entire data set. Right? So that's the purpose of using
+[53:28] table partitioning and again this is another very very important speed and
+[53:34] cost optimization technique that big query offers.
+[53:38] Okay. Now what about clustering? Clustering is bigquery is like where you
+[53:44] can automatically organize the data organize the table data based on some
+[53:51] content in I would say one or more columns.
+[53:55] Right? So if if in your table schema we have a column let's say for a location
+[54:01] for a country and you want to clusterize you want to categorize those table based
+[54:08] on country as a column you can do that very easily. So here clustering help us
+[54:14] to collocate those related data uh in a single frame. Okay. Now I'll be moving
+[54:21] to an example before that when to use clustering. Can we use both the things?
+[54:27] Yes, those questions come in our mind. So I just give you a couple of use cases
+[54:32] will definitely help you to find out which situation we should be using which
+[54:38] one. Okay. And then let's quickly move to the example. See we have initially a
+[54:47] order table which is not clustered not partitioned. Then we apply clustering.
+[54:55] Okay. And we apply clustering on top of country. So now this is how the
+[55:01] clustering is happening based on the country. Later after applying clustering
+[55:07] maybe we can think of using partitioning. Now this partitioning is
+[55:10] based on some time style and this is how it looks. Right. So with the help of
+[55:14] partition clustering we can definitely optimize speed cost sorry both the
+[55:21] thing. Okay. Um now let me move to big table then I will
+[55:29] take those questions queries that we have maybe the chat or someone want to
+[55:34] tell anything. Okay. So a couple of things with big table guys. uh again we
+[55:39] don't like to deep dive into big table architecture in data storage structure
+[55:44] all those things but just from the exam point of view I can let you know that if
+[55:50] you see some keywords like uh I need a key value pair I need a white column
+[55:59] database I need to store my time series data uh what should be the exact
+[56:06] database yes that is where You can think of using big table as a database, right?
+[56:13] And also you will be uh surprised to see that sometimes we can use big table for
+[56:21] analysis. Now up to this point of time we all know that analysis means hey it
+[56:27] should be only bigquery. Why big table? Yes, definitely in majority of the cases
+[56:33] we should be using BigQuery for any sort of analytical activities any sort of
+[56:40] Olaf type of activities right but if our analytical workload is very read right
+[56:47] intensive and you you want to care latency
+[56:52] very much. So if you need something some sort of decision that can be made in in
+[56:59] real time or at least in near real time that is where you can think of big table
+[57:05] as doing those analytical activities. Apart from those very specific
+[57:10] requirement definitely as we discussed big query is the best for doing
+[57:15] analytical activities. Okay. Yeah that's it for me. Any question guys? Do we have
+[57:22] access to the slides discussed as well? Definitely brother you should have an
+[57:26] access to the slide just go there in our Google drive.
+[57:31] Uh okay has already answered your query. So
+[57:36] guys apart from that any question any doubt are we good till now about those
+[57:41] other data service that we have discussed today those six seven eight
+[57:45] services yes no can I have a quick confirmation?
+[57:49] Yes. No. Thumbs up, thumbs down. What else? I'm not getting any confirmation.
+[57:54] Is my I'm audible. What else? Yeah. Yeah. Okay.
+[58:00] Uh fine. Anyone raise? No. Great. Thank you. Thanks for the conversation, guys.
+[58:06] So, as I told you, we have discussed around seven or eight different storage
+[58:11] options in GCP. Now let me just tell you that if we need
+[58:17] to differentiate between them, if you need to just like create a small summary
+[58:23] of all those different services that we have discussed like what is the
+[58:28] overview, what are those characteristics and in which situation they're ideal
+[58:33] for. So what I've done is I have created a bunch of slides where we can compare
+[58:38] those different storage services like I have created for storage cloud storage.
+[58:42] which I've created for data store, I've created for fire store, big table, cloud
+[58:49] SQL, spanner, big query, everything. And on top of that I've also given you some
+[58:58] tree structure some flowchart type of thing where if you get a question like
+[59:03] hey I have a structured database and I need to use that database for some
+[59:10] transactional workload and it is mostly about some SQL workload. Now it's the
+[59:16] question is if I want to use that database that transactional database for
+[59:22] a particular region or in in a locality then definitely I should be choosing
+[59:29] cloud SQL. Else if I need that workload to be spread across multiple regions yes
+[59:36] we can think of using cloud spanner. This type of flowchart, this type of
+[59:41] table will definitely help you to choose the perfect, the most important, the
+[59:46] most suitable data storage service. Right? So I have couple of those
+[59:51] different slides like I think I have those different tables as well comparing
+[59:56] different technical details of storing and this is also very important like
+[1:00:01] selecting different storage option is the data structured do we need to do
+[1:00:06] those mobile SDK if your work is analytics if your data is relational yes
+[1:00:11] no yes no so definitely that will help you to find out okay now for every
+[1:00:15] aspect now this is what the major option that I need to do. So just those those
+[1:00:21] type of yes no flowchart activity will give you a proper solution for a data
+[1:00:27] storage service. So definitely go through those slides specifically for
+[1:00:31] your exert. Okay. Now what else? Yeah, I think I've also
+[1:00:38] given you some additional links for your knowledge upgradation for
+[1:00:45] brushing up some more technical concept. Right? go through those materials and I
+[1:00:52] think I'm done with the technical thing and if you don't have any queries any
+[1:00:56] queries I'm not seeing anything in the chat okay so if you are good on every
+[1:01:02] aspect guys why not use the next maybe 27 28 minutes on discussing some
+[1:01:10] diagnostic question and I'll be starting with this question yeah here it is
+[1:01:16] what to say about this Mhm. Option A.
+[1:01:49] Okay. I got a D.
+[1:01:57] 1 A. Now guys before moving to the solution
+[1:02:04] what is actually a snapshot is it's a snap right in it's a very general
+[1:02:17] term it's like a point in time copy or maybe
+[1:02:24] uh it's a copy of something that is
+[1:02:27] representing or something that we need to represent later on.
+[1:02:33] So it is depend on different context but I would say the core idea is to uh maybe
+[1:02:39] capturing a state of something at a particular moment. Right? That is what
+[1:02:44] we can think of uh as a snapshot. Okay. But the question is not actually
+[1:02:54] about snapshot or what is snapshot or the purpose of snapshot. It's more about
+[1:03:00] the command through which we can use snapshot in our comput engine in a VM.
+[1:03:09] That's the question right now. Uh let me just show you yes option A is the
+[1:03:18] correct answer. But I don't like uh you are aligning with me what I'm thinking.
+[1:03:23] See it's a trick again that we need to remember. Any G-Cloud command, any
+[1:03:29] G-Cloud command should have three major parts.
+[1:03:34] So it will start definitely with G-Cloud followed by
+[1:03:42] group that is maybe command for this one.
+[1:03:48] Then we have subgroup and finally the action or the verb
+[1:03:57] that should be the actual process of writing any G-Cloud command again I'm
+[1:04:05] repeating we will start with G-Cloud then the group group is your compute
+[1:04:12] within that group we are using snapshots it's a subgroup and in snapshot What is
+[1:04:18] the activity we are looking for? List. Okay. So now if you compare the
+[1:04:25] remaining one uh G-Cloud snapshot list maybe it's missing
+[1:04:33] the group. G-Cloud compute list snapshot somehow reversed and G-Cloud compute get
+[1:04:42] guys again to let you know there is no such action called get within snapshot.
+[1:04:50] This is not at all action. And again to let you know guys the the action of
+[1:04:57] snapshot uh sorry list describe
+[1:05:04] and I think delete these are the three different action I don't remember if
+[1:05:09] there is anything more on apart from this one but definitely there there is
+[1:05:15] no such action called get so yeah we are done we should be selecting option A as
+[1:05:21] the right answer. So those who have selected option A if you think that you
+[1:05:25] follow the same pattern then good. Else do remember this particular concept.
+[1:05:30] Okay. Anyone any queries on this question guys? Yes. No. Can I get a
+[1:05:35] quick confirmation from everyone? What happened?
+[1:05:40] Yes. Thumbs up. Thumbs down. No. Sorry. Yeah. Next one. Great.
+[1:05:48] Thank you. Another question related to snapshot.
+[1:05:55] You initial you have raised your hand or any queries.
+[1:06:02] If yes, go ahead. I think uh somehow mistakenly done this.
+[1:06:09] Fine. So let's see this question guys. You have a schedule snapshot.
+[1:06:21] Okay. And you are trying to delete
+[1:06:26] but you are not able to do that thing. You are getting some error. Why?
+[1:06:36] The question is why? White is from mind but we are expecting from the this
+[1:06:42] question perspective what should you do to resolve the problem
+[1:07:01] option C. Mhm.
+[1:07:12] Okay. I got an option as an answer as well.
+[1:07:28] So guys, when the snapshots are scheduled,
+[1:07:34] right? So schedule snapshots often what they have done that they
+[1:07:40] create a chain of incremental snapshots. That means each subsequent snapshots
+[1:07:51] only store the changes made uh since the previous one.
+[1:07:58] Right? So therefore I would say uh later later means the the downstream one that
+[1:08:06] the word that they have used over here that downstream snapshot depends on the
+[1:08:12] data of the earlier snapshot that means the upstream snapshot.
+[1:08:18] So we have a main reference then we have those incremental snapshot going one by
+[1:08:25] one and those snapshots yes those are now scheduled so I can see different
+[1:08:32] answers now. So what do you say as it is creating those incremental
+[1:08:40] thing we will not be able to delete the snapshot over there. So what we need to
+[1:08:48] do is we need to first detach the snapshot schedule
+[1:08:56] then we can go ahead and delete that thing and one more thing I think I've
+[1:09:03] shown you about GCS bucket where I've shown you uh that retention policy right
+[1:09:09] so here also th those things those snapshots or maybe some snapshots
+[1:09:16] already applied some retention policy I need to store this snapshot for the next
+[1:09:20] 5 days or within the next 5 days no one can able to delete those snapshot so
+[1:09:25] those things are already maintained when we have that scheduling thing right so
+[1:09:32] once we don't have a direct management direct protection
+[1:09:40] of those snapshots that means if we can able to detach those from the skill that
+[1:09:46] means the management is broken then you can think of deleting but before that
+[1:09:51] it's fully managed. So yes we can't delete. So why is definitely they are
+[1:09:59] incremental we have applied some retention policy. So that's why we don't
+[1:10:04] able to delete. Now how to resolve the problem? You need to detach those. Okay.
+[1:10:11] So yeah option C is the right one. Any question guys on this one?
+[1:10:18] Are we good? I got one hand or what else?
+[1:10:24] Okay, great. Next one then A and D
+[1:11:22] all. There's no such option called all. By the way, we need to pick two only.
+[1:11:27] They're explicitly defined. We need to pick two.
+[1:11:31] Someone is saying D and B. Okay.
+[1:11:39] What about others guys? I'm not getting answer. Maybe four five persons are
+[1:11:42] giving what else? H go ahead. Go ahead. Try it out. Just
+[1:11:47] find out two answer. I think it should be very easy for you.
+[1:12:03] So when we are trying to create a managed instance group what we do we go
+[1:12:11] there we click on create manage instance group
+[1:12:17] then I think we have already shown that thing at the very first day where I need
+[1:12:23] to put a name a description. Then I need to select an instance
+[1:12:32] template and the remaining thing is more about those scaling location all those
+[1:12:39] things about the health check. But is there any option
+[1:12:46] in creating manions group that says that uh how that we can specify persistent
+[1:12:55] disk that we can choose different machine type or operating system.
+[1:13:04] Is there an option of selecting persistent disk, machine
+[1:13:10] type or operating system while we are trying to create a manage instance group
+[1:13:17] like here it's more about health check it's more
+[1:13:22] about autoscaling it's more about load balancing everything nothing related to
+[1:13:28] machine type nothing related to persistent or choosing that specific
+[1:13:33] operating system right now. Who does this?
+[1:13:38] Those things are given in this instance template, right? Instance template are
+[1:13:47] the blueprint. Blueprint of what type of VM we should
+[1:13:52] be using in this instance group. On that particular blueprint, we define
+[1:14:00] the machine type. On that blueprint we define what should be the persistent
+[1:14:06] disk what type of operating system we need. So the entire structure or the
+[1:14:14] configuration of the VM is taken from machine uh sorry taken from instance
+[1:14:20] template that means we define those entire configuration within instance
+[1:14:24] template and then we just add those instance or add that particular instance
+[1:14:29] template while creating those instance group. So I think if I just go there
+[1:14:35] create an instance template like if uh uh
+[1:14:40] Do I have the permission? Let me check. Uh
+[1:14:45] yes, see now I'm creating an instance template and here I could define those
+[1:14:51] machine configuration like this one. Maybe I I I can set preset or I can use
+[1:14:57] some custom configuration whatever it is. I uh containers that means deploy
+[1:15:03] container. See from this boot disc I think I can able to add those operating
+[1:15:09] system all those things. So those things are there in instance template not in
+[1:15:15] instance group. So again I'm repeating instance group is different where it
+[1:15:20] will not ask us to configure a VM rather it will use the instance template where
+[1:15:29] we put that configuration and it will add something more what it will add
+[1:15:35] those health checks it will add how many instance we need right or it will add
+[1:15:44] those autoscaling illing activities everything. Okay. So
+[1:15:49] yes, option A and B are correct where this is specifically for instance group
+[1:15:57] and the remaining three are related to instance template.
+[1:16:03] Am I clear guys on this one? What I have told makes sense to
+[1:16:09] everyone. Can I get a quick confirmation about this question? Make it very clear.
+[1:16:13] We need this small difference. Next.
+[1:16:37] We have discussed this type of question at the very beginning like in who is
+[1:16:47] Mhm. Everyone, I'm waiting. Mhm. Yes, definitely.
+[1:17:07] If we want to expose our application, we have repeated it all that it should be
+[1:17:15] service. If you want to add some more concept can go through those links.
+[1:17:22] Okay, great.
+[1:17:25] Next one. Mhm.
+[1:18:07] Now um fine I will take those answer but first of all can anyone tell me about
+[1:18:13] exactly what is this declarative way of initialize something that means
+[1:18:20] what is declarative statement and we have something called imperative
+[1:18:26] statement as well. Now what is those? What are those thing?
+[1:18:32] Imperative and declarative. Can I get a quick oneliner maybe in the chat?
+[1:18:41] Just tell what to do and not how to do. Great. And maybe the difference
+[1:18:49] or the reverse is imperative one. Great. Yes, that that's the answer. So the
+[1:18:55] declarative statement describes what you want to achieve or what the desired
+[1:19:03] outcome or or the status should be and you will be doing that thing without
+[1:19:10] explicitly specifying those stepbystep instruction
+[1:19:16] to actually achieve that goal. So it only focus on the result
+[1:19:23] right and imperative statement focuses like how it is to be done that
+[1:19:30] means it will describe like do this then do that then do another thing. So it is
+[1:19:38] focus on the process and as I told you compared to uh uh imperative one
+[1:19:43] declarative is more about specifying what to be done. I want the system to be
+[1:19:49] look like that or something like this. Okay. So it's just focused on the
+[1:19:55] desired outcome. Now cubectl
+[1:20:01] apply exactly give us that opportunity to use
+[1:20:07] declarative statement. Right? So with the help of cubes it will
+[1:20:11] apply that creates and updates different cube cubernetes object and they do that
+[1:20:17] thing in a declarative way. But if you want to do the same thing in an
+[1:20:23] imperative way those are the remaining three things like create replace those
+[1:20:28] are imperative state right. So yeah option A is the correct answer for this
+[1:20:34] one. Any doubt on this?
+[1:20:39] Okay. Wait. Then one more. A bit tricky. Interesting question. Yes.
+[1:20:48] Let's see. D uh one give me B.
+[1:21:31] Okay. Now let's see what is the question. So
+[1:21:36] you have a cloud run service with a database back end. That's fine. You want
+[1:21:43] to limit the number of connections to your database.
+[1:21:50] Great. So I need to do something where CloudFrun will should have a limitation
+[1:21:59] on the number of connection to the database. Now let's come back to the
+[1:22:04] option. Majority of you are selecting option D.
+[1:22:10] That means if we can set some concurrency settings. Now guys,
+[1:22:18] concurrency setting is like how many users can connect to a particular
+[1:22:25] instance. Again I'm repeating here
+[1:22:31] concurrency setting means how many user can able to connect to a particular
+[1:22:36] instance. But the requirement is I think at the next level where we want to limit
+[1:22:42] the number of connection to the database H now I'm pausing myself
+[1:22:53] can we think in a different way number of user
+[1:22:59] shouldn't have a impact on the connection to the database or how to
+[1:23:06] make that see for each cloud run instance that
+[1:23:17] starts up will typically open one or more
+[1:23:23] connection to your database. I'm telling about the instance not the
+[1:23:27] users. So if we set up a max instance limit
+[1:23:35] that means if we can put an upper bound on the total number of cloud run
+[1:23:41] instance that can exist uh maybe that can exist in a given point of time right
+[1:23:48] now since the total number of database connection
+[1:23:52] again is a function of the number of instances and the number of connection
+[1:23:58] ction for each instances to the database because see the
+[1:24:04] connection that each instance is open those connection will directly connect
+[1:24:10] to the database. Now if we can able to limit those number of instance we can
+[1:24:14] able to limit the number of connection and if we have those limitation we can
+[1:24:19] able to limit how many of the connection can able to connect with the database.
+[1:24:23] So that concept is quite different from connecting those users to the instances
+[1:24:30] rather instances to the database and that is where if we can set those sorry
+[1:24:36] max instances or we can limit the maximum number of instances we can limit
+[1:24:41] the number of connection with the database that's the logic that's the
+[1:24:46] requirement it should be option B any confusion guys on this
+[1:24:54] very tricky one but I would say it's not so hard as well
+[1:24:59] any question any doubt fine I think we can do one more
+[1:25:37] I it is very easy. Mhm. I got one from Aneli then. Okay.
+[1:25:47] Fine. So I'm getting answers. Those who are giving one as an option
+[1:25:52] guys. H see this we need to pick two in the exam they will explicitly define
+[1:26:00] that how many we need to select if nothing is defined then only one option
+[1:26:06] it's a it's busy so you want to implement a life cycle
+[1:26:14] policy or life cycle rule that changes your storage type from standard to near
+[1:26:20] line after a specific specific date. So why not we go to our
+[1:26:28] GCS bucket, right? Give me time to just
+[1:26:38] Yes. So if I go, let me go to GCS bucket GC
+[1:26:50] and try to define the same
+[1:26:56] policy for an existing market.
+[1:27:02] Okay. So let me see if I have any existing
+[1:27:17] bucket. Yes, I do have one. So I go there. Um
+[1:27:27] and let me define that role.
+[1:27:33] Okay. I think we need to go to life cycle to
+[1:27:42] define that rule and I click on add a role. Okay. Now I I'm here with an
+[1:27:50] exact location. So if I click on add role,
+[1:27:55] what is the question? I need let me move back to the question where I need to
+[1:28:00] implement some rule to change our storage type from standard to nearline
+[1:28:06] after a specific date. So yeah maybe this this bucket let's say is in
+[1:28:12] standard so I need to set the storage class to near line. So that's the action
+[1:28:17] I need to do and what are the logic concept that that should be moved to
+[1:28:26] nearline storage class after a specific date. Now majority of you have chosen
+[1:28:31] AB. A means let's move to the question once again. A means age. B means created
+[1:28:38] before. Okay. Now say I want to move that thing to nearline storage class if
+[1:28:48] my storage class matches with standard. That is the first condition. I need to
+[1:28:56] move from or I need to move to nearline storage class if my storage class
+[1:29:03] matches standard. And if you select age, age means what? I need to put some days
+[1:29:12] like I need to move to a nearline storage class after this amount of days
+[1:29:18] after 2 years, 3 years, 90 days. There we need to choose age. But here they
+[1:29:24] explicitly ask us that I need to move that thing after
+[1:29:30] uh in a specific date. So why not we move to created before
+[1:29:36] thing where I can able to select a date. let's say this date. So if my storage
+[1:29:43] class or if my object is created before this particular date
+[1:29:50] and my storage class is standard then it will move to nearline storage cuz that
+[1:29:56] should be the logic. So if it is done then I will be clicking on create and
+[1:30:01] I'm good with setting up this roles. So whenever that object satisfy both the
+[1:30:06] condition it will move to the specified that is for this
+[1:30:13] question near line storage class right. So it should be B and C where I will be
+[1:30:22] first selecting that yeah the storage class matches with that standard storage
+[1:30:29] class and this particular date is specified
+[1:30:37] over here. So it should be B and C. Is it clear guys or any confusion?
+[1:30:49] Yes. No. If you have any doubt do let me know.
+[1:30:57] Are we good for this question? So again I'm telling you you can expect this type
+[1:31:00] of question in the exam. Okay. So I think we're also on time. Now if we are
+[1:31:09] good with all the topics all the questions that we have discussed then we
+[1:31:12] are good to wrap up today's session guys what you feeling we have already done
+[1:31:18] with fifth week maybe one week is remaining uh the last week and I'll be
+[1:31:24] covering some more technical topic along with uh non-technical thing where I will
+[1:31:29] show you how you can able to book your exam slot after getting your voucher and
+[1:31:35] what are the different modes of giving your exam
+[1:31:38] and the pros and cons of those different modes. I will discussing those thing
+[1:31:43] next week. Okay. So yeah then thank you. See you next week. Take care. Happy
+[1:31:50] learning guys. Yeah. Are you there?
+[1:31:54] >> Thank you. Supraatim.
